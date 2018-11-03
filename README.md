@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # helijia
 
 ## Project setup
@@ -27,3 +28,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# HLJ
+>>>>>>> c70c35f8430d98464b60f1ca01d10d523534c307
