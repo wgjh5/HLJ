@@ -15,6 +15,8 @@
         <Xproduct />
         <Xspace />
         <Xrecommend />
+        <XbackTop />
+        <Xnavbar />
     </div>
 </template>
 <script>
@@ -26,6 +28,8 @@ import Xproduct from '../components/Xproduct.vue';
 import XbigImglink from '../components/XbigImglink.vue';
 import Xspace from '../components/Xspace.vue';
 import Xrecommend from '../components/Xrecommend.vue';
+import XbackTop from '../components/XbackTop.vue';
+import Xnavbar from '../components/Xnavbar.vue';
 export default {
     components: {
 		XTopbar,
@@ -35,7 +39,9 @@ export default {
         Xproduct,
         XbigImglink,
         Xspace,
-        Xrecommend
+        Xrecommend,
+        XbackTop,
+        Xnavbar
     }
 }
 </script>
