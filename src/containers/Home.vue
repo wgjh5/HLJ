@@ -1,7 +1,7 @@
 <template>
     <div>
 
-		<XTopbar />
+		<XTopbar status="home" />
 		<XCarousel />
 		<XGridMenu />
 		<XComplexmages />

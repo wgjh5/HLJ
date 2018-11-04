@@ -51,7 +51,7 @@
 				 this.$router.push({ name: 'home' });
 			},
 			publishCat(){
-				this.$router.push({ name: 'cats' });
+				this.$router.push({ name: 'cat' });
 			},
 			publishOrder(){
 				this.$router.push({ name: 'orders' });

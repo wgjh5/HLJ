@@ -1,49 +1,69 @@
 <template>
-	<section class="Topbar magic-widget" data-track-spm="m-clientapp-index.Topbar_189.$.b9bd0e">
-		<section data-sticky-index="0" class="topbar-component" style="background-color: rgba(0, 0, 0, 0.004);">
-			<section class="location-selector">
-				<div class="local-bottom default-local-bottom"><span data-track-pos="0" data-track-scm="定位" class="SVGInline icon-location icon default-icon-location"><svg
-						 class="SVGInline-svg icon-location-svg icon-svg default-icon-location-svg" width="20" height="20" viewBox="0 0 20 20"
-						 xmlns="http://www.w3.org/2000/svg">
-							<defs>
-								<linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="id-27a">
-									<stop stop-color="#E7C269" offset="0%"></stop>
-									<stop stop-color="#C3902C" offset="100%"></stop>
-								</linearGradient>
-							</defs>
-							<g fill="none" fill-rule="evenodd">
-								<path d="M10.237 18.16s-6.39-5.606-6.39-9.17c0-3.563 2.86-6.452 6.39-6.452s6.39 2.89 6.39 6.453-6.39 9.169-6.39 9.169zm0-6.113c1.672 0 3.027-1.368 3.027-3.056s-1.355-3.057-3.027-3.057c-1.672 0-3.027 1.369-3.027 3.057s1.355 3.056 3.027 3.056z"
-								 fill="url(#id-27a)"></path>
-								<path d="M0 0h20v20H0z"></path>
-							</g>
-						</svg></span>
-					<div class="location"><span><b>服务地址：</b>广州市
-						</span></div>
-					<div class="icon-right-arrow">编辑</div><span class="arrow"><span class="SVGInline"><svg class="SVGInline-svg" style="width: 1em;height: 0.8em;"
-							 viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg">
-								<path d="M4.547 5.002L.383 9.167c-.2.2-.194.509 0 .703a.502.502 0 0 0 .703 0l4.411-4.411a.494.494 0 0 0 .26-.386.494.494 0 0 0-.256-.523L1.086.135a.491.491 0 0 0-.703 0 .502.502 0 0 0 0 .703l4.164 4.164z"
-								 fill="#999" fill-rule="evenodd"></path>
-							</svg></span></span>
-				</div>
+	<div>
+		<section v-if="status==='cat'" class="Topbar magic-widget">
+			<section data-sticky-index="0" class="topbar-component" style="background-color: rgba(0, 0, 0, 0.9);">
+				<section class="searchinput-component" data-track-scm="搜索">
+					<div class="input-field"><span class="SVGInline search"><svg class="SVGInline-svg search-svg" style="width: 0.7rem;height: 0.7rem;"
+							width="13" height="14" viewBox="0 0 13 14" xmlns="http://www.w3.org/2000/svg">
+								<g fill="#999" fill-rule="evenodd">
+									<path d="M6 11A5 5 0 1 0 6 1a5 5 0 0 0 0 10zm0 1A6 6 0 1 1 6 0a6 6 0 0 1 0 12zM10.14 11.82l2.04 2.04a.48.48 0 1 0 .68-.68l-2.04-2.04a.48.48 0 1 0-.68.68z"></path>
+								</g>
+							</svg></span><input type="search" class="search" placeholder="美睫" value=""></div>
+				</section><button class="msg"><span class="SVGInline icon"><svg class="SVGInline-svg icon-svg" width="26" height="26"
+						viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13 20.486c-.639 0-1.26-.058-1.866-.157l-4.373 2.653v-4.417c-2.28-1.602-3.744-4.056-3.744-6.813 0-4.824 4.47-8.735 9.983-8.735 5.513 0 9.983 3.91 9.983 8.735 0 4.824-4.47 8.734-9.983 8.734zM17.991 13a1.248 1.248 0 1 0 0-2.495 1.248 1.248 0 0 0 0 2.495zM13 13a1.248 1.248 0 1 0 0-2.495 1.248 1.248 0 0 0 0 2.495zm-4.991 0a1.248 1.248 0 1 0 0-2.495 1.248 1.248 0 0 0 0 2.495z"
+							fill="#FFF" fill-rule="nonzero"></path>
+						</svg></span></button>
 			</section>
-			<section class="searchinput-component" data-track-scm="搜索">
-				<div class="input-field"><span class="SVGInline search"><svg class="SVGInline-svg search-svg" style="width: 0.7rem;height: 0.7rem;"
-						 width="13" height="14" viewBox="0 0 13 14" xmlns="http://www.w3.org/2000/svg">
-							<g fill="#999" fill-rule="evenodd">
-								<path d="M6 11A5 5 0 1 0 6 1a5 5 0 0 0 0 10zm0 1A6 6 0 1 1 6 0a6 6 0 0 1 0 12zM10.14 11.82l2.04 2.04a.48.48 0 1 0 .68-.68l-2.04-2.04a.48.48 0 1 0-.68.68z"></path>
-							</g>
-						</svg></span><input type="search" class="search" placeholder="美睫" value=""></div>
-			</section><button class="msg"><span class="SVGInline icon"><svg class="SVGInline-svg icon-svg" width="26" height="26"
-					 viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
-						<path d="M13 20.486c-.639 0-1.26-.058-1.866-.157l-4.373 2.653v-4.417c-2.28-1.602-3.744-4.056-3.744-6.813 0-4.824 4.47-8.735 9.983-8.735 5.513 0 9.983 3.91 9.983 8.735 0 4.824-4.47 8.734-9.983 8.734zM17.991 13a1.248 1.248 0 1 0 0-2.495 1.248 1.248 0 0 0 0 2.495zM13 13a1.248 1.248 0 1 0 0-2.495 1.248 1.248 0 0 0 0 2.495zm-4.991 0a1.248 1.248 0 1 0 0-2.495 1.248 1.248 0 0 0 0 2.495z"
-						 fill="#FFF" fill-rule="nonzero"></path>
-					</svg></span></button>
 		</section>
-	</section>
+		<section v-if="status==='home'" class="Topbar magic-widget">
+			<section data-sticky-index="0" class="topbar-component" style="background-color: rgba(0, 0, 0, 0.004);">
+				<section class="location-selector">
+					<div class="local-bottom default-local-bottom"><span data-track-pos="0" data-track-scm="定位" class="SVGInline icon-location icon default-icon-location"><svg
+							class="SVGInline-svg icon-location-svg icon-svg default-icon-location-svg" width="20" height="20" viewBox="0 0 20 20"
+							xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="id-27a">
+										<stop stop-color="#E7C269" offset="0%"></stop>
+										<stop stop-color="#C3902C" offset="100%"></stop>
+									</linearGradient>
+								</defs>
+								<g fill="none" fill-rule="evenodd">
+									<path d="M10.237 18.16s-6.39-5.606-6.39-9.17c0-3.563 2.86-6.452 6.39-6.452s6.39 2.89 6.39 6.453-6.39 9.169-6.39 9.169zm0-6.113c1.672 0 3.027-1.368 3.027-3.056s-1.355-3.057-3.027-3.057c-1.672 0-3.027 1.369-3.027 3.057s1.355 3.056 3.027 3.056z"
+									fill="url(#id-27a)"></path>
+									<path d="M0 0h20v20H0z"></path>
+								</g>
+							</svg></span>
+						<div class="location"><span><b>服务地址：</b>广州市
+							</span></div>
+						<div class="icon-right-arrow">编辑</div><span class="arrow"><span class="SVGInline"><svg class="SVGInline-svg" style="width: 1em;height: 0.8em;"
+								viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.547 5.002L.383 9.167c-.2.2-.194.509 0 .703a.502.502 0 0 0 .703 0l4.411-4.411a.494.494 0 0 0 .26-.386.494.494 0 0 0-.256-.523L1.086.135a.491.491 0 0 0-.703 0 .502.502 0 0 0 0 .703l4.164 4.164z"
+									fill="#999" fill-rule="evenodd"></path>
+								</svg></span></span>
+					</div>
+				</section>
+				<section class="searchinput-component" data-track-scm="搜索">
+					<div class="input-field"><span class="SVGInline search"><svg class="SVGInline-svg search-svg" style="width: 0.7rem;height: 0.7rem;"
+							width="13" height="14" viewBox="0 0 13 14" xmlns="http://www.w3.org/2000/svg">
+								<g fill="#999" fill-rule="evenodd">
+									<path d="M6 11A5 5 0 1 0 6 1a5 5 0 0 0 0 10zm0 1A6 6 0 1 1 6 0a6 6 0 0 1 0 12zM10.14 11.82l2.04 2.04a.48.48 0 1 0 .68-.68l-2.04-2.04a.48.48 0 1 0-.68.68z"></path>
+								</g>
+							</svg></span><input type="search" class="search" placeholder="美睫" value=""></div>
+				</section><button class="msg"><span class="SVGInline icon"><svg class="SVGInline-svg icon-svg" width="26" height="26"
+						viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13 20.486c-.639 0-1.26-.058-1.866-.157l-4.373 2.653v-4.417c-2.28-1.602-3.744-4.056-3.744-6.813 0-4.824 4.47-8.735 9.983-8.735 5.513 0 9.983 3.91 9.983 8.735 0 4.824-4.47 8.734-9.983 8.734zM17.991 13a1.248 1.248 0 1 0 0-2.495 1.248 1.248 0 0 0 0 2.495zM13 13a1.248 1.248 0 1 0 0-2.495 1.248 1.248 0 0 0 0 2.495zm-4.991 0a1.248 1.248 0 1 0 0-2.495 1.248 1.248 0 0 0 0 2.495z"
+							fill="#FFF" fill-rule="nonzero"></path>
+						</svg></span></button>
+			</section>
+		</section>
+	</div>
+	
 </template>
 
 <script>
 	export default {
+		props: ["status"],
 		components: {}
 	}
 </script>
