@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "min-ui": "0.0.2",
+    "mint-ui": "^2.2.13",
     "vue": "^2.5.17"
   },
   "devDependencies": {

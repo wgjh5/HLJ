@@ -3,6 +3,7 @@
 		<XTopbar />
 		<XCarousel />
 		<XGridMenu />
+		<XComplexmages />
         <XsmallImglink />
         <Xproduct />
         <XbigImglink />
@@ -21,6 +22,7 @@
 </template>
 <script>
 import XTopbar from '../components/XTopbar.vue';
+import XComplexmages from '../components/XComplexImages.vue';
 import XCarousel from '../components/XCarousel.vue';
 import XGridMenu from '../components/XGridMenu.vue';
 import XsmallImglink from '../components/XsmallImglink.vue';
@@ -35,6 +37,7 @@ export default {
 		XTopbar,
 		XCarousel,
 		XGridMenu,
+		XComplexmages,
         XsmallImglink,
         Xproduct,
         XbigImglink,

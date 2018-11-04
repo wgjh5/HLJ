@@ -7,6 +7,9 @@ Vue.config.productionTip = false
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
+import MintUI from 'mint-ui'
+import  'mint-ui/lib/style.css'
+Vue.use(MintUI)
 
 // ====vuex
 import Vuex from 'vuex'
