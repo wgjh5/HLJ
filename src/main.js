@@ -24,8 +24,8 @@ const routes = [{
         name: 'home',
         component: Home
     },{
-        path: '/cats',
-        name: 'cats',
+        path: '/cat',
+        name: 'cat',
         component: Cat
     },{
         path: '/orders',
