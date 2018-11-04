@@ -198,7 +198,7 @@
                                 </div>
     </section>
 </template>
-<style scoped>
+<style>
 @import url("../assets/product.css");
 /**
  * 清除浮动
