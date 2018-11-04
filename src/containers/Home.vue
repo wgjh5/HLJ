@@ -1,5 +1,6 @@
 <template>
     <div>
+
 		<XTopbar />
 		<XCarousel />
 		<XGridMenu />

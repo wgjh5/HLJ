@@ -15,11 +15,26 @@ Vue.use(MintUI)
 import Vuex from 'vuex'
 Vue.use(Vuex)
 import Home from './containers/Home.vue'
+import Cat from './containers/Cat.vue'
+import Orders from './containers/Orders.vue'
+import Mine from './containers/Mine.vue'
 
 const routes = [{
         path: '/home',
         name: 'home',
-        component: Home,
+        component: Home
+    },{
+        path: '/cats',
+        name: 'cats',
+        component: Cat
+    },{
+        path: '/orders',
+        name: 'orders',
+        component: Orders
+    },{
+        path: '/mine',
+        name: 'mine',
+        component: Mine
     },
     { path: '/', redirect: { name: 'home' } }
 ]
