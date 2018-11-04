@@ -19,5 +19,26 @@
 	</section>
 </template>
 <style scoped>
+@import url("../assets/home.css");
+.ui-backtop {
+  position: fixed;
+  z-index: 2000;
+  right: 1rem;
+  bottom: 3rem;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+}
+
+.ui-backtop .ui-backtop-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+      -ms-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+
 	
+
 </style>

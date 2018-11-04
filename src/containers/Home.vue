@@ -1,50 +1,56 @@
 <template>
-    <div>
+	<div>
 		<XTopbar />
 		<XCarousel />
 		<XGridMenu />
-        <XsmallImglink />
-        <Xproduct />
-        <XbigImglink />
-        <Xproduct />
-        <XbigImglink />
-        <Xproduct />
-        <XbigImglink />
-        <Xproduct />
-        <XbigImglink />
-        <Xproduct />
-        <Xspace />
-        <Xrecommend />
-        <XbackTop />
-        <Xnavbar />
-    </div>
+		<XsmallImglink />
+		<Xproduct />
+		<XbigImglink />
+		<Xproduct />
+		<XbigImglink />
+		<Xproduct />
+		<XbigImglink />
+		<Xproduct />
+		<XbigImglink />
+		<Xproduct />
+		<Xspace />
+		<Xrecommend />
+		<XbackTop />
+		<Xaccount />
+		<XgotToApp />
+		<Xnavbar />
+	</div>
 </template>
 <script>
-import XTopbar from '../components/XTopbar.vue';
-import XCarousel from '../components/XCarousel.vue';
-import XGridMenu from '../components/XGridMenu.vue';
-import XsmallImglink from '../components/XsmallImglink.vue';
-import Xproduct from '../components/Xproduct.vue';
-import XbigImglink from '../components/XbigImglink.vue';
-import Xspace from '../components/Xspace.vue';
-import Xrecommend from '../components/Xrecommend.vue';
-import XbackTop from '../components/XbackTop.vue';
-import Xnavbar from '../components/Xnavbar.vue';
-export default {
-    components: {
-		XTopbar,
-		XCarousel,
-		XGridMenu,
-        XsmallImglink,
-        Xproduct,
-        XbigImglink,
-        Xspace,
-        Xrecommend,
-        XbackTop,
-        Xnavbar
-    }
-}
+	import XTopbar from '../components/XTopbar.vue';
+	import XCarousel from '../components/XCarousel.vue';
+	import XGridMenu from '../components/XGridMenu.vue';
+	import XsmallImglink from '../components/XsmallImglink.vue';
+	import Xproduct from '../components/Xproduct.vue';
+	import XbigImglink from '../components/XbigImglink.vue';
+	import Xspace from '../components/Xspace.vue';
+	import Xrecommend from '../components/Xrecommend.vue';
+	import XbackTop from '../components/XbackTop.vue';
+	import Xaccount from '../components/Xaccount.vue';
+	import XgotToApp from '../components/XgotToApp.vue';
+	import Xnavbar from '../components/Xnavbar.vue';
+	export default {
+		components: {
+			XTopbar,
+			XCarousel,
+			XGridMenu,
+			XsmallImglink,
+			Xproduct,
+			XbigImglink,
+			Xspace,
+			Xrecommend,
+			XbackTop,
+			Xaccount,
+			XgotToApp,
+			Xnavbar
+		}
+	}
 </script>
 <style scoped>
-	
+
 </style>
