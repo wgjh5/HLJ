@@ -17,6 +17,7 @@
         <Xspace />
         <Xrecommend />
         <XbackTop />
+		<Xaccount />
         <Xnavbar />
     </div>
 </template>
@@ -32,6 +33,7 @@ import Xspace from '../components/Xspace.vue';
 import Xrecommend from '../components/Xrecommend.vue';
 import XbackTop from '../components/XbackTop.vue';
 import Xnavbar from '../components/Xnavbar.vue';
+import Xaccount from '../components/Xaccount.vue';
 export default {
     components: {
 		XTopbar,
@@ -44,6 +46,7 @@ export default {
         Xspace,
         Xrecommend,
         XbackTop,
+		Xaccount,
         Xnavbar
     }
 }

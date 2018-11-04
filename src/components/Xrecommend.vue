@@ -198,7 +198,7 @@
                                 </div>
     </section>
 </template>
-<style scoped>
+<style>
 @import url("../assets/product.css");
 /**
  * 清除浮动
@@ -297,5 +297,19 @@
   margin: 0.15rem;
 }
 
+/* ================ */
+
+.magic-view-recommend-component .header-img {
+  display: block;
+}
+
+.magic-view-recommend-component .products-component.layout-2x1 {
+  padding-top: 0.3rem;
+}
+
+.magic-view-recommend-component .products-component.layout-2x1 .product-props.no-status {
+  height: 1.1rem;
+  overflow: hidden;
+}
 
 </style>
