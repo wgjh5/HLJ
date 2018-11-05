@@ -49,7 +49,8 @@ export default {
         XbackTop,
 		Xaccount,
         Xnavbar
-    }
+    },
+	
 }
 </script>
 <style scoped>

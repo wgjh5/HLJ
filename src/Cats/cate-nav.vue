@@ -1,7 +1,7 @@
 <template>
 	<section class="m-cate-nav">
 		<ul class="nav-list">
-			<li v-for="(n,index) in navCell" class="nav-cell " :class="{active:channel==index}" @click="catClick(index)"><a
+			<li v-for="(n,index) in navCell" class="nav-cell " :class="{active:nav==index}" @click="catClick(index)"><a
 				 data-track-scm="美甲" v-text="n.title">美甲</a></li>
 		</ul>
 	</section>
@@ -56,12 +56,25 @@
 						path: ""
 					}
 				],
-				channel: 0
+				
 			};
 		},
 		methods: {
 			catClick(index) {
-				this.channel = index;
+				this.nav = index;
+				this.$store.dispatch("setNav", index);
+			}
+		},
+		computed:{
+			nav: {
+				// getter
+				get: function() {
+					return this.$store.getters.getNav;
+				},
+				// setter
+				set: function(newValue) {
+					this.$store.state.nav = newValue;
+				}
 			}
 		}
 

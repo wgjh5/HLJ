@@ -137,14 +137,29 @@
 	export default {
 		data() {
 			return {
-
+				
 			};
+		},
+		computed: {
+			nav: {
+				// getter
+				get: function() {
+					return this.$store.getters.getNav;
+				},
+				// setter
+				set: function(newValue) {
+					this.$store.state.nav = newValue;
+				}
+			},
+			arr(){
+				return this.$store.getters.getArr;
+			}
 		}
 	}
 </script>
 
 <style scoped>
-	 .cate-right {
+	.cate-right {
 		position: relative;
 		padding-top: 2.5rem;
 		margin-left: 4rem;
@@ -160,7 +175,7 @@
 		box-sizing: border-box;
 	}
 
-	 .cate-right .cate-banner {
+	.cate-right .cate-banner {
 		overflow: hidden;
 		width: 100%;
 		padding: 0.5rem;
@@ -229,7 +244,7 @@
 		display: block;
 	}
 
-	 .cate-right .more {
+	.cate-right .more {
 		color: #bd9d62;
 		float: right;
 		padding-right: 0.5rem;
@@ -248,7 +263,7 @@
 		display: inline-block !important;
 	}
 
-	 .cate-right .more svg path {
+	.cate-right .more svg path {
 		fill: #bd9d62;
 	}
 
@@ -259,11 +274,11 @@
 		margin-right: auto;
 	}
 
-	 .cate-right .cate-list {
+	.cate-right .cate-list {
 		position: relative;
 	}
 
-	 .cate-right .cate-list .tit {
+	.cate-right .cate-list .tit {
 		font-size: 0.7rem;
 		line-height: 1.6rem;
 		height: 1.9rem;
@@ -274,24 +289,24 @@
 		overflow: hidden;
 	}
 
-	 .cate-right .cate-list .cont {
+	.cate-right .cate-list .cont {
 		overflow: hidden;
 		clear: both;
 		width: 100%;
 		padding: 0 0.25rem;
 	}
 
-	 .cate-right .cate-list .cont li {
+	.cate-right .cate-list .cont li {
 		float: left;
 		width: 33.33%;
 		padding: 0 0.25rem 0.5rem;
 	}
 
-	 .cate-right .cate-list .cont li .picture-cont {
+	.cate-right .cate-list .cont li .picture-cont {
 		position: relative;
 	}
 
-	 .cate-right .cate-list .cont li .name {
+	.cate-right .cate-list .cont li .name {
 		color: #666;
 		line-height: 1.25rem;
 		font-size: 0.6rem;
@@ -304,7 +319,7 @@
 		word-break: break-all;
 	}
 
-	 .cate-right .cate-list .cont li .picture-cont .picture {
+	.cate-right .cate-list .cont li .picture-cont .picture {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -320,12 +335,12 @@
 		background: url(https://hlj-img.b0.upaiyun.com/zmw/m/1555934….png);
 	}
 
-	 .cate-right .cate-list .cont li .picture-cont .holder {
+	.cate-right .cate-list .cont li .picture-cont .holder {
 		position: relative;
 		padding-bottom: 100%;
 	}
 
-	 .cate-right .cate-list .cont li .picture-cont .picture {
+	.cate-right .cate-list .cont li .picture-cont .picture {
 		position: absolute;
 		top: 0;
 		left: 0;

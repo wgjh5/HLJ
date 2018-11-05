@@ -17,7 +17,7 @@
 			</section>
 		</section>
 		<section v-if="status==='home'" class="Topbar magic-widget">
-			<section data-sticky-index="0" class="topbar-component" style="background-color: rgba(0, 0, 0, 0.004);">
+			<section data-sticky-index="0" class="topbar-component" :style="{backgroundColor:'rgba(0, 0, 0,'+isactualTop+')'}">
 				<section class="location-selector">
 					<div class="local-bottom default-local-bottom"><span data-track-pos="0" data-track-scm="定位" class="SVGInline icon-location icon default-icon-location"><svg
 							class="SVGInline-svg icon-location-svg icon-svg default-icon-location-svg" width="20" height="20" viewBox="0 0 20 20"
@@ -63,8 +63,30 @@
 
 <script>
 	export default {
+		data(){
+			return{
+				isactualTop:0
+			}
+		},
 		props: ["status"],
-		components: {}
+		components: {},
+// 		watch: {
+// 		  dat:function(newQuestion, oldQuestion){
+// 			  console.log(dat);
+// 		  }
+// 		},
+		mounted: function () {
+			this.$nextTick(function () {
+				window.addEventListener('scroll', this.getElementTop)
+			})
+		},
+		methods: {
+			getElementTop() {
+				var actualTop = document.documentElement.scrollTop || document.body.scrollTop;
+				this.isactualTop= actualTop/200>0.9? 0.9:actualTop/200;
+			}
+		}
+
 	}
 </script>
 
