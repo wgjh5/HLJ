@@ -59,7 +59,7 @@
 	}
 </script>
 <style scoped>
-	@import url("../assets/home.css");
+	@import url("../../assets/home.css");
 
 	.ui-backtop {
 		position: fixed;

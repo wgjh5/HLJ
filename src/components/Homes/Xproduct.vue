@@ -135,8 +135,8 @@ export default {
 }
 </script>
 <style scoped>
-@import url("../assets/uiImg.css");
-@import url("../assets/product.css");
+@import url("../../assets/uiImg.css");
+@import url("../../assets/product.css");
 /**
  * 清除浮动
  */
