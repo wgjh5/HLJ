@@ -14,11 +14,13 @@ Vue.use(MintUI)
 // ====vuex
 import Vuex from 'vuex'
 Vue.use(Vuex)
+
 import Home from './containers/Home.vue'
 import Cat from './containers/Cat.vue'
 import Orders from './containers/Orders.vue'
 import Mine from './containers/Mine.vue'
-
+import Register from './containers/Register.vue'
+import Login from './containers/Login.vue'
 const routes = [{
         path: '/home',
         name: 'home',
@@ -35,6 +37,14 @@ const routes = [{
         path: '/mine',
         name: 'mine',
         component: Mine
+    },{
+        path: '/register',
+        name: 'register',
+        component: Register
+    },{
+        path: '/login',
+        name: 'login',
+        component: Login
     },
     { path: '/', redirect: { name: 'home' } }
 ]

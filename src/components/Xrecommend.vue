@@ -1,6 +1,7 @@
 <template>
     <section class="Recommend magic-widget" data-track-spm="m-clientapp-index.Recommend_15.$.b592e1">
-        <div class="magic-view-recommend-component"><img src="https://img-ucdn-static.helijia.com/zmw/magic-view/recommend-header.png" width="100%" alt="top-img" class="header-img">
+        <div class="magic-view-recommend-component">
+					<img v-if="status== 'home'" src="https://img-ucdn-static.helijia.com/zmw/magic-view/recommend-header.png" width="100%" alt="top-img" class="header-img">
             <div class="products-component layout-2x1" data-track-show-root="true">
                 <div class="product-item" data-track-scm="product.0bb463267ab64a4cb0c06627c7a5760a" data-track-pos="0" data-track-show="init">
                     <div class="box">
@@ -198,6 +199,11 @@
                                 </div>
     </section>
 </template>
+<script>
+	export default{
+		props: ["status"]
+	}
+</script>
 <style>
 @import url("../assets/product.css");
 /**
@@ -310,6 +316,46 @@
 .magic-view-recommend-component .products-component.layout-2x1 .product-props.no-status {
   height: 1.1rem;
   overflow: hidden;
+}
+
+
+/* =============== */
+.dbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: flex;
+}
+
+.pack {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.align {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fle {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.maylike {
+  background: #ffffff;
+  margin-top: 6px;
 }
 
 </style>
