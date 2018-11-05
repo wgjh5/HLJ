@@ -1,9 +1,9 @@
 <template>
 	<div>
 		<section class="top-share-component">
-			<section data-sticky-index="0" class="topbar-component" :style="{backgroundColor:'rgba(0, 0, 0,'+isactualTop+')'}"><button @click="back" class="back"><span
-					 class="SVGInline icon"><svg class="SVGInline-svg icon-svg" style="width: 1em;height: 1em;" width="24" height="24"
-						 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+			<section data-sticky-index="0" class="topbar-component" :style="{backgroundColor:'rgba(0, 0, 0,'+isactualTop+')'}"><button
+				 @click="back" class="back"><span class="SVGInline icon"><svg class="SVGInline-svg icon-svg" style="width: 1em;height: 1em;"
+						 width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 							<defs>
 								<linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="id-5a">
 									<stop stop-color="#E7C269" offset="0%"></stop>
@@ -17,41 +17,87 @@
 			</section>
 		</section>
 		<div class="product-nav" data-track-spm="b-default.nav.$" :style="{backgroundColor:'rgba(255, 255, 255,'+isactualTop+')',color:'rgba(0, 0, 0,'+isactualTop+')',opacity:isactualTop}">
-			<span data-track-scm="项目" data-track-pos="0" class="atvid">项目</span>
-			<span data-track-scm="评价" data-track-pos="1" >评价</span>
-			<span data-track-scm="详情" data-track-pos="2" >详情</span>
-			<span data-track-scm="推荐" data-track-pos="3" >推荐</span>
+			<span data-track-scm="项目" data-track-pos="0" @click="jump($event)" :class="{atvid:pageTop+20>AscrollTop[0]&&pageTop<AscrollTop[1]}">项目</span>
+			<span data-track-scm="评价" data-track-pos="1" @click="jump($event)" :class="{atvid:pageTop+20>AscrollTop[1]&&pageTop<AscrollTop[2]}">评价</span>
+			<span data-track-scm="详情" data-track-pos="2" @click="jump($event)" :class="{atvid:pageTop+20>AscrollTop[2]&&pageTop<AscrollTop[3]}">详情</span>
+			<span data-track-scm="推荐" data-track-pos="3" @click="jump($event)" :class="{atvid:pageTop+20>AscrollTop[3]}">推荐</span>
 		</div>
 	</div>
 </template>
 
 <script>
 	export default {
+		props: ['AscrollTop'],
 		data() {
 			return {
-				isactualTop:1
+				isactualTop: 1,
+				pageTop: 0,
 			};
 		},
-		mounted: function () {
-			this.$nextTick(function () {
-				window.addEventListener('scroll', this.getElementTop)
+		mounted: function() {
+			this.$nextTick(function() {
+				window.addEventListener('scroll', this.getElementTop);
 			})
 		},
 		methods: {
 			getElementTop() {
 				var actualTop = document.documentElement.scrollTop || document.body.scrollTop;
-				this.isactualTop= actualTop/200>0.9? 0.9:actualTop/200;
+				this.pageTop = actualTop;
+				this.isactualTop = actualTop / 200 > 0.9 ? 0.9 : actualTop / 200;
 			},
-			back(){
-				
+			back() {
+				this.$router.history.go(-1);
+			},
+			jump(e) {
+				let index = e.target.getAttribute('data-track-pos');
+				let total = this.AscrollTop[index];
+				let distance = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
+				// 平滑滚动，时长500ms，每10ms一跳，共50跳
+				let step = total / 50
+				if (total > distance) {
+					smoothDown()
+				} else {
+					let newTotal = distance - total
+					step = newTotal / 50
+					smoothUp()
+				}
+
+				function smoothDown() {
+					if (distance < total) {
+						distance += step
+						document.body.scrollTop = distance
+						document.documentElement.scrollTop = distance
+						window.pageYOffset = distance
+						setTimeout(smoothDown, 10)
+					} else {
+						document.body.scrollTop = total
+						document.documentElement.scrollTop = total
+						window.pageYOffset = total
+					}
+				}
+
+				function smoothUp() {
+					if (distance > total) {
+						distance -= step
+						document.body.scrollTop = distance
+						document.documentElement.scrollTop = distance
+						window.pageYOffset = distance
+						setTimeout(smoothUp, 10)
+					} else {
+						document.body.scrollTop = total
+						document.documentElement.scrollTop = total
+						window.pageYOffset = total
+					}
+				}
+
 			}
+
 		}
 	}
 </script>
 
 <style scoped>
-	@import url("../../assets/home.css")
-	.top-share-component {
+	@import url("../../assets/home.css") .top-share-component {
 		position: absolute;
 		z-index: 10;
 		width: 100%;

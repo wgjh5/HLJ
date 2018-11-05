@@ -67,7 +67,7 @@
 						<div class="count-wrap"><span class="title">
 								购买数量:
 							</span>
-							<div class="count-box"><button class="disable">-</button><input type="tel" value="1"><button class="">+</button></div>
+							<div class="count-box"><button @click="subtract" :class="{disable:value<=1}">-</button><input type="tel" :value="value"><button @click="plus" class="">+</button></div>
 						</div>
 					</div>
 				</div>
@@ -102,8 +102,16 @@
 	export default {
 		data() {
 			return {
-
+				value:1
 			};
+		},
+		methods: {
+			subtract() {
+				this.value<=1? this.value=1:this.value--;
+			},
+			plus(){
+				this.value++;
+			}
 		}
 	}
 </script>

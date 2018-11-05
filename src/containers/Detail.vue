@@ -1,11 +1,14 @@
 <template>
-	<section class="product-detail-container" id="project">
-        <XtopShare />
+	<section class="product-detail-container" id="project" >
+        <XtopShare :AscrollTop="scrollTop" />
+		<div class="step-jump"></div>
 		<XproductImg />
 		<XDetailComponents />
 		<XdaysContainer />
 		<Xservice />
+		<div class="step-jump"></div>
 		<Xcomment />
+		<div class="step-jump"></div>
 		<Xdetail />
 		<XfloatHelpcomponent />
 		<XserviceStepComponents />
@@ -13,6 +16,7 @@
 		<XitemIntro />
 		<XartisanSimple />
 		<XsecStudio />
+		<div class="step-jump"></div>
 		<div class="title-belt-component gray-bg"><span class="SVGInline title-belt"><svg class="SVGInline-svg title-belt-svg"
 				 width="32" height="6" viewBox="0 0 32 6" xmlns="http://www.w3.org/2000/svg">
 					<g fill="none" fill-rule="evenodd">
@@ -70,9 +74,32 @@
 		},
 		data() {
 			return {
-
+				scrollTop:[],
+				
 			};
 		},
+		mounted: function () {
+		 this.$nextTick(function () {
+				this.onScroll();
+		 })
+		 },
+		methods:{
+			 onScroll (){
+				let article = document.querySelectorAll('.step-jump');
+				console.log(article[1].scrollTop)
+				for(var i=0;i<article.length;i++){
+					this.scrollTop.push(this.getPoint(article[i]));
+				}
+			 },
+			 getPoint(obj) {  
+				let t = obj.offsetTop;   
+				while (obj = obj.offsetParent) { 
+				  t += obj.offsetTop;
+				}
+				return t;
+			  }
+		}
+		
 		
 	}
 </script>
