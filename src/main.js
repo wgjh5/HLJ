@@ -46,29 +46,10 @@ const routes = [{
         name: 'login',
         component: Login
     },
-    { path: '/', redirect: { name: 'home' } }
-		path: '/home',
-		name: 'home',
-		component: Home
-	}, {
-		path: '/cat',
-		name: 'cat',
-		component: Cat
-	}, {
-		path: '/orders',
-		name: 'orders',
-		component: Orders
-	}, {
-		path: '/mine',
-		name: 'mine',
-		component: Mine
-	},
 	{
 		path: '/',
-		redirect: {
-			name: 'home'
-		}
-	}
+		redirect: '/home'
+	} //  碰到#/重定向到#/home
 ]
 const router = new VueRouter({
     routes // (缩写) 相当于 routes: routes
