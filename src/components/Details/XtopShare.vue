@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<section class="top-share-component">
-			<section data-sticky-index="0" class="topbar-component" :style="{backgroundColor:'rgba(0, 0, 0,'+isactualTop+')'}"><button class="back"><span
+			<section data-sticky-index="0" class="topbar-component" :style="{backgroundColor:'rgba(0, 0, 0,'+isactualTop+')'}"><button @click="back" class="back"><span
 					 class="SVGInline icon"><svg class="SVGInline-svg icon-svg" style="width: 1em;height: 1em;" width="24" height="24"
 						 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 							<defs>
@@ -41,6 +41,9 @@
 			getElementTop() {
 				var actualTop = document.documentElement.scrollTop || document.body.scrollTop;
 				this.isactualTop= actualTop/200>0.9? 0.9:actualTop/200;
+			},
+			back(){
+				
 			}
 		}
 	}
