@@ -13,15 +13,15 @@
 	</div>
 </template>
 <script>
-	import Xnavbar from '../components/Xnavbar.vue';
-	import XsecUser from '../Mine/XsecUser.vue';
-	import XsecAllorder from '../Mine/XsecAllorder.vue';
-	import XsecOrder from '../Mine/XsecOrder.vue';
-	import XsecGroup from '../Mine/XsecGroup.vue';
-	import XsecProperty from '../Mine/XsecProperty.vue';
-	import XsecMixed from '../Mine/XsecMixed.vue';
-	import XbrowseHistory from '../Mine/XbrowseHistory.vue';
-	import Xrecommend from '../components/Xrecommend.vue';
+	import Xnavbar from '../components/Homes/Xnavbar.vue';
+	import XsecUser from '../components/Mine/XsecUser.vue';
+	import XsecAllorder from '../components/Mine/XsecAllorder.vue';
+	import XsecOrder from '../components/Mine/XsecOrder.vue';
+	import XsecGroup from '../components/Mine/XsecGroup.vue';
+	import XsecProperty from '../components/Mine/XsecProperty.vue';
+	import XsecMixed from '../components/Mine/XsecMixed.vue';
+	import XbrowseHistory from '../components/Mine/XbrowseHistory.vue';
+	import Xrecommend from '../components/Homes/Xrecommend.vue';
 	export default {
 		
 		components: {

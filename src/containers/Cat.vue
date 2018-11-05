@@ -9,10 +9,10 @@
 	</div>
 </template>
 <script>
-	import Xnavbar from '../components/Xnavbar.vue';
-	import XTopbar from '../components/XTopbar.vue';
-	import catNav from '../Cats/cate-nav.vue';
-	import catRight from '../Cats/catRight.vue';
+	import Xnavbar from '../components/Homes/Xnavbar.vue';
+	import XTopbar from '../components/Homes/XTopbar.vue';
+	import catNav from '../components/Cats/cate-nav.vue';
+	import catRight from '../components/Cats/catRight.vue';
 	export default {
 
 		components: {

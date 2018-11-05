@@ -16,8 +16,8 @@
 </template>
 
 <script>
-	import XtopBar from '../Register/XtopBar.vue';
-	import Xlogin from '../Register/Xlogin.vue';
+	import XtopBar from '../components/Register/XtopBar.vue';
+	import Xlogin from '../components/Register/Xlogin.vue';
 	export default {
 		props: ["status"],
 		components: {

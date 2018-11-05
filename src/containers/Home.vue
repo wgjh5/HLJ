@@ -24,18 +24,18 @@
     </div>
 </template>
 <script>
-import XTopbar from '../components/XTopbar.vue';
-import XComplexmages from '../components/XComplexImages.vue';
-import XCarousel from '../components/XCarousel.vue';
-import XGridMenu from '../components/XGridMenu.vue';
-import XsmallImglink from '../components/XsmallImglink.vue';
-import Xproduct from '../components/Xproduct.vue';
-import XbigImglink from '../components/XbigImglink.vue';
-import Xspace from '../components/Xspace.vue';
-import Xrecommend from '../components/Xrecommend.vue';
-import XbackTop from '../components/XbackTop.vue';
-import Xnavbar from '../components/Xnavbar.vue';
-import Xaccount from '../components/Xaccount.vue';
+import XTopbar from '../components/Homes/XTopbar.vue';
+import XComplexmages from '../components/Homes/XComplexImages.vue';
+import XCarousel from '../components/Homes/XCarousel.vue';
+import XGridMenu from '../components/Homes/XGridMenu.vue';
+import XsmallImglink from '../components/Homes/XsmallImglink.vue';
+import Xproduct from '../components/Homes/Xproduct.vue';
+import XbigImglink from '../components/Homes/XbigImglink.vue';
+import Xspace from '../components/Homes/Xspace.vue';
+import Xrecommend from '../components/Homes/Xrecommend.vue';
+import XbackTop from '../components/Homes/XbackTop.vue';
+import Xnavbar from '../components/Homes/Xnavbar.vue';
+import Xaccount from '../components/Homes/Xaccount.vue';
 export default {
     components: {
 		XTopbar,
