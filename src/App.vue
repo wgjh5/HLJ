@@ -12,7 +12,7 @@
 </script>
 
 <style>
-	
+	@import url("assets/home.css");
 
 	/*====================*/
 	@charset "UTF-8";
