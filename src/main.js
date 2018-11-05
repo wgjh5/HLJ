@@ -16,6 +16,7 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 import Home from './containers/Home.vue'
+import List from './containers/List.vue'
 import Detail from './containers/Detail.vue'
 import Cat from './containers/Cat.vue'
 import Orders from './containers/Orders.vue'
@@ -26,6 +27,10 @@ const routes = [{
         path: '/home',
         name: 'home',
         component: Home
+    },{
+        path: '/list',
+        name: 'list',
+        component: List
     },{
         path: '/cat',
         name: 'cat',
