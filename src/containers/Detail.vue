@@ -1,10 +1,9 @@
 <template>
-	
 	<section class="product-detail-container" id="project">
-        <topShare />
-		<productImg />
-		<DetailComponents />
-		<daysContainer />
+        <XtopShare />
+		<XproductImg />
+		<XDetailComponents />
+		<XdaysContainer />
 		<Xservice />
 		<Xcomment />
 		<Xdetail />
@@ -34,12 +33,28 @@
 </template>
 
 <script>
+	import XtopShare from '../components/Details/XtopShare.vue';
+	import XproductImg from '../components/Details/Xproduct-img.vue';
+	import XdaysContainer from '../components/Details/XdaysContainer.vue';
+	import XDetailComponents from '../components/Details/XDetail-components.vue';
+	import Xservice from '../components/Details/Xservice.vue';
+	import Xcomment from '../components/Details/Xcomment.vue';
+	import Xdetail from '../components/Details/Xdetail.vue';
+	import XfloatHelpcomponent from '../components/Details/XfloatHelpcomponent.vue';
+	import XserviceStepComponents from '../components/Details/XserviceStepComponents.vue';
+	import XitemProductComponents from '../components/Details/XitemProductComponents.vue';
+	import XitemIntro from '../components/Details/XitemIntro.vue';
+	import XartisanSimple from '../components/Details/XartisanSimple.vue';
+	import XsecStudio from '../components/Details/XsecStudio.vue';
+	import Xrecommend from '../components/Homes/Xrecommend.vue';
+	import XbackTop from '../components/Homes/XbackTop.vue';
+	import Xfooter from '../components/Details/Xfooter.vue';
 	export default {
 		components: {
-			topShare,
-			productImg,
-			DetailComponents,			
-			daysContainer,
+			XtopShare,
+			XproductImg,
+			XDetailComponents,			
+			XdaysContainer,
 			Xservice,
 			Xcomment,
 			Xdetail,
@@ -52,16 +67,13 @@
 			Xrecommend,
 			XbackTop,
 			Xfooter
-
 		},
 		data() {
 			return {
 
 			};
 		},
-		components: {
-			
-		}
+		
 	}
 </script>
 
