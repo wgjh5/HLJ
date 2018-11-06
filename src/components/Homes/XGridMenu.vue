@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<section class="ImageLink magic-widget">
-			<div class="image-link-component"><a href="https://p.helijia.com/l/2091?city=440100" data-track-scm="imglink">
+			<div class="image-link-component"><a data-track-scm="imglink">
 					<div class="ui-image-component status-show animate animate-end"><img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_514f6774ff559282ecbf8de15bddf797.gif!/0/w-640/format-webp"><img
 						 class="draft" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_514f6774ff559282ecbf8de15bddf797.gif!/0/w-100/quality-10/format-webp"></div>
 				</a></div>
@@ -10,11 +10,10 @@
 			<section class="grid-menus" style="background-image: url(https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_2ecf074….jpg!/0/w-1080/format-webp);">
 				<div class="placeholder"></div>
 				<div @touchmove="getElementLeft" class="scroll-menus" ref="viewBox">
-					<div  class="menus-grid" style="width: 200%;" >
+					<div class="menus-grid" style="width: 200%;">
 						<ul class="grid-menu" style="width: 50%;">
 							<li class="list-10">
-								<div class="link-component"><a href="javascript:void(0);"
-									 data-track-scm="美甲" data-track-pos="0">
+								<div class="link-component"><a @click="publishList" href="javascript:void(0);" data-track-scm="美甲" data-track-pos="0">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -26,8 +25,7 @@
 									</a></div>
 							</li>
 							<li class="list-10">
-								<div class="link-component"><a href="https://m.helijia.com/search.html?artisanType=10&amp;category=tag_wei_zheng&amp;entryWayId=12&amp;mixed=true&amp;mode=weizheng_index"
-									 data-track-scm="微整形" data-track-pos="1">
+								<div class="link-component"><a @click="publishList" data-track-scm="微整形" data-track-pos="1">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -39,8 +37,7 @@
 									</a></div>
 							</li>
 							<li class="list-10">
-								<div class="link-component"><a href="https://m.helijia.com/search.html?artisanType=3&amp;category=tag_mei_rong%7Cmianbuhuli&amp;entryWayId=8&amp;mixed=true&amp;mode=meirong_index&amp;spm_scope=meirong"
-									 data-track-scm="美容" data-track-pos="2">
+								<div class="link-component"><a @click="publishList" data-track-scm="美容" data-track-pos="2">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -52,8 +49,7 @@
 									</a></div>
 							</li>
 							<li class="list-10">
-								<div class="link-component"><a href="https://m.helijia.com/search.html?artisanType=14&amp;category=tag_li_liao&amp;entryWayId=9&amp;mixed=true&amp;mode=liliao_index&amp;spm_scope=liliao"
-									 data-track-scm="理疗" data-track-pos="3">
+								<div class="link-component"><a @click="publishList" data-track-scm="理疗" data-track-pos="3">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -65,8 +61,7 @@
 									</a></div>
 							</li>
 							<li class="list-10">
-								<div class="link-component"><a href="https://m.helijia.com/search.html?artisanType=1&amp;category=tag_mei_zu&amp;entryWayId=9&amp;mixed=true&amp;mode=meizu_index&amp;spm_scope=meizu"
-									 data-track-scm="美足" data-track-pos="4">
+								<div class="link-component"><a @click="publishList" data-track-scm="美足" data-track-pos="4">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -78,8 +73,7 @@
 									</a></div>
 							</li>
 							<li class="list-10">
-								<div class="link-component"><a href="https://m.helijia.com/search.html?artisanType=12&amp;category=tag_mei_jie&amp;entryWayId=7&amp;mixed=true&amp;mode=meijie_index&amp;spm_scope=meijie"
-									 data-track-scm="美睫" data-track-pos="5">
+								<div class="link-component"><a @click="publishList" data-track-scm="美睫" data-track-pos="5">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -91,8 +85,7 @@
 									</a></div>
 							</li>
 							<li class="list-10">
-								<div class="link-component"><a href="https://m.helijia.com/search.html?category=tag_wei_zheng&amp;entryWayId=16&amp;mode=yimei_index&amp;query=%E6%B0%B4%E5%85%89%E9%92%88%2C%E8%B6%85%E5%A3%B0%E5%88%80%2C%E7%83%AD%E7%8E%9B%E5%90%89%2C%E7%89%99%2C%E5%85%89%E5%AD%90%2C%E7%BA%A2%E8%93%9D%E5%85%89%2C%E5%B0%8F%E6%B0%94%E6%B3%A1%2C%E5%AB%A9%E8%82%A4%2C%E6%BF%80%E5%85%89%2C%E7%83%AD%E5%8A%9B%E5%A1%91%2C%E4%BC%98%E7%AB%8B%E5%A1%91%2C%E9%85%B7%E5%A1%91%2C%E5%B0%84%E9%A2%91%2C%E8%84%B1%E6%AF%9B%2C%E7%99%BD%E7%93%B7%E5%A8%83%E5%A8%83%2C%E9%BB%91%E8%84%B8%E5%A8%83%E5%A8%83%2C%E7%82%B9%E9%98%B5%E6%BF%80%E5%85%89%2C%E7%96%A4%E7%97%95%2C%E7%A5%9B%E6%96%91%2C%E7%9A%AE%E7%A7%92%2C%E6%8A%97%E8%A1%B0%E8%80%81%2C%E6%B0%B4%E6%B0%A7%2C%E7%A5%9B%E7%97%98%2C%E7%BA%A4%E4%BD%93%2C%E5%86%B7%E5%85%89%E7%BE%8E%E7%99%BD%2C%E6%B4%97%E7%89%99%2C%E7%89%99%E5%86%A0%2C%E7%9F%AB%E6%AD%A3%2C%E7%89%99"
-									 data-track-scm="医疗美容" data-track-pos="6">
+								<div class="link-component"><a @click="publishList" data-track-scm="医疗美容" data-track-pos="6">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -104,8 +97,8 @@
 									</a></div>
 							</li>
 							<li class="list-10">
-								<div class="link-component"><a href="https://m.helijia.com/search.html?artisanType=3&amp;category=tag_mei_rong%7Cshentianmo&amp;entryWayId=18&amp;mixed=true&amp;mode=meiti_index&amp;spm_scope=meiti"
-									 data-track-scm="美体" data-track-pos="7">
+								<div class="link-component">
+									<a @click="publishList" data-track-scm="美体" data-track-pos="7">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -117,8 +110,7 @@
 									</a></div>
 							</li>
 							<li class="list-10">
-								<div class="link-component"><a href="https://m.helijia.com/search.html?artisanType=2&amp;category=tag_zao_xing&amp;entryWayId=13&amp;mixed=true&amp;mode=huazhuang_index&amp;spm_scope=huazhuang"
-									 data-track-scm="化妆" data-track-pos="8">
+								<div class="link-component"><a @click="publishList" data-track-scm="化妆" data-track-pos="8">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -130,8 +122,7 @@
 									</a></div>
 							</li>
 							<li class="list-10">
-								<div class="link-component"><a href="https://m.helijia.com/search.html?isStudio=1&amp;mixed=true&amp;mode=studio&amp;spm_scope=studio&amp;type=product"
-									 data-track-scm="品牌馆" data-track-pos="9">
+								<div class="link-component"><a @click="publishList" data-track-scm="品牌馆" data-track-pos="9">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -145,8 +136,7 @@
 						</ul>
 						<ul class="grid-menu" style="width: 50%;">
 							<li class="list-10">
-								<div class="link-component"><a href="https://m.helijia.com/search.html?category=tag_wei_zheng&amp;query=%E7%8E%BB%E5%B0%BF%E9%85%B8"
-									 data-track-scm="玻尿酸" data-track-pos="0">
+								<div class="link-component"><a @click="publishList" data-track-scm="玻尿酸" data-track-pos="0">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -158,8 +148,7 @@
 									</a></div>
 							</li>
 							<li class="list-10">
-								<div class="link-component"><a href="https://m.helijia.com/search.html?artisanType=5&amp;category=tag_jian_shen&amp;entryWayId=3&amp;mixed=true"
-									 data-track-scm="健身" data-track-pos="1">
+								<div class="link-component"><a @click="publishList" data-track-scm="健身" data-track-pos="1">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -171,8 +160,7 @@
 									</a></div>
 							</li>
 							<li class="list-10">
-								<div class="link-component"><a href="https://m.helijia.com/search.html?category=tag_half_forever"
-									 data-track-scm="半永久" data-track-pos="2">
+								<div class="link-component"><a @click="publishList" data-track-scm="半永久" data-track-pos="2">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -184,8 +172,7 @@
 									</a></div>
 							</li>
 							<li class="list-10">
-								<div class="link-component"><a href="https://m.helijia.com/search.html?activityTag=644%2C645%2C646%2C647%2C651%2C652"
-									 data-track-scm="折扣区" data-track-pos="3">
+								<div class="link-component"><a @click="publishList" data-track-scm="折扣区" data-track-pos="3">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -197,8 +184,7 @@
 									</a></div>
 							</li>
 							<li class="list-10">
-								<div class="link-component"><a href="https://m.helijia.com/search.html?artisanType=13&amp;category=tag_jian_fei&amp;entryWayId=9&amp;mixed=true"
-									 data-track-scm="瘦身" data-track-pos="4">
+								<div class="link-component"><a @click="publishList" data-track-scm="瘦身" data-track-pos="4">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -210,8 +196,7 @@
 									</a></div>
 							</li>
 							<li class="list-10">
-								<div class="link-component"><a href="https://m.helijia.com/search.html?query=%E8%84%B1%E6%AF%9B" data-track-scm="脱毛"
-									 data-track-pos="5">
+								<div class="link-component"><a @click="publishList" data-track-scm="脱毛" data-track-pos="5">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -223,8 +208,7 @@
 									</a></div>
 							</li>
 							<li class="list-10">
-								<div class="link-component"><a href="https://m.helijia.com/search.html?artisanType=4&amp;category=tag_mei_fa&amp;entryWayId=4&amp;mixed=true"
-									 data-track-scm="美发" data-track-pos="6">
+								<div class="link-component"><a @click="publishList" data-track-scm="美发" data-track-pos="6">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -236,8 +220,7 @@
 									</a></div>
 							</li>
 							<li class="list-10">
-								<div class="link-component"><a href="https://m.helijia.com/search.html?category=tag_ti_diao&amp;mixed=true"
-									 data-track-scm="体雕" data-track-pos="7">
+								<div class="link-component"><a @click="publishList" data-track-scm="体雕" data-track-pos="7">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -249,8 +232,7 @@
 									</a></div>
 							</li>
 							<li class="list-10">
-								<div class="link-component"><a href="https://p.helijia.com/l/155?city=440100" data-track-scm="新人专享"
-									 data-track-pos="8">
+								<div class="link-component"><a @click="publishList" data-track-scm="新人专享" data-track-pos="8">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -262,7 +244,7 @@
 									</a></div>
 							</li>
 							<li class="list-10">
-								<div class="link-component"><a href="https://m.helijia.com/#/cats" data-track-scm="全部分类" data-track-pos="9">
+								<div class="link-component"><a @click="publishList" data-track-scm="全部分类" data-track-pos="9">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
@@ -280,7 +262,7 @@
 			</section>
 		</section>
 		<section class="ImageLink magic-widget">
-			<div class="image-link-component"><a href="https://p.helijia.com/l/155?city=440100" data-track-scm="imglink">
+			<div class="image-link-component"><a data-track-scm="imglink">
 					<div class="ui-image-component status-show animate animate-end"><img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_44b991d83d81caf737fa1879c9b96676.jpg!/0/w-640/format-webp"><img
 						 class="draft" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_44b991d83d81caf737fa1879c9b96676.jpg!/0/w-100/quality-10/format-webp"></div>
 				</a></div>
@@ -293,18 +275,22 @@
 	export default {
 		data() {
 			return {
-				isactualLeft:1
+				isactualLeft: 1
 			}
 		},
 		components: {
 
 		},
-		mounted() {
-		},
+		mounted() {},
 		methods: {
 			getElementLeft() {
 				var actualLeft = this.$refs.viewBox.scrollLeft;
 				this.isactualLeft = actualLeft;
+			},
+			publishList() {
+				this.$router.push({
+					name: 'list'
+				});
 			}
 		}
 

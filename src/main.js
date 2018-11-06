@@ -15,6 +15,7 @@ Vue.use(MintUI)
 import Vuex from 'vuex'
 Vue.use(Vuex)
 
+// ==一级路由==
 import Home from './containers/Home.vue'
 import List from './containers/List.vue'
 import Detail from './containers/Detail.vue'
@@ -23,53 +24,198 @@ import Orders from './containers/Orders.vue'
 import Mine from './containers/Mine.vue'
 import Register from './containers/Register.vue'
 import Login from './containers/Login.vue'
+
+// ==二级路由==
+import OrderChannel from './containers/OrderChannel.vue'
+
 const routes = [{
-        path: '/home',
-        name: 'home',
-        component: Home
-    },{
-        path: '/list',
-        name: 'list',
-        component: List
-    },{
-        path: '/cat',
-        name: 'cat',
-        component: Cat
-    },{
-        path: '/detail',
-        name: 'detail',
-        component: Detail
-    },{
-        path: '/orders',
-        name: 'orders',
-        component: Orders
-    },{
-        path: '/mine',
-        name: 'mine',
-        component: Mine
-    },{
-        path: '/register',
-        name: 'register',
-        component: Register
-    },{
-        path: '/login',
-        name: 'login',
-        component: Login
-    },
+		path: '/home',
+		name: 'home',
+		component: Home
+	}, {
+		path: '/list',
+		name: 'list',
+		component: List
+	}, {
+		path: '/cat',
+		name: 'cat',
+		component: Cat
+	}, {
+		path: '/detail',
+		name: 'detail',
+		component: Detail
+	}, {
+		path: '/orders',
+		name: 'orders',
+		component: Orders,
+		children: [{
+				// 当 /user/:id/profile 匹配成功，
+				// UserProfile 会被渲染在 User 的 <router-view> 中
+				path: 'all',
+				name: 'all',
+				component: OrderChannel,
+			},
+			{
+
+				path: 'notPaid',
+				name: 'notPaid',
+				component: OrderChannel,
+			},
+			{
+
+				path: 'beforeService',
+				name: 'beforeService',
+				component: OrderChannel,
+			},
+			{
+
+				path: 'active',
+				name: 'active',
+				component: OrderChannel,
+			},
+			{
+
+				path: 'needComment',
+				name: 'needComment',
+				component: OrderChannel,
+			},
+			{
+
+				path: 'refund',
+				name: 'refund',
+				component: OrderChannel,
+			},
+			{
+
+				path: 'afterSale',
+				name: 'afterSale',
+				component: OrderChannel,
+			}
+
+		]
+	}, {
+		path: '/mine',
+		name: 'mine',
+		component: Mine
+	}, {
+		path: '/register',
+		name: 'register',
+		component: Register
+	}, {
+		path: '/login',
+		name: 'login',
+		component: Login
+	},
 	{
 		path: '/',
 		redirect: '/home'
 	} //  碰到#/重定向到#/home
 ]
 const router = new VueRouter({
-    routes // (缩写) 相当于 routes: routes
+	routes // (缩写) 相当于 routes: routes
 
 })
 const store = new Vuex.Store({
 	// 状态
 	state: {
 		nav: 0,
-		arr:[]
+		arr: [],
+		text: {
+			text:"全部微整形"
+		},
+		textPx: {
+			text:"智能排序"
+		},
+		gallery: {
+			galleryOrder: [],
+			index: 0
+		},
+		
+		tabs: [{
+			title: "全部",
+			path: "all",
+		}, {
+			title: "待付款",
+			path: "notPaid",
+		}, {
+			title: "待服务",
+			path: "beforeService",
+		}, {
+			title: "进行中",
+			path: "active",
+		}, {
+			title: "待评价",
+			path: "needComment",
+		}, {
+			title: "退款",
+			path: "refund",
+		}, {
+			title: "售后",
+			path: "afterSale",
+		}],
+		dropdown: [{
+			title: "全部微整形",
+			dropdownAll: []
+		}, {
+			title: "牙齿",
+			dropdownTooth:[]
+		}, {
+			title: "玻尿酸",
+			dropdownBns:[]
+		}, {
+			title: "半永久",
+			dropdownSemipermanent:[]
+		}, {
+			title: "水光针",
+			dropdownSgz:[]
+		}, {
+			title: "V脸型",
+			dropdownVshape:[]
+		}, {
+			title: "瘦脸针",
+			dropdownBOTOX:[]
+		}, {
+			title: "美体塑形",
+			dropdownThroax:[]
+		}, {
+			title: "脂肪填充",
+			dropdownFatfill:[]
+		}, {
+			title: "抗衰老",
+			dropdownAntiaging:[]
+		}, {
+			title: "光子嫩肤",
+			dropdownPhotorejuvenation:[]
+		}, {
+			title: "超声刀",
+			dropdownUlthera:[]
+		}, {
+			title: "埋线",
+			dropdownSunk:[]
+		},{
+			title: "热立塑",
+			dropdownLiposonix:[]
+		}, {
+			title: "双眼皮",
+			dropdownDoubleeye:[]
+		}, {
+			title: "皮秒",
+			dropdownPicosecond:[]
+		}],
+		IntelligentSorting:[{
+			title: "智能排序",
+			IntelligentSorting: []
+		}, {
+			title: "人气最高",
+			Mostpopular:[]
+		}, {
+			title: "价格最低",
+			Lowest:[]
+		}, {
+			title: "价格最高",
+			TopPrice:[]
+		}]
+
 	},
 	// 修改状态
 	mutations: {
@@ -78,6 +224,15 @@ const store = new Vuex.Store({
 		},
 		editArr(state, data) {
 			state.arr = data
+		},
+		editGallery(state, data) {
+            state.gallery = data;
+        },
+		editText(state, data) {
+			state.text = data;
+		},
+		editTextPx(state, data) {
+			state.textPx = data;
 		}
 
 	},
@@ -88,6 +243,15 @@ const store = new Vuex.Store({
 		},
 		setArr(context, data) {
 			context.commit('editArr', data);
+		}, 
+		setGallery(conText, data) {
+            conText.commit('editGallery', data);
+        },
+		setText(conText, data) {
+			conText.commit('editText', data);
+		},
+		setTextPx(conText, data) {
+			conText.commit('editTextPx', data);
 		}
 	},
 	// 组件从store(中介)手上拿数据  配个 computed
@@ -97,10 +261,29 @@ const store = new Vuex.Store({
 		},
 		getArr: state => {
 			return state.arr
+		},
+		getGallery: state => {
+            return state.gallery
+        },
+        getTabs: state => {
+            return state.tabs
+        },
+        getDropdown: state => {
+            return state.dropdown
+        },
+		getPx: state => {
+			return state.IntelligentSorting
+		},
+		getText: state => {
+			return state.text
+		},
+		getTextPx: state => {
+			return state.textPx
 		}
 	}
 })
-new Vue({	router,
+new Vue({
+	router,
 	store,
 	render: h => h(App),
 }).$mount('#app')
