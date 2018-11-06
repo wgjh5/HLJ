@@ -23,14 +23,14 @@
 		name: "goTop",
 		data() {
 			return {
-				scrollTop: '',
+				BscrollTop: '',
 				goTopShow: false,
 			}
 		},
 		methods: {
 			handleScroll() {
-				this.scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-				if (this.scrollTop > 500) {
+				this.BscrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+				if (this.BscrollTop > 500) {
 					this.goTopShow = true
 				}
 			},
@@ -39,9 +39,9 @@
 					_that = this;
 				cancelAnimationFrame(timer)
 				timer = requestAnimationFrame(function fn() {
-					if (_that.scrollTop > 0) {
-						_that.scrollTop -= 50;
-						document.body.scrollTop = document.documentElement.scrollTop = _that.scrollTop;
+					if (_that.BscrollTop > 0) {
+						_that.BscrollTop -= 50;
+						document.body.scrollTop = document.documentElement.scrollTop = _that.BscrollTop;
 						timer = requestAnimationFrame(fn)
 					} else {
 						cancelAnimationFrame(timer);
@@ -52,10 +52,7 @@
 		},
 		mounted() {
 			window.addEventListener('scroll', this.handleScroll);
-		},
-		destroyed() {
-			window.removeEventListener('scroll', this.handleScroll)
-		}
+		}	
 	}
 </script>
 <style scoped>

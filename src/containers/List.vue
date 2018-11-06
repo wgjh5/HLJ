@@ -8,7 +8,7 @@
 		<XControls />
 		<XQuickFilter />
     <XlistProducts />
-
+		
 	</section>
 </template>
 

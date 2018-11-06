@@ -26,6 +26,7 @@
 </template>
 
 <script>
+	import $ from 'jquery';
 	export default {
 		props: ['AscrollTop'],
 		data() {
@@ -36,7 +37,7 @@
 		},
 		mounted: function() {
 			this.$nextTick(function() {
-				window.addEventListener('scroll', this.getElementTop);
+				window.onscroll = this.getElementTop;
 			})
 		},
 		methods: {
@@ -51,53 +52,19 @@
 			jump(e) {
 				let index = e.target.getAttribute('data-track-pos');
 				let total = this.AscrollTop[index];
-				let distance = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
-				// 平滑滚动，时长500ms，每10ms一跳，共50跳
-				let step = total / 50
-				if (total > distance) {
-					smoothDown()
-				} else {
-					let newTotal = distance - total
-					step = newTotal / 50
-					smoothUp()
-				}
-
-				function smoothDown() {
-					if (distance < total) {
-						distance += step
-						document.body.scrollTop = distance
-						document.documentElement.scrollTop = distance
-						window.pageYOffset = distance
-						setTimeout(smoothDown, 10)
-					} else {
-						document.body.scrollTop = total
-						document.documentElement.scrollTop = total
-						window.pageYOffset = total
-					}
-				}
-
-				function smoothUp() {
-					if (distance > total) {
-						distance -= step
-						document.body.scrollTop = distance
-						document.documentElement.scrollTop = distance
-						window.pageYOffset = distance
-						setTimeout(smoothUp, 10)
-					} else {
-						document.body.scrollTop = total
-						document.documentElement.scrollTop = total
-						window.pageYOffset = total
-					}
-				}
-
+				$("html,body").animate({ scrollTop :total}, 500);
 			}
 
+		},
+		destroyed(){
+			window.onscroll = null;
 		}
 	}
 </script>
 
 <style scoped>
-	@import url("../../assets/home.css") .top-share-component {
+	@import url("../../assets/home.css");
+	.top-share-component {
 		position: absolute;
 		z-index: 10;
 		width: 100%;

@@ -8,8 +8,9 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 import MintUI from 'mint-ui'
-
 Vue.use(MintUI)
+
+import $ from 'jquery'
 
 // ====vuex
 import Vuex from 'vuex'
@@ -23,6 +24,7 @@ import Orders from './containers/Orders.vue'
 import Mine from './containers/Mine.vue'
 import Register from './containers/Register.vue'
 import Login from './containers/Login.vue'
+import DetailChannel from './containers/DetailChannel.vue'
 const routes = [{
         path: '/home',
         name: 'home',
@@ -55,6 +57,10 @@ const routes = [{
         path: '/login',
         name: 'login',
         component: Login
+    },{
+        path: '/DetailChannel',
+        name: 'DetailChannel',
+        component: DetailChannel
     },
 	{
 		path: '/',
@@ -69,15 +75,23 @@ const store = new Vuex.Store({
 	// 状态
 	state: {
 		nav: 0,
-		arr:[]
+		subscribe:false,
+		arr:[],
+		DetailChannel:[]
 	},
 	// 修改状态
 	mutations: {
 		editNav(state, data) {
 			state.nav = data
 		},
+		editSubscribe(state, data) {
+			state.subscribe = data
+		},
 		editArr(state, data) {
 			state.arr = data
+		},
+		editDetailChannel(state, data) {
+			state.DetailChannel = data
 		}
 
 	},
@@ -86,8 +100,14 @@ const store = new Vuex.Store({
 		setNav(context, data) {
 			context.commit('editNav', data);
 		},
+		setSubscribe(context, data) {
+			context.commit('editSubscribe', data);
+		},
 		setArr(context, data) {
 			context.commit('editArr', data);
+		},
+		setDetailChannel(context, data) {
+			context.commit('editDetailChannel', data);
 		}
 	},
 	// 组件从store(中介)手上拿数据  配个 computed
@@ -95,8 +115,14 @@ const store = new Vuex.Store({
 		getNav: state => {
 			return state.nav
 		},
+		getSubscribe: state => {
+			return state.subscribe
+		},
 		getArr: state => {
 			return state.arr
+		},
+		getDetailChannel: state => {
+			return state.DetailChannel
 		}
 	}
 })
