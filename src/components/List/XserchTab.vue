@@ -3,8 +3,8 @@
 		<div class="ui-anchor-top-box" style="top: 75.425px;">
 			<div data-sticky-index="3" data-sticky-top="75.42499923706055">
 				<ul class="search-type-switch-widget" data-track-spm="m-list.ProductLayout_1:SearchTypeSwitch_39.$.f19c2a">
-					<li data-track-pos="0" data-track-scm="精选" class="current" style="min-width: auto;">精选</li>
-					<li data-track-pos="1" data-track-scm="医生" class="" style="min-width: auto;">医生</li>
+					<li @click="changeDoctor(index)" v-for="(n,index) in nav" v-text="n.title"  :class="{current:tab==index}" style="min-width: auto;"></li>
+					<!-- <li @click="changeDoctor" data-track-pos="1" data-track-scm="医生" class="" style="min-width: auto;">医生</li> -->
 				</ul>
 			</div>
 		</div>
@@ -15,7 +15,27 @@
 	export default {
 		data() {
 			return {
+				tab:0,
+				nav:[{
+					title:"精选",
+					path:"choiceness"
+				},{
+					title:"医生",
+					path:"doctor"
+				}]
 			};
+		},
+		methods:{
+			changeDoctor(tab) {
+				this.tab = tab;
+				// this.status = this.nav[tab].path
+				this.$router.push({
+					name: this.nav[tab].path
+				});
+			}
+// 			changeChoiceness(){
+// 				this.$router.push({ name: 'choiceness' });
+// 			}
 		}
 
 	}
