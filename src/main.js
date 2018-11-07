@@ -354,7 +354,7 @@ const routes = [{
 		router.afterEach((to, from) => {
 			setTimeout(function(){
 				store.dispatch("setloading",false);
-			},1000)
+			},500)
 
 		})
 		new Vue({
