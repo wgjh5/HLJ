@@ -1,21 +1,69 @@
 <template>
-	<div id="app">
-			<router-view></router-view>
+	<div id="app" style="width=100%;height: 100%;position: static; ">
+		<loading v-if="isloading" />
+    <router-view class="child-view"></router-view>
 	</div>
 </template>
 
 <script>
+	import loading from './components/loading/isloading.vue';
+	import {mapState} from "vuex";
 	export default {
 		name: 'app',
-		components: {}
+		data(){
+			return {
+				 transitionName: 'slide-left'
+			}
+		},
+		components: {
+			loading
+		},
+		 watch: {
+			'$route' (to, from) {
+				const toDepth = to.path.split('/').length
+				const fromDepth = from.path.split('/').length
+				this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
+			}
+		},
+		 computed:{
+			...mapState([
+					'isloading'
+				])
+		},
+	
 	}
 </script>
 
 <style>
+	#app{
+		width: 100%;
+		height: 100%;
+	}
 	@import url("assets/home.css");
 
 	/*====================*/
 	@charset "UTF-8";
+	.child-view {
+    position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -moz-box-sizing: border-box;
+             box-sizing: border-box;
+    transition: all .6s cubic-bezier(.55,0,.1,1);
+}
+.slide-left-enter, .slide-right-leave-active {
+    opacity: 0;
+    -webkit-transform: translate(-80px, 0);
+    transform: translate(-80px, 0);
+}
+.slide-left-leave-active, .slide-right-enter {
+    opacity: 0;
+    -webkit-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+}
+
 
 	section.widget>header,
 	.bar,
@@ -229,7 +277,7 @@
 
 	#app {
 		width: 100%;
-		position: relative;
+		/* position: relative; */
 	}
 
 	@media screen and (min-width: 800px) {

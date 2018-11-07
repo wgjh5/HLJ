@@ -1,7 +1,7 @@
 <template>
 	<div class="new-order-cont">
 		<div class="segments">
-			<div class="user-address-info-wrap selected">
+			<div @click="sites" class="user-address-info-wrap selected">
 				<div class="user-wrap"><span class="user-info">130****3974 13036943974</span><span class="SVGInline right-arrow"><svg
 						 class="SVGInline-svg right-arrow-svg" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg">
 							<path d="M4.547 5.002L.383 9.167c-.2.2-.194.509 0 .703a.502.502 0 0 0 .703 0l4.411-4.411a.494.494 0 0 0 .26-.386.494.494 0 0 0-.256-.523L1.086.135a.491.491 0 0 0-.703 0 .502.502 0 0 0 0 .703l4.164 4.164z"
@@ -74,16 +74,19 @@
 									 fill="#b5b5b9"></path>
 								</svg></span>
 				</button><span>免费意外险：保障人身及财产安全</span></div>
-				<div v-show="insurance" class="info-select">
-					<div class="input-box"><input placeholder="请输入投保人姓名" class="insure-man" name="userName" value="" maxlength="20"></div>
-					<div class="input-box"><input placeholder="请输入身份证号" class="insure-card" name="cardId" value="" maxlength="20"></div>
-					<p class="declare muted">
-						<!-- react-text: 205 -->本保险费由河狸家承担,无需消费者额外支付。
-						<!-- /react-text --><br><!-- react-text: 207 -->选择即为默认同意
-						<!-- /react-text --><a href="//www.helijia.com/active/safe/index.html" target="_blank" class="declare-link">《投保须知》&amp;《保险同款》</a><!-- react-text: 209 -->。
-						<!-- /react-text -->
-					</p>
-				</div>
+				<transition name="show">
+					<div v-show="insurance" class="info-select">
+						<div class="input-box"><input placeholder="请输入投保人姓名" class="insure-man" name="userName" value="" maxlength="20"></div>
+						<div class="input-box"><input placeholder="请输入身份证号" class="insure-card" name="cardId" value="" maxlength="20"></div>
+						<p class="declare muted">
+							<!-- react-text: 205 -->本保险费由河狸家承担,无需消费者额外支付。
+							<!-- /react-text --><br><!-- react-text: 207 -->选择即为默认同意
+							<!-- /react-text --><a href="//www.helijia.com/active/safe/index.html" target="_blank" class="declare-link">《投保须知》&amp;《保险同款》</a><!-- react-text: 209 -->。
+							<!-- /react-text -->
+						</p>
+					</div>
+				</transition>
+				
 			</div>
 		</div>
 		<div class="segments">
@@ -108,12 +111,15 @@
 		methods:{
 			Subscribe(){
 				this.$store.dispatch("setSubscribe", true);
+			},
+			sites(){
+				this.$store.dispatch("setSiteshow", true);
 			}
 
 		},
 		watch:{
 			value:function(newvalue,old){
-				newvalue<1? this.value=1:this.value=newvalue;
+				this.value = newvalue<1? 1:newvalue;
 			}
 		}
 		
@@ -121,5 +127,10 @@
 </script>
 
 <style>
-
+.show-enter-active, .show-leave-active {
+	transition: opacity .5s;
+	}
+	.show-enter, .show-leave-to  {
+			opacity: 0;
+	}
 </style>

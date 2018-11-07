@@ -1,4 +1,5 @@
 <template>
+	<transition name="fade">
 	<div v-show="subscribe==true" v-cloak id="popup" @click="popupHide">
 		<div class="overlay"></div>
 		<div class="content">
@@ -127,6 +128,7 @@
 			</section>
 		</div>
 	</div>
+	</transition>
 </template>
 
 <script>
@@ -360,6 +362,12 @@
 </script>
 
 <style scoped>
+	.fade-enter-active, .fade-leave-active {
+	transition: opacity .5s;
+	}
+	.fade-enter, .fade-leave-to  {
+			opacity: 0;
+	}
 	 #popup {
 		position: fixed;
 		z-index: 10000;

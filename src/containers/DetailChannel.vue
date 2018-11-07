@@ -2,7 +2,9 @@
 	<section class="new-order-container full-height">
 		<XtopBar status="indent" />
 		<orderCont/>
+		
 		<Xpopup/>
+		<sites/>
 		<Xfooter start="detall" />
 	</section>
 </template>
@@ -12,6 +14,7 @@
 	import XtopBar from '../components/Register/XtopBar.vue';
 	import orderCont from '../components/DetailChannel/order-cont.vue';
 	import Xpopup from '../components/DetailChannel/Xpopup.vue';
+	import sites from '../components/DetailChannel/sites.vue';
 	export default {
 		data() {
 			return {
@@ -22,14 +25,15 @@
 			Xfooter,
 			XtopBar,
 			orderCont,
-			Xpopup
+			Xpopup,
+			sites
 		}
 	}
 </script>
 
 <style>
 	@import url("../assets/home.css");
-
+	
 	section.full-height {
 		-webkit-box-direction: normal;
 		-webkit-box-orient: vertical;

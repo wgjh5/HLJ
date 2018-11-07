@@ -15,6 +15,7 @@ import $ from 'jquery'
 import Vuex from 'vuex'
 Vue.use(Vuex)
 
+
 // ==一级路由==
 import Home from './containers/Home.vue'
 import List from './containers/List.vue'
@@ -125,13 +126,16 @@ const routes = [{
 		const router = new VueRouter({
 				routes
 		})
+		
 		const store = new Vuex.Store({
 			// 状态
 			state: {
 				nav: 0,
 				subscribe: false,
+				siteshow:false,
 				DetailChannel: [],
 				arr: [],
+				isloading:false,
 				text: {
 					text: "全部微整形"
 				},
@@ -237,6 +241,9 @@ const routes = [{
 				editSubscribe(state, data) {
 					state.subscribe = data
 				},
+				editSiteshow(state, data) {
+					state.siteshow = data
+				},
 				editArr(state, data) {
 					state.arr = data
 				},
@@ -251,6 +258,9 @@ const routes = [{
 				},
 				editDetailChannel(state, data) {
 					state.DetailChannel = data
+				},
+				editisloading(state, data) {
+					state.isloading = data
 				}
 
 			},
@@ -258,6 +268,9 @@ const routes = [{
 			actions: {
 				setNav(context, data) {
 					context.commit('editNav', data);
+				},
+				setSiteshow(context, data) {
+					context.commit('editSiteshow', data);
 				},
 				setSubscribe(context, data) {
 					context.commit('editSubscribe', data);
@@ -273,6 +286,9 @@ const routes = [{
 				},
 				setTextPx(conText, data) {
 					conText.commit('editTextPx', data);
+				},
+				setloading(conText, data) {
+					conText.commit('editisloading', data);
 				}
 			},
 			// 组件从store(中介)手上拿数据  配个 computed
@@ -282,6 +298,9 @@ const routes = [{
 				},
 				getSubscribe: state => {
 					return state.subscribe
+				},
+				getSiteshow: state => {
+					return state.siteshow
 				},
 				getArr: state => {
 					return state.arr
@@ -306,10 +325,22 @@ const routes = [{
 				},
 				getDetailChannel: state => {
 					return state.DetailChannel
+				},
+				getisloading: state => {
+					return state.isloading
 				}
 			}
 		})
+		router.beforeEach((to, from, next) => {
+			store.dispatch("setloading",true);
+			next()
+		})
+		router.afterEach((to, from) => {
+			setTimeout(function(){
+				store.dispatch("setloading",false);
+			},1000)
 
+		})
 		new Vue({
 			router,
 			store,
