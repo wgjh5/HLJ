@@ -170,22 +170,8 @@
 			return {
 				
 			};
-		},
-		methods: {
-			handleScroll() {
-				var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-				var offsetTop = document.querySelector('.ui-anchor-top').offsetTop
-				if (scrollTop > offsetTop) {
-					this.searchBarFixed = true
-				} else {
-					this.searchBarFixed = false
-				}
-			}
-
-		},
-		mounted() {
-			window.addEventListener('scroll', this.handleScroll)
-		},
+		}
+	
 	}
 </script>
 

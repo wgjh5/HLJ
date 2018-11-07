@@ -59,33 +59,33 @@
 		</section>
 		<!-- list头部 -->
 		<div v-if="status=='list'">
-		<section class="SearchInput magic-widget" data-track-spm="m-list.ProductLayout_1:SearchInput_YM_searchbar.$.f19c2a">
-			<div class="search-input-widget" data-sticky-index="0" style="height: 2.5rem;">
-				<section data-sticky-index="0" class="topbar-component" style="background-color: rgb(0, 0, 0);"><button class="back"><span
-						 class="SVGInline icon"><svg class="SVGInline-svg icon-svg" style="width: 1em;height: 1em;" width="24" height="24"
-							 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-								<defs>
-									<linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="id-11a">
-										<stop stop-color="#E7C269" offset="0%"></stop>
-										<stop stop-color="#C3902C" offset="100%"></stop>
-									</linearGradient>
-								</defs>
-								<path d="M30.9 52.092l-9.9-9.9 9.9-9.9a1 1 0 0 1 1.414 1.415l-8.486 8.485 8.486 8.486a1 1 0 0 1-1.415 1.414z"
-								 fill="url(#id-11a)" transform="translate(-15 -30)" fill-rule="evenodd"></path>
-							</svg></span></button>
-					<section class="searchinput-component" data-track-scm="搜索">
-						<div class="input-field"><span class="SVGInline search"><svg class="SVGInline-svg search-svg" style="width: 0.7rem;height: 0.7rem;"
-								 width="13" height="14" viewBox="0 0 13 14" xmlns="http://www.w3.org/2000/svg">
-									<g fill="#999" fill-rule="evenodd">
-										<path d="M6 11A5 5 0 1 0 6 1a5 5 0 0 0 0 10zm0 1A6 6 0 1 1 6 0a6 6 0 0 1 0 12zM10.14 11.82l2.04 2.04a.48.48 0 1 0 .68-.68l-2.04-2.04a.48.48 0 1 0-.68.68z"></path>
-									</g>
-								</svg></span><input type="search" class="search" placeholder="美睫" value=""></div>
+			<section class="SearchInput magic-widget" data-track-spm="m-list.ProductLayout_1:SearchInput_YM_searchbar.$.f19c2a">
+				<div class="search-input-widget" data-sticky-index="0" style="height: 2.5rem;">
+					<section data-sticky-index="0" class="topbar-component" style="background-color: rgb(0, 0, 0);"><button @click="back" class="back"><span
+							 class="SVGInline icon"><svg class="SVGInline-svg icon-svg" style="width: 1em;height: 1em;" width="24" height="24"
+								 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+									<defs>
+										<linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="id-11a">
+											<stop stop-color="#E7C269" offset="0%"></stop>
+											<stop stop-color="#C3902C" offset="100%"></stop>
+										</linearGradient>
+									</defs>
+									<path d="M30.9 52.092l-9.9-9.9 9.9-9.9a1 1 0 0 1 1.414 1.415l-8.486 8.485 8.486 8.486a1 1 0 0 1-1.415 1.414z"
+									 fill="url(#id-11a)" transform="translate(-15 -30)" fill-rule="evenodd"></path>
+								</svg></span></button>
+						<section class="searchinput-component" data-track-scm="搜索">
+							<div class="input-field"><span class="SVGInline search"><svg class="SVGInline-svg search-svg" style="width: 0.7rem;height: 0.7rem;"
+									 width="13" height="14" viewBox="0 0 13 14" xmlns="http://www.w3.org/2000/svg">
+										<g fill="#999" fill-rule="evenodd">
+											<path d="M6 11A5 5 0 1 0 6 1a5 5 0 0 0 0 10zm0 1A6 6 0 1 1 6 0a6 6 0 0 1 0 12zM10.14 11.82l2.04 2.04a.48.48 0 1 0 .68-.68l-2.04-2.04a.48.48 0 1 0-.68.68z"></path>
+										</g>
+									</svg></span><input type="search" class="search" placeholder="美睫" value=""></div>
+						</section>
 					</section>
-				</section>
-			</div>
-		</section>
+				</div>
+			</section>
 
-		<!-- === -->
+			<!-- === -->
 
 		</div>
 	</div>
@@ -115,6 +115,9 @@
 			getElementTop() {
 				var actualTop = document.documentElement.scrollTop || document.body.scrollTop;
 				this.isactualTop = actualTop / 200 > 0.9 ? 0.9 : actualTop / 200;
+			},
+			back() {
+				this.$router.history.go(-1);
 			}
 		}
 
@@ -275,14 +278,6 @@
 		margin-left: 0.15rem;
 	}
 
-	.SVGInline {
-		line-height: 1;
-		vertical-align: middle;
-		-webkit-align-self: center;
-		-ms-flex-item-align: center;
-		align-self: center;
-		display: inline-block !important;
-	}
 
 	.home.index .msg {
 		height: 1.5rem;
@@ -312,7 +307,7 @@
 		-webkit-align-self: center;
 		-ms-flex-item-align: center;
 		align-self: center;
-		display: inline-block !important;
+		display: inline-block ;
 	}
 
 	.topbar-component .searchinput-component {

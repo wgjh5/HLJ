@@ -64,7 +64,7 @@
 			},
 			publishOrder() {
 				this.$router.push({
-					name: 'orders'
+					name: 'all'
 				});
 			},
 			publishMine() {
@@ -81,7 +81,7 @@
 				case "/cat":
 					this.channel = 1;
 					break;
-				case "/orders":
+				case "/orders/all":
 					this.channel = 2;
 					break;
 				case "/mine":

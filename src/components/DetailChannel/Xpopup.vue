@@ -642,7 +642,7 @@
      -webkit-align-self: center;
      -ms-flex-item-align: center;
      align-self: center;
-     display: inline-block !important;
+     display: inline-block;
 }
  .srv-time-selector .bar .SVGInline-svg path {
      fill: #BD9D62;

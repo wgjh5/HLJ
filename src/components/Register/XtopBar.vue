@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<section v-if="status=='indent'" data-sticky-index="0" class="topbar-component" style="background-color: rgba(0, 0, 0, 0.9);"><button class="back"><span
+		<section v-if="status=='indent'" data-sticky-index="0" class="topbar-component" style="background-color: rgba(0, 0, 0, 0.9);"><button @click="back" class="back"><span
 				 class="SVGInline icon"><svg class="SVGInline-svg icon-svg" style="width: 1em;height: 1em;" width="24" height="24"
 					 viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 						<defs>

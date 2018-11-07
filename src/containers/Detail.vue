@@ -104,7 +104,7 @@
 	}
 </script>
 
-<style scoped>
+<style >
 .product-detail-container {
     padding-bottom: 2.5rem;
 }

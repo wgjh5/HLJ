@@ -245,7 +245,7 @@
 		-webkit-align-self: center;
 		-ms-flex-item-align: center;
 		align-self: center;
-		display: inline-block !important;
+		display: inline-block ;
 	}
 
 	.SVGInline-svg {
