@@ -24,20 +24,35 @@ import Orders from './containers/Orders.vue'
 import Mine from './containers/Mine.vue'
 import Register from './containers/Register.vue'
 import Login from './containers/Login.vue'
-import DetailChannel from './containers/DetailChannel.vue'
+
 
 // ==二级路由==
 import OrderChannel from './containers/OrderChannel.vue'
-
+import DetailChannel from './containers/DetailChannel.vue'
+import ListChannel from './containers/ListChannel.vue'
 const routes = [{
-				path: '/home',
-				name: 'home',
-				component: Home
-			},
-			{
-				path: '/list',
-				name: 'list',
-				component: List
+			path: '/home',
+			name: 'home',
+			component: Home
+		},
+		{
+			path: '/list',
+			name: 'list',
+			component: List,
+			children: [{
+					// 当 /user/:id/profile 匹配成功，
+					// UserProfile 会被渲染在 User 的 <router-view> 中
+					path: 'choiceness',
+					name: 'choiceness',
+					component: ListChannel
+				},
+				{
+
+					path: 'doctor',
+					name: 'doctor',
+					component: ListChannel
+				}]
+
 			},
 			{
 				path: '/cat',
@@ -95,7 +110,8 @@ const routes = [{
 						path: 'afterSale',
 						name: 'afterSale',
 						component: OrderChannel,
-					}]
+					}
+				]
 			},
 			{
 				path: '/mine',
@@ -123,7 +139,7 @@ const routes = [{
 			} //  碰到#/重定向到#/home
 		]
 		const router = new VueRouter({
-				routes
+			routes
 		})
 		const store = new Vuex.Store({
 			// 状态

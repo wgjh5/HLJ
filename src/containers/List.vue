@@ -6,9 +6,9 @@
 		<XMultipleImages />
 		<XMultipleImages2 />
 		<XControls />
-		<XQuickFilter />
-    <XlistProducts />
 		
+		<router-view></router-view>
+   
 	</section>
 </template>
 
@@ -19,8 +19,7 @@
 	import XMultipleImages from '../components/List/XMultipleImages.vue';
 	import XMultipleImages2 from '../components/List/XMultipleImages2.vue';
 	import XControls from '../components/List/XControls.vue';
-	import XQuickFilter from '../components/List/XQuickFilter.vue';
-  import XlistProducts from '../components/List/XlistProducts.vue';
+	
 
 
 	
@@ -31,9 +30,8 @@
 			XserchTab,
 			XMultipleImages,
 			XMultipleImages2,
-			XControls,
-			XQuickFilter,
-      XlistProducts
+			XControls
+     
 
 
 			

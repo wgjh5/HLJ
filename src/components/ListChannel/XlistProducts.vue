@@ -1,5 +1,5 @@
 <template>
-	<section class="Products magic-widget" data-track-spm="m-list.ProductLayout_1:Products_YM_goodslist.$.f19c2a">
+	<section v-if="channel==1" class="Products magic-widget" data-track-spm="m-list.ProductLayout_1:Products_YM_goodslist.$.f19c2a">
 		<section class="products-widget">
 			<div class="products-widget">
 				<div class="cross"></div>
@@ -166,6 +166,7 @@
 
 <script>
 	export default {
+		props:["channel"],
 		data() {
 			return {
 				

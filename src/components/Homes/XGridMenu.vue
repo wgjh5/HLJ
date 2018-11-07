@@ -289,7 +289,7 @@
 			},
 			publishList() {
 				this.$router.push({
-					name: 'list'
+					name: 'choiceness'
 				});
 			}
 		}

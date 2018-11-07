@@ -74,17 +74,18 @@
 			},
 			setChannel() {
 			var route = this.$router.history.current.path;
-			switch (route) {
-				case "/home":
+			route = route.split('/');
+			switch (route[1]) {
+				case "home":
 					this.channel = 0;
 					break;
-				case "/cat":
+				case "cat":
 					this.channel = 1;
 					break;
-				case "/orders/all":
+				case "orders":
 					this.channel = 2;
 					break;
-				case "/mine":
+				case "mine":
 					this.channel = 3;
 					break;
 				default:
