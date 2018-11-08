@@ -5,45 +5,46 @@
 				<div class="slick-list">
 					<mt-swipe class="slick-track carousel-component" :auto="0">
 						<!-- <div class="slick-track carousel-component" style="opacity: 1;"> -->
+						
 							<mt-swipe-item>
-								<a href="https://p.helijia.com/l/2098?city=440100" class="slick-slide slick-active slick-current " style="width: 20rem;">
+								<a href="javascript:void(0)" class="slick-slide slick-active slick-current " >
 									<div class="ui-image-component status-show animate animate-end">
 										<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_9289604824321e00c0f31642f897b98a.jpg!/0/w-1080/format-webp">
 									</div>
 								</a>
 							</mt-swipe-item>
 							<mt-swipe-item>
-								<a href="https://p.helijia.com/l/1328?city=440100" class="slick-slide slick-active slick-current" tabindex="-1"
-								 style="outline: none; width: 20rem;">
+								<a href="javascript:void(0)" class="slick-slide slick-active slick-current"  >
+								
 									<div class="ui-image-component status-show animate animate-end">
 										<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_0ea47017accb67c9b42d8426a33fb818.jpg!/0/w-1080/format-webp">
 									</div>
 								</a>
 							</mt-swipe-item>
 							<mt-swipe-item>
-								<a href="https://p.helijia.com/l/2101?city=440100" class="slick-slide slick-active slick-current" tabindex="-1"
-								 style="outline: none; width: 20rem;">
+								<a href="javascript:void(0)" class="slick-slide slick-active slick-current"  >
+								
 									<div class="ui-image-component status-show animate animate-end">
 										<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_71686612ce15773c65f545f5e5e0e0f3.jpg!/0/w-1080/format-webp">
 									</div>
 								</a>
 							</mt-swipe-item>
 							<mt-swipe-item>
-								<a href="https://p.helijia.com/l/2101?city=440100" class="slick-slide slick-active slick-current " style="width: 20rem;">
+								<a href="javascript:void(0)" class="slick-slide slick-active slick-current " >
 									<div class="ui-image-component status-show animate animate-end">
 										<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_71686612ce15773c65f545f5e5e0e0f3.jpg!/0/w-1080/format-webp">
 									</div>
 								</a>
 							</mt-swipe-item>
 							<mt-swipe-item>
-								<a href="https://p.helijia.com/l/1328?city=440100" class="slick-slide slick-active slick-current " style="width: 20rem;">
+								<a href="javascript:void(0)" class="slick-slide slick-active slick-current " >
 									<div class="ui-image-component status-show animate animate-end">
 										<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_0ea47017accb67c9b42d8426a33fb818.jpg!/0/w-1080/format-webp">
 									</div>
 								</a>
 							</mt-swipe-item>
 							<mt-swipe-item>
-								<a href="https://p.helijia.com/l/2098?city=440100" class="slick-slide slick-active slick-current " style="outline: none; width: 20rem;">
+								<a href="javascript:void(0)" class="slick-slide slick-active slick-current " >
 									<div class="ui-image-component status-show animate animate-end">
 										<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_9289604824321e00c0f31642f897b98a.jpg!/0/w-1080/format-webp">
 									</div>

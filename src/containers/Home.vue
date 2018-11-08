@@ -22,6 +22,7 @@
 	</section>
 </template>
 <script>
+	import axios from 'axios';
 	import XTopbar from '../components/Homes/XTopbar.vue';
 	import XComplexmages from '../components/Homes/XComplexImages.vue';
 	import XCarousel from '../components/Homes/XCarousel.vue';
@@ -35,6 +36,11 @@
 	import Xnavbar from '../components/Homes/Xnavbar.vue';
 	import Xaccount from '../components/Homes/Xaccount.vue';
 	export default {
+		data() {
+			return {
+				aa:[]
+			}
+		},
 		components: {
 			XTopbar,
 			XCarousel,
@@ -49,6 +55,18 @@
 			Xaccount,
 			Xnavbar
 		},
+		mounted() {
+			var self = this;
+			axios.get('http://localhost:12345/api/gethome')
+				.then(function(response) {
+					self.aa =  response.data.data.widgets;
+					console.log(response.data.data.widgets);
+					// console.log(response.data.data.cards);
+				})
+				.catch(function(error) {
+					console.log(error);
+				});
+		}
 
 	}
 </script>
@@ -82,6 +100,8 @@
 	 * 注意retina屏中的尺码要先除以2
 	 */
 	body {
+		width: 100%;
+		height: 100%;
 		background-color: #fbf4e2;
 		color: #1a1a1a;
 	}
@@ -92,6 +112,8 @@
 
 	.home.index {
 		padding-bottom: 2.5rem;
+		width: 100%;
+		height: 100%;
 	}
 
 	.home.index .msg {

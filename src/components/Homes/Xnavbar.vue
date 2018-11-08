@@ -1,5 +1,5 @@
 <template>
-	<section class="Navbar magic-widget" data-track-spm="m-clientapp-index.Navbar_193.$.fed914">
+	
 		<section class="navbar-component">
 			<div class="links">
 				<a class="home" :class="{current:channel==0}" @click="publishHome" data-track="tab|idx"><span class="wrapper"><span
@@ -43,7 +43,7 @@
 						<!-- /react-text --></span></a>
 			</div>
 		</section>
-	</section>
+	
 </template>
 <script>
 	export default {

@@ -1,6 +1,6 @@
 <template>
 	<section class="product-detail-container" id="project" >
-        <XtopShare :AscrollTop="scrollTop" />
+    <XtopShare :AscrollTop="scrollTop" />
 		<div class="step-jump"></div>
 		<XproductImg />
 		<XDetailComponents />
@@ -79,14 +79,13 @@
 			};
 		},
 		mounted: function () {
-		 this.$nextTick(function () {
-				this.onScroll();
-		 })
+			 this.$nextTick(function () {
+					this.onScroll();
+			 })
 		 },
 		methods:{
 			 onScroll (){
 				let article = document.querySelectorAll('.step-jump');
-				console.log(article[1].scrollTop)
 				for(var i=0;i<article.length;i++){
 					this.scrollTop.push(this.getPoint(article[i]));
 				}

@@ -2,9 +2,11 @@
 	<div>
 		<section data-reactroot="" class="order-list">
 			<XorderTopBar status="order" />
-			<transition :name="transitionName">
-				<router-view class="child-view"></router-view>
-			</transition> 
+			<keep-alive>
+        <transition name="fade" >
+          <router-view></router-view>
+        </transition>
+      </keep-alive>
 			<Xnavbar />
 		</section>
 	</div>
@@ -25,35 +27,23 @@
 		},
 		watch: {
 			'$route' (to, from) {
+				console.log(to,from)
 				const toDepth = to.path.split('/').length
 				const fromDepth = from.path.split('/').length
-				this.transitionName = toDepth > fromDepth ? 'slide-right' : 'slide-left'
+				this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
 			}
 		},
 	}
 </script>
 <style>
 @charset "UTF-8";
-	.child-view {
-    position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      -moz-box-sizing: border-box;
-             box-sizing: border-box;
-    transition: all .6s cubic-bezier(.55,0,.1,1);
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
 }
-.slide-left-enter, .slide-right-leave-active {
-    opacity: 0;
-    -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
-.slide-left-leave-active, .slide-right-enter {
-    opacity: 0;
-    -webkit-transform: translate(100%, 0);
-    transform: translate(100%, 0);
-}
+
 /**
  * 简单1px解决方案
  */

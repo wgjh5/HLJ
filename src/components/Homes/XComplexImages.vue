@@ -1,16 +1,16 @@
 <template>
 	<div>
-		<section class="Space magic-widget" data-track-spm="m-clientapp-index.Space_111.$.182096">
+		<section class="Space magic-widget" >
 			<div style="width: 100%; height: 10px; background-color: rgb(241, 233, 218);"></div>
 		</section>
-		<section class="MultipleImages magic-widget" data-track-spm="m-clientapp-index.MultipleImages_shou_yi_ren_xin_dian.$.dbf6e4">
+		<section class="MultipleImages magic-widget" >
 			<div class="multiple-images-component top-line">
-				<div><a href="https://m.helijia.com/search.html?radius=10&amp;type=artisan" data-track-scm="imglink-1">
+				<div><a href="javascript:void(0)" >
 						<div class="ui-image-component status-show animate animate-end">
 							<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_6c465b2d34584f107cea7ee2cc93fc42.jpg!/0/w-540/format-webp">
 						</div>
 					</a></div>
-				<div><a href="https://p.helijia.com/l/1464?city=440100" data-track-scm="imglink-2">
+				<div><a href="javascript:void(0)">
 						<div class="ui-image-component status-show animate animate-end">
 							<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_9a0ef458654456bcd615e6d60b7e3822.jpg!/0/w-540/format-webp">
 						</div>
@@ -30,19 +30,19 @@
 		<section class="ComplexImages magic-widget">
 			<div class="complex-images-component inner-line">
 				<div class="left-part">
-					<a href="https://p.helijia.com/l/1462?city=440100" data-track-scm="imglink-1">
+					<a href="javascript:void(0)" >
 						<div class="ui-image-component status-show animate animate-end">
 							<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_e4582cd42970a1b473a9675930f295c7.jpg!/0/w-540/format-webp"></div>
 					</a></div>
 				<div class="right-part">
-					<a href="https://p.helijia.com/p/new-user-award?city=440100" data-track-scm="imglink-2">
+					<a href="javascript:void(0)" >
 						<div class="ui-image-component status-show animate animate-end">
 							<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_258d16c8920cc3710a27b5b283c8bc18.jpg!/0/w-540/format-webp">
 						</div>
-					</a><a href="https://p.helijia.com/l/2107?city=440100" data-track-scm="imglink-3">
+					</a><a href="javascript:void(0)" >
 						<div class="ui-image-component status-show animate animate-end">
 							<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_d94e3703714054e9b04f65ea37b750d7.jpg!/0/w-540/format-webp"></div>
-					</a><a href="https://p.helijia.com/l/1328?city=440100" data-track-scm="imglink-4">
+					</a><a href="javascript:void(0)">
 						<div class="ui-image-component status-show animate animate-end">
 							<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_ce3e359dbf6fde355303275b1e6fe224.jpg!/0/w-540/format-webp">
 						</div>
@@ -52,35 +52,34 @@
 		<section class="Space magic-widget">
 			<div style="width: 100%; height: 10px; background-color: rgb(241, 233, 218);"></div>
 		</section>
-		<section class="ImageLink magic-widget" data-track-spm="m-clientapp-index.ImageLink_21.$.999bf9">
+		<section class="ImageLink magic-widget" >
 			<div class="image-link-component bottom-line">
 				<div class="ui-image-component status-show animate animate-end">
 					<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_91a672142198dc6ea2eb479822f3d381.png!/0/w-1080/format-webp">
 				</div>
 			</div>
 		</section>
-		<section class="MultipleImages magic-widget" data-track-spm="m-clientapp-index.MultipleImages_heng_3.$.7eb425">
+		<section class="MultipleImages magic-widget" >
 			<div class="multiple-images-component inner-line">
-				<div><a href="https://p.helijia.com/l/1225?city=440100" data-track-scm="imglink-1">
+				<div><a href="javascript:void(0)" >
 						<div class="ui-image-component status-show animate animate-end">
 							<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_35202b80f3af877f155822a2c1017d95.jpg!/0/w-360/format-webp">
 						</div>
 					</a></div>
-				<div><a href="https://p.helijia.com/l/2101" data-track-scm="imglink-2">
+				<div><a href="javascript:void(0)" >
 						<div class="ui-image-component status-show animate animate-end">
 							<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_30007f1c82ed00d9931312f7d43973d9.jpg!/0/w-360/format-webp">
 						</div>
 					</a></div>
-				<div><a href="https://page.helijia.com/m/stuff/ym-helper/index.html?city=440100" data-track-scm="imglink-3">
+				<div><a href="javascript:void(0)" >
 						<div class="ui-image-component status-show animate animate-end">
 							<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_2be6b4b1088c6a62b635f8acd8e0f208.jpg!/0/w-360/format-webp">
 						</div>
 					</a></div>
 			</div>
 		</section>
-		<section class="ImageLink magic-widget" data-track-spm="m-clientapp-index.ImageLink_pin_pai_guan.$.2312e7">
-			<div class="image-link-component top-line"><a href="https://m.helijia.com/search.html?isStudio=1&amp;mixed=true&amp;mode=studio&amp;spm_scope=studio&amp;type=product"
-				 data-track-scm="imglink">
+		<section class="ImageLink magic-widget" >
+			<div class="image-link-component top-line"><a href="https://m.helijia.com/search.html?isStudio=1&amp;mixed=true&amp;mode=studio&amp;spm_scope=studio&amp;type=product">
 					<div class="ui-image-component status-show animate animate-end">
 						<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_d194e969ac39ba9b08da21c1a6e254b5.jpg!/0/w-1080/format-webp">
 					</div>
@@ -89,26 +88,23 @@
 		<section class="Space magic-widget">
 			<div style="width: 100%; height: 10px; background-color: rgb(241, 233, 218);"></div>
 		</section>
-		<section class="Carousel magic-widget" data-track-spm="m-clientapp-index.Carousel_lun_bo_tu.$.2ff608">
+		<section class="Carousel magic-widget" >
 			<div class="carousel-component">
 				<div class="slick-initialized slick-slider">
 					<div class="slick-list">
 						<!-- <div class="slick-track" style="opacity: 1; "> -->
 							<mt-swipe :auto="4000">
 								<mt-swipe-item>
-									<a href="https://p.helijia.com/l/2104?city=440100" data-index="-1" class="slick-slide slick-cloned" style="width: 22.5rem;">
-										<div class="ui-image-component status-show animate animate-end">
-											<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_26efcb2154cbc8b3b391897888838ce1.jpg!/0/w-1080/format-webp"
-											 style="width: 22.5rem;">
+									<a href="javascript:void(0)" class="slick-slide slick-cloned"  >
+										<div class="ui-image-component status-show animate animate-end" style="height: 100%;">
+											<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_26efcb2154cbc8b3b391897888838ce1.jpg!/0/w-1080/format-webp" style="height: 100%;">
 										</div>
 									</a>
 								</mt-swipe-item>
 								<mt-swipe-item>
-									<a href="https://p.helijia.com/l/2099?city=440100" data-index="0" class="slick-slide slick-active slick-current"
-									 tabindex="-1" style=" width: 22.5rem;">
-										<div class="ui-image-component status-show animate animate-end">
-											<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_830005cd3f0b45dc1b8a0f68d8cefe32.jpg!/0/w-1080/format-webp"
-											 style="width: 22.5rem;">
+									<a href="javascript:void(0)"  class="slick-slide slick-active slick-current"  >
+										<div class="ui-image-component status-show animate animate-end" style="height: 100%;">
+											<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_830005cd3f0b45dc1b8a0f68d8cefe32.jpg!/0/w-1080/format-webp" style="height: 100%;">
 										</div>
 									</a>
 								</mt-swipe-item>

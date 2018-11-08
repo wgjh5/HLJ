@@ -5,9 +5,8 @@
 						 class="decimal">.00</span></span></span></div><button class="block-level inverted primary button">去付款</button>
 		</footer>
 		<footer v-else class="product-footer-component studio">
-			<div class="secondary-btns"><a href="/?avatar=%2Fupload%2F20180212%2F2e10bef1383d439897c3d24ce8c0813f&amp;isCert=0&amp;name=%E4%BC%8A%E5%8F%AF%E6%AC%A3&amp;touid=56473b3e5be64bab8b62f433bec3e9f9#/chat"
-				 data-track-spm="b-default.contact.$" data-track-scm="artisan.56473b3e5be64bab8b62f433bec3e9f9"><span class="SVGInline footer-icon"><svg
-						 class="SVGInline-svg footer-icon-svg" style="width: 1.3rem;height: 1.3rem;" width="26" height="26" viewBox="0 0 26 26"
+			<div class="secondary-btns"><a href="javascript:void(0)"><span class="SVGInline footer-icon">
+				<svg class="SVGInline-svg footer-icon-svg" style="width: 1.3rem;height: 1.3rem;" width="26" height="26" viewBox="0 0 26 26"
 						 xmlns="http://www.w3.org/2000/svg">
 							<g fill="none" fill-rule="evenodd">
 								<path d="M11.117 20.311l-4.373 2.654v-4.417C4.464 16.946 3 14.492 3 11.735 3 6.91 7.47 3 12.983 3c5.513 0 9.983 3.91 9.983 8.735 0 4.824-4.47 8.734-9.983 8.734-.639 0-1.26-.058-1.866-.158z"
@@ -15,22 +14,20 @@
 								<path d="M17.974 12.982a1.248 1.248 0 1 1 0-2.495 1.248 1.248 0 0 1 0 2.495zM12.983 12.982a1.248 1.248 0 1 1 0-2.495 1.248 1.248 0 0 1 0 2.495zM7.991 12.982a1.248 1.248 0 1 1 0-2.495 1.248 1.248 0 0 1 0 2.495z"
 								 fill="#666"></path>
 							</g>
-						</svg></span><span class="footer-des">联系TA</span></a><a href="https://m.helijia.com/studio.html?code=17Cto10009"
-				 data-track-spm="b-default.shop.$" data-track-scm="studio.17Cto10009"><span class="SVGInline block-level studio-shop"><svg
-						 class="SVGInline-svg block-level-svg studio-shop-svg" style="width: 1.3rem;height: 1.3rem;" width="26" height="26"
-						 viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+						</svg></span><span class="footer-des">联系TA</span></a><a href="javascript:void(0)"	><span class="SVGInline block-level studio-shop">
+							<svg class="SVGInline-svg block-level-svg studio-shop-svg" style="width: 1.3rem;height: 1.3rem;" width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
 							<g fill="none" fill-rule="evenodd">
 								<path d="M22.414 3.75H3.585l-.724 6.28A4.25 4.25 0 0 0 9.55 14.4l.451-.338.45.339c.73.548 1.617.849 2.55.849.933 0 1.82-.3 2.55-.85l.45-.338.45.339a4.25 4.25 0 0 0 6.688-4.37l-.014-.086-.71-6.195z"
 								 stroke="#666" stroke-width="1.5"></path>
 								<path fill="#666" d="M3 7h20v1.5H3zM4.5 16.5H3V24h20v-7.5h-1.5v6h-17v-6z"></path>
 							</g>
-						</svg></span><span class="footer-des">品牌馆</span></a><a data-track-spm="b-default.favorite.$" data-track-scm="product.a2b0c1f275e647f6be378c64f682043b"><span
-					 class="SVGInline block-level collected"><svg class="SVGInline-svg block-level-svg collected-svg" style="width: 1.3rem;height: 1.3rem;"
+						</svg></span><span class="footer-des">品牌馆</span></a><a href="javascript:void(0)">
+						<span class="SVGInline block-level collected"><svg class="SVGInline-svg block-level-svg collected-svg" style="width: 1.3rem;height: 1.3rem;"
 						 width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
 							<path d="M13 21.885l1.037-.92c5.427-4.91 7.002-6.51 8.192-8.647.63-1.134.938-2.21.938-3.322-.003-2.92-2.268-5.163-5.22-5.163a5.712 5.712 0 0 0-4.316 1.998l-.634.742-.634-.742a5.712 5.712 0 0 0-4.315-1.998c-2.951 0-5.215 2.244-5.215 5.162 0 1.113.307 2.19.938 3.323 1.19 2.138 2.773 3.747 8.187 8.641l1.042.926z"
 							 stroke="#666" stroke-width="1.667" fill-rule="nonzero" fill="none"></path>
-						</svg></span><span class="footer-des">收藏</span></a></div><span class="inverted block-level primary button"
-			 data-track-spm="b-default.buy.$|product.a2b0c1f275e647f6be378c64f682043b">立即购买</span>
+						</svg></span><span class="footer-des">收藏</span></a></div><span @click="onsites" class="inverted block-level primary button">立即购买</span>
+			
 		</footer>
 	</div>
 
@@ -43,6 +40,11 @@
 			return {
 
 			};
+		},
+		methods:{
+			onsites(){
+				this.$router.push({ name: 'DetailChannel'});
+			}
 		}
 	}
 </script>

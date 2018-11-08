@@ -1,9 +1,9 @@
 <template>
 	<div id="app" style="width:100%;height: 100%; ">
 		<loading v-if="isloading" />
-    <!-- <transition :name="transitionName"> -->
-    	<router-view ></router-view>
-    <!-- </transition> -->
+    <transition :name="transitionName" >
+    	<router-view class="child-view" ></router-view>
+    </transition>
 	</div>
 </template>
 
@@ -14,19 +14,20 @@
 		name: 'app',
 		data(){
 			return {
-				 // transitionName: 'slide-left'
+				 transitionName: 'slide-left'
 			}
 		},
 		components: {
 			loading
 		},
-// 		 watch: {
-// 			'$route' (to, from) {
-// 				const toDepth = to.path.split('/').length
-// 				const fromDepth = from.path.split('/').length
-// 				this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
-// 			}
-// 		},
+		 watch: {
+			'$route' (to, from) {
+				const toDepth = to.path.split('/').length
+				const fromDepth = from.path.split('/').length
+				this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
+				window.scrollTo(0,0);
+			}
+		},
 		 computed:{
 			...mapState([
 					'isloading'
@@ -53,17 +54,17 @@
       height: 100%;
       -moz-box-sizing: border-box;
              box-sizing: border-box;
-    transition: all .6s cubic-bezier(.55,0,.1,1);
+    transition: all .6s  cubic-bezier(0.42, 0, 0.58, 1.0);
 }
 .slide-left-enter, .slide-right-leave-active {
     opacity: 0;
-    -webkit-transform: translate(-80px, 0);
-    transform: translate(-80px, 0);
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
 }
 .slide-left-leave-active, .slide-right-enter {
     opacity: 0;
-    -webkit-transform: translate(100%, 0);
-    transform: translate(100%, 0);
+    -webkit-transform: translate(10px, 0);
+    transform: translate(10px, 0);
 }
 
 
@@ -170,6 +171,7 @@
 
 	html {
 		width: 100%;
+		height: 100%;
 	}
 
 	html>* {
@@ -178,6 +180,8 @@
 	}
 
 	html body {
+		width: 100%;
+		height: 100%;
 		margin: auto;
 	}
 
