@@ -1,11 +1,11 @@
 <template>
 	<div>
 		<XfilterBar />
-<!-- 		<div class="group-lead-component"></div> -->
+		<!-- 		<div class="group-lead-component"></div> -->
 		<div class="list-widget">
 			<div>
 				<div class="group-lead-component"></div>
-				<XlistWidget />
+				<XlistWidget :cha="tab"/>
 				<Xrecommend />
 			</div>
 		</div>
@@ -21,18 +21,57 @@
 			XfilterBar,
 			XlistWidget,
 			Xrecommend
-			
+
 		},
 		data() {
 			return {
-
+				tab: 0
 			};
+		},
+		methods: {
+			setChannel() {
+				var route = this.$router.history.current.path;
+				// route = route.split('/');
+				switch (route) {
+					case "/orders/all":
+						this.tab = 0;
+						break;
+					case "/orders/notPaid":
+						this.tab = 1;
+						break;
+					case "/orders/beforeService":
+						this.tab = 2;
+						break;
+					case "/orders/active":
+						this.tab = 3;
+						break;
+					case "/orders/needComment":
+						this.tab = 4;
+						break;
+					case "/orders/refund":
+						this.tab = 5;
+						break;
+					case "/orders/afterSale":
+						this.tab = 6;
+						break;
+					default:
+						this.tab = 0;
+				}
+			}
+		},
+		mounted() {
+			this.setChannel();
+
+		},
+		watch: {
+			$route() {
+				this.setChannel();
+			}
 		}
 	}
 </script>
 
 <style>
-	
 	/* ======== */
 	.group-lead-component {
 		width: 100%;
@@ -75,6 +114,6 @@
 	.group-lead-component .gl-wrap .SVGInline-svg path {
 		fill: #BD9D62;
 	}
+
 	/* == */
-	
 </style>
