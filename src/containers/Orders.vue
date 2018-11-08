@@ -2,9 +2,10 @@
 	<div>
 		<section data-reactroot="" class="order-list">
 			<XorderTopBar status="order" />
-			<router-view></router-view>
+			<transition :name="transitionName">
+				<router-view class="child-view"></router-view>
+			</transition> 
 			<Xnavbar />
-			
 		</section>
 	</div>
 </template>
@@ -12,15 +13,47 @@
 	import XorderTopBar from '../components/Orders/XorderTopBar.vue';
 	import Xnavbar from '../components/Homes/Xnavbar.vue';
 	export default {
+		data(){
+			return{
+				transitionName: 'slide-left'
 
+			}
+		},
 		components: {
 			XorderTopBar,
 			Xnavbar
-		}
+		},
+		watch: {
+			'$route' (to, from) {
+				const toDepth = to.path.split('/').length
+				const fromDepth = from.path.split('/').length
+				this.transitionName = toDepth > fromDepth ? 'slide-right' : 'slide-left'
+			}
+		},
 	}
 </script>
 <style>
 @charset "UTF-8";
+	.child-view {
+    position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -moz-box-sizing: border-box;
+             box-sizing: border-box;
+    transition: all .6s cubic-bezier(.55,0,.1,1);
+}
+.slide-left-enter, .slide-right-leave-active {
+    opacity: 0;
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+}
+.slide-left-leave-active, .slide-right-enter {
+    opacity: 0;
+    -webkit-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+}
 /**
  * 简单1px解决方案
  */

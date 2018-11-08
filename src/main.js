@@ -162,7 +162,6 @@ const routes = [{
 					galleryOrder: [],
 					index: 0
 				},
-
 				tabs: [{
 					title: "全部",
 					path: "all",
@@ -278,6 +277,7 @@ const routes = [{
 				editisloading(state, data) {
 					state.isloading = data
 				}
+	
 
 			},
 			// actions  一般配合 事件@xxx 触发
@@ -306,6 +306,7 @@ const routes = [{
 				setloading(conText, data) {
 					conText.commit('editisloading', data);
 				}
+		
 			},
 			// 组件从store(中介)手上拿数据  配个 computed
 			getters: {
@@ -345,6 +346,7 @@ const routes = [{
 				getisloading: state => {
 					return state.isloading
 				}
+	
 			}
 		})
 		router.beforeEach((to, from, next) => {
@@ -352,9 +354,9 @@ const routes = [{
 			next()
 		})
 		router.afterEach((to, from) => {
-			setTimeout(function(){
+			// setTimeout(function(){
 				store.dispatch("setloading",false);
-			},500)
+			// },500)
 
 		})
 		new Vue({
