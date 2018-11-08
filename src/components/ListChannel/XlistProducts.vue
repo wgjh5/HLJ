@@ -6,43 +6,45 @@
 				<div class="scroll-view-component">
 					<div class="content">
 						<div class="products-component layout-2x1" data-track-spm="search" data-track-show-root="true">
-							<div class="product-item" data-track-scm="product.097f1d0315b14f699be4e616c29691c6" data-track-pos="0"
-							 data-track-show="showed">
+							<!-- ==== -->
+							<div class="product-item" v-for="(a,index) in aa">
 								<div class="box">
 									<div class="product-image-box"><a href="https://m.helijia.com/product.html?id=097f1d0315b14f699be4e616c29691c6">
 											<div class="product-img">
-												<div class="ui-image-component status-show"><img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/20171130/99e5d507ad5e4f1a83c44e4fa543d585!/0/w-298/format-webp"><img
-													 class="draft" src="https://img-ucdn-static.helijia.com/zmw/upload/20171130/99e5d507ad5e4f1a83c44e4fa543d585!/0/w-100/quality-10/format-webp"></div>
+												<div class="ui-image-component status-show">
+													<img class="image" :src="'https://img-ucdn-static.helijia.com/zmw/'+a.coverPic">
+													<img class="draft" src="https://img-ucdn-static.helijia.com/zmw/upload/20171130/99e5d507ad5e4f1a83c44e4fa543d585!/0/w-100/quality-10/format-webp"></div>
 											</div>
 										</a>
 										<div class="promotion-tag"></div>
 									</div>
 									<div class="wrap"><a href="https://m.helijia.com/product.html?id=097f1d0315b14f699be4e616c29691c6">
 											<div class="product-name">
-												<span class="name">【瘦身】热力塑瘦身塑形 即刻见效 平台销量第一</span></div>
+												<span class="name">{{a.name}}</span></div>
 										</a>
 										<div>
 											<div class="product-props">
 												<div class="box">
-													<div class="price-part"><span class="price-component "><span class="yen">¥</span><span><span class="round">1780</span></span></span><span
+													<div class="price-part"><span class="price-component "><span class="yen">¥</span><span><span class="round">{{a.price}}</span></span></span><span
 														 class="market-price">
 															¥
-
-															12800
+															{{a.marketPrice}}
+															
 														</span>
 														<div class="new-line"><span class="service-type"><span class="tag bg-gold">到店</span></span><!-- react-empty: 50847 --><span
-															 class="status"><span class="status-text">109468 人喜欢</span></span></div>
+															 class="status"><span class="status-text">{{a.likeNum}} {{a.favNumInfo}}</span></span></div>
 													</div>
 													<div class="right-part"></div>
 												</div>
 											</div>
 											<div class="Artisan-part">
+												<!-- 0% 0% / cover no-repeat; -->
 												<div class="artisan-item">
-													<div class="avatar" style="background: url(&quot;https://img-ucdn-static.helijia.com/zmw/upload/20180103/7e01e842c3864024b00d178a55ccec1f!/0/w-128/format-webp&quot;) 0% 0% / cover no-repeat;"></div>
+													<div class="avatar" v-bind:style="{background:'url('+'https://img-ucdn-static.helijia.com/zmw/'+ a.artisanAvatar+')',backgroundSize:'100%',backgroundRepeat:'no-repeat'}"></div>
 													<div class="wrap"><span class="artisan-name-component"><span class="nick-name">
 
 
-																昕颜医疗美容顿军成教授
+																{{a.artisanNick}}
 															</span></span>
 														<div class="level-star-component"><img class="star" src="//hlj-img.b0.upaiyun.com/zmw/upload/mobile/star/star5.gif"></div>
 													</div>
@@ -53,7 +55,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="product-item" data-track-scm="product.a295521106dd49a08a72c5d8f3ffa83b" data-track-pos="1"
+							<!-- 	<div class="product-item" data-track-scm="product.a295521106dd49a08a72c5d8f3ffa83b" data-track-pos="1"
 							 data-track-show="showed">
 								<div class="box">
 									<div class="product-image-box"><a href="https://m.helijia.com/product.html?id=a295521106dd49a08a72c5d8f3ffa83b">
@@ -79,7 +81,7 @@
 																	¥
 
 																	499
-																</span><span class="service-type"><span class="tag bg-gold">到店</span></span><!-- react-empty: 50894 --><span
+																</span><span class="service-type"><span class="tag bg-gold">到店</span></span><span
 																 class="status"><span class="status-text">17321 人喜欢</span></span></div>
 														</div>
 													</div>
@@ -102,10 +104,10 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 
 
-							<div class="product-item" data-track-scm="product.aeee5ca3df024283b809d414fa0b8f1f" data-track-pos="179"
+							<!-- 	<div class="product-item" data-track-scm="product.aeee5ca3df024283b809d414fa0b8f1f" data-track-pos="179"
 							 data-track-show="init">
 								<div class="box">
 									<div class="product-image-box"><a href="https://m.helijia.com/product.html?id=aeee5ca3df024283b809d414fa0b8f1f">
@@ -154,7 +156,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<!-- == -->
 						</div>
 					</div>
