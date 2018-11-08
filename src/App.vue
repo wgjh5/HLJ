@@ -1,7 +1,9 @@
 <template>
-	<div id="app" style="width=100%;height: 100%;position: static; ">
+	<div id="app" style="width:100%;height: 100%; ">
 		<loading v-if="isloading" />
-    <router-view class="child-view"></router-view>
+    <!-- <transition :name="transitionName"> -->
+    	<router-view ></router-view>
+    <!-- </transition> -->
 	</div>
 </template>
 
@@ -12,19 +14,19 @@
 		name: 'app',
 		data(){
 			return {
-				 transitionName: 'slide-left'
+				 // transitionName: 'slide-left'
 			}
 		},
 		components: {
 			loading
 		},
-		 watch: {
-			'$route' (to, from) {
-				const toDepth = to.path.split('/').length
-				const fromDepth = from.path.split('/').length
-				this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
-			}
-		},
+// 		 watch: {
+// 			'$route' (to, from) {
+// 				const toDepth = to.path.split('/').length
+// 				const fromDepth = from.path.split('/').length
+// 				this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
+// 			}
+// 		},
 		 computed:{
 			...mapState([
 					'isloading'

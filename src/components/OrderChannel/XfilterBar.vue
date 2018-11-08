@@ -31,39 +31,41 @@
 				this.$router.push({
 					name: this.tabs[tab].path
 				});
+			},
+			setChannel(tab) {
+				var route = this.$router.history.current.path;
+				route = route.split('/');
+				switch (route[2]) {
+					case "all":
+						this.tab = 0;
+						break;
+					case "notPaid":
+						this.tab = 1;
+						break;
+					case "beforeService":
+						this.tab = 2;
+						break;
+					case "active":
+						this.tab = 3;
+						break;
+					case "needComment":
+						this.tab = 4;
+						break;
+					case "refund":
+						this.tab = 5;
+						break;
+					case "afterSale":
+						this.tab = 6;
+						break;
+					default:
+						this.tab = 0;
+				}
 			}
+		},
+		
+		mounted() {
+			this.setChannel()
 		}
-// 		setChannel(tab) {
-// 			var route = this.$router.history.current.path;
-// 			switch (route) {
-// 				case "all":
-// 					this.tab = 0;
-// 					break;
-// 				case "notPaid":
-// 					this.tab = 1;
-// 					break;
-// 				case "beforeService":
-// 					this.tab = 2;
-// 					break;
-// 				case "active":
-// 					this.tab = 3;
-// 					break;
-// 				case "needComment":
-// 					this.tab = 4;
-// 					break;
-// 				case "refund":
-// 					this.tab = 5;
-// 					break;
-// 				case "afterSale":
-// 					this.tab = 6;
-// 					break;
-// 				default:
-// 					this.tab = 0;
-// 			};
-// 		},
-// 		mounted() {
-// 			this.setChannel()
-// 		}
 // 
 
 	}
