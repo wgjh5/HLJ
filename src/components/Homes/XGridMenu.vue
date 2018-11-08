@@ -2,29 +2,28 @@
 	<div>
 		<section class="ImageLink magic-widget">
 			<div class="image-link-component"><a data-track-scm="imglink">
-					<div class="ui-image-component status-show animate animate-end"><img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_514f6774ff559282ecbf8de15bddf797.gif!/0/w-640/format-webp"><img
-						 class="draft" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_514f6774ff559282ecbf8de15bddf797.gif!/0/w-100/quality-10/format-webp"></div>
+					<div class="ui-image-component status-show animate animate-end"><img class="image" :src="status[0]"></div>
 				</a></div>
 		</section>
 		<section class="GridMenu magic-widget">
-			<section class="grid-menus" style="background-image: url(https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_2ecf074….jpg!/0/w-1080/format-webp);">
+			<section class="grid-menus" :style="{background: 'url('+status[3]+')'}">
 				<div class="placeholder"></div>
 				<div @touchmove="getElementLeft" class="scroll-menus" ref="viewBox">
 					<div class="menus-grid" style="width: 200%;">
 						<ul class="grid-menu" style="width: 50%;">
-							<li class="list-10">
+							<li class="list-10" v-for="a in status[1]">
 								<div class="link-component"><a @click="publishList" href="javascript:void(0);" data-track-scm="美甲" data-track-pos="0">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
-													<div class="cate-img"><img src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_8e1a40b286196940d0eba4c3d55fbd70.jpg!/0/w-1080/format-webp"></div><span
-													 class="cate-name" style="color: rgb(26, 26, 26);">美甲</span><span class="cate-desc"></span>
+													<div class="cate-img"><img :src="a.imageUrl"></div><span class="cate-name" style="color: rgb(26, 26, 26);" v-text="a.categoryName">美甲</span><span class="cate-desc"></span>
+													 
 												</div>
 											</div>
 										</div>
 									</a></div>
 							</li>
-							<li class="list-10">
+							<!-- <li class="list-10">
 								<div class="link-component"><a @click="publishList" data-track-scm="微整形" data-track-pos="1">
 										<div class="holder-wrap">
 											<div class="holder-cont">
@@ -132,22 +131,22 @@
 											</div>
 										</div>
 									</a></div>
-							</li>
+							</li> -->
 						</ul>
 						<ul class="grid-menu" style="width: 50%;">
-							<li class="list-10">
+							<li class="list-10" v-for="a in status[2]">
 								<div class="link-component"><a @click="publishList" data-track-scm="玻尿酸" data-track-pos="0">
 										<div class="holder-wrap">
 											<div class="holder-cont">
 												<div class="cate-wrap">
-													<div class="cate-img"><img src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_bc8bd042f31c7d94730df305de54e548.jpg!/0/w-1080/format-webp"></div><span
-													 class="cate-name" style="color: rgb(26, 26, 26);">玻尿酸</span><span class="cate-desc"></span>
+													<div class="cate-img"><img :src="a.imageUrl"></div><span
+													 class="cate-name" style="color: rgb(26, 26, 26);" v-text="a.categoryName">玻尿酸</span><span class="cate-desc"></span>
 												</div>
 											</div>
 										</div>
 									</a></div>
 							</li>
-							<li class="list-10">
+							<!-- <li class="list-10">
 								<div class="link-component"><a @click="publishList" data-track-scm="健身" data-track-pos="1">
 										<div class="holder-wrap">
 											<div class="holder-cont">
@@ -254,7 +253,7 @@
 											</div>
 										</div>
 									</a></div>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 				</div>
@@ -263,8 +262,7 @@
 		</section>
 		<section class="ImageLink magic-widget">
 			<div class="image-link-component"><a data-track-scm="imglink">
-					<div class="ui-image-component status-show animate animate-end"><img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_44b991d83d81caf737fa1879c9b96676.jpg!/0/w-640/format-webp"><img
-						 class="draft" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_44b991d83d81caf737fa1879c9b96676.jpg!/0/w-100/quality-10/format-webp"></div>
+					<div class="ui-image-component status-show animate animate-end"><img class="image" :src="status[4]"></div>
 				</a></div>
 		</section>
 	</div>
@@ -273,9 +271,11 @@
 
 <script>
 	export default {
+		props: ["status"],
 		data() {
 			return {
-				isactualLeft: 1
+				isactualLeft: 1,
+	
 			}
 		},
 		components: {
@@ -292,6 +292,9 @@
 					name: 'choiceness'
 				});
 			}
+		},
+		computed:{
+			
 		}
 
 
