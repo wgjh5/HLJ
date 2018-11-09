@@ -2,7 +2,6 @@
 	<section class="new-order-container full-height">
 		<XtopBar status="indent" />
 		<orderCont/>
-		
 		<Xpopup/>
 		<sites/>
 		<Xfooter start="detall" />

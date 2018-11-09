@@ -3,17 +3,17 @@
 		<XTopbar status="home" />
 		<XCarousel :status="Carousel" />
 		<XGridMenu :status="Menu" />
-		<XComplexmages />
+		<XComplexmages  :status="Carouseltow"/>
 		<XsmallImglink />
-		<Xproduct />
-		<XbigImglink />
-		<Xproduct />
-		<XbigImglink />
-		<Xproduct />
-		<XbigImglink />
-		<Xproduct />
-		<XbigImglink />
-		<Xproduct />
+		<Xproduct :status="productnew" />
+		<XbigImglink :status="bigImglink1" />
+		<Xproduct :status="product1" />
+		<XbigImglink :status="bigImglink2" />
+		<Xproduct :status="product2" />
+		<XbigImglink :status="bigImglink3" />
+		<Xproduct :status="product3" />
+		<XbigImglink :status="bigImglink4" />
+		<Xproduct :status="product4" />
 		<Xspace />
 		<Xrecommend status="home" />
 		<XbackTop />
@@ -71,6 +71,7 @@
 			var self = this;
 			axios.get('http://localhost:12345/api/gethome')
 				.then(function(response) {
+					self.init();
 				  let aa =  response.data.data.widgets;
 					self.Carousel=aa[1].data.images;
 					self.Menu.push(aa[2].data.image);
@@ -78,8 +79,8 @@
 					self.Menu.push(aa[3].data.contents.slice(10,20));
 					self.Menu.push(aa[3].data.image);
 					self.Menu.push(aa[4].data.image);
-					self.Menu.push(aa[6].data.images);
-					self.Carouseltow=aa[15].data.images;
+					self.Carouseltow.push(aa[6].data.images);
+					self.Carouseltow.push(aa[15].data.images);
 					self.productnew=aa[18].data.products;
 					self.bigImglink1=aa[20].data.image;
 					self.product1=aa[21].data.products;
@@ -95,6 +96,23 @@
 				.catch(function(error) {
 					console.log(error);
 				});
+		},
+		methods:{
+			init(){
+				this.Carousel=[],
+				this.Menu=[],
+				this.Carouseltow=[],
+				this.productnew=[],
+				this.bigImglink1=[],
+				this.product1=[],
+				this.bigImglink2=[],
+				this.product2=[],
+				this.bigImglink3=[],
+				this.product3=[],
+				this.bigImglink4=[],
+				this.product4=[],
+				this.recommend=[]
+			}
 		}
 
 	}

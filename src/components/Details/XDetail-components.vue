@@ -333,6 +333,7 @@
     height: 100%;
 }
 .ItemDetail-components .intro-box > div.timesCard-cont {
+	background: #fff;
     padding: 0;
     margin-top: 0;
     font-size: 0.75rem;
