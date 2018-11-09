@@ -1,4 +1,5 @@
 <template>
+	
 	<div>
 		<XfilterBar />
 		<!-- 		<div class="group-lead-component"></div> -->
@@ -10,6 +11,8 @@
 			</div>
 		</div>
 	</div>
+	
+
 </template>
 
 <script>
@@ -79,6 +82,7 @@
 		width: 100%;
 		overflow: hidden;
 	}
+
 
 	.group-lead-component .gl-wrap {
 		display: -webkit-box;

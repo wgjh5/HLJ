@@ -90,8 +90,6 @@
 					self.product3=aa[27].data.products;
 					self.bigImglink4=aa[29].data.image;
 					self.product4=aa[30].data.products;
-					console.log(self.Carousel);
-					
 				})
 				.catch(function(error) {
 					console.log(error);

@@ -1,7 +1,7 @@
 <template>
 	<section class="ProductsSlider magic-widget">
 		<div class="products-component track-sideslip layout-slider">
-			<div v-for="a in status" @click="ondetails" class="product-item">
+			<div v-for="(a,index) in status" @click="ondetails(index)" class="product-item">
 				<div class="product-image-box">
 					<a>
 						<div class="product-img">
@@ -168,9 +168,12 @@
 		props: ["status"],
 		components: {},
 		methods: {
-			ondetails() {
+			ondetails(index) {
 				this.$router.push({
-					name: 'detail'
+					name: 'detail',
+					params: { 
+                dataObj: this.status[index]
+            }
 				});
 
 			}
