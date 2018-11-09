@@ -1,4 +1,6 @@
 <template>
+
+
     <section class="Recommend magic-widget" >
         <div class="magic-view-recommend-component">
 					<img v-if="status== 'home'" src="https://img-ucdn-static.helijia.com/zmw/magic-view/recommend-header.png" width="100%" alt="top-img" class="header-img">
@@ -198,6 +200,8 @@
                                     </div>
                                 </div>
     </section>
+
+
 </template>
 <script>
 	export default{

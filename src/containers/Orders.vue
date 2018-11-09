@@ -2,11 +2,9 @@
 	<div>
 		<section data-reactroot="" class="order-list">
 			<XorderTopBar status="order" />
-			<keep-alive>
-        <transition name="fade" >
+			<transition name="fade" >
           <router-view></router-view>
         </transition>
-      </keep-alive>
 			<Xnavbar />
 		</section>
 	</div>
@@ -27,7 +25,6 @@
 		},
 		watch: {
 			'$route' (to, from) {
-				console.log(to,from)
 				const toDepth = to.path.split('/').length
 				const fromDepth = from.path.split('/').length
 				this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
@@ -37,12 +34,6 @@
 </script>
 <style>
 @charset "UTF-8";
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
 
 /**
  * 简单1px解决方案
@@ -50,7 +41,12 @@
 .order-list {
   overflow: hidden;
 }
-
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
 .order-list .widget-topbar {
   position: fixed;
   width: 100%;

@@ -171,7 +171,6 @@
 				};
 			},
 			showMu(e) {
-				console.log(e.target.className)
 				if (e.target.className == "dirty") {
 					this.indx = e.target.getAttribute("data-id");
 					this.$store.dispatch('setShowMu', {
@@ -190,7 +189,6 @@
 			},
 			changeTabPx(tab) {
 				this.tab = tab;
-				console.log(this.$store.getters.getShowMu);
 				this.$store.dispatch('setShowMu', {
 					isShowMu : this.ee
 				})

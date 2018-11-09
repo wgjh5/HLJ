@@ -1,4 +1,6 @@
 <template>
+	
+	
 		<div v-show="isShowMu.isShowMu==true&&indx=='2'" id="popup" style="width: 100%;height: 100%;">
 			<div data-reactroot="" class="popup-component filter-pannel">
 				<div @click="close" class="overlay"></div>
@@ -163,6 +165,7 @@
 				</div>
 			</div>
 		</div>
+	
 </template>
 
 <script>
@@ -172,6 +175,7 @@
 		data() {
 			return {
 				
+		
 
 			};
 		},
@@ -183,7 +187,6 @@
 		},
 
 		methods: {
-		
 			close() {
 				this.$store.dispatch('setShowMu', {
 					isShowMu: !this.$store.getters.getShowMu
