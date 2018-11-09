@@ -1,19 +1,19 @@
 <template>
 	<section data-reactroot="" class="widgets clientapp-index home index mode">
 		<XTopbar status="home" />
-		<XCarousel />
-		<XGridMenu />
-		<XComplexmages />
+		<XCarousel :status="Carousel" />
+		<XGridMenu :status="Menu" />
+		<XComplexmages  :status="Carouseltow"/>
 		<XsmallImglink />
-		<Xproduct />
-		<XbigImglink />
-		<Xproduct />
-		<XbigImglink />
-		<Xproduct />
-		<XbigImglink />
-		<Xproduct />
-		<XbigImglink />
-		<Xproduct />
+		<Xproduct :status="productnew" />
+		<XbigImglink :status="bigImglink1" />
+		<Xproduct :status="product1" />
+		<XbigImglink :status="bigImglink2" />
+		<Xproduct :status="product2" />
+		<XbigImglink :status="bigImglink3" />
+		<Xproduct :status="product3" />
+		<XbigImglink :status="bigImglink4" />
+		<Xproduct :status="product4" />
 		<Xspace />
 		<Xrecommend status="home" />
 		<XbackTop />
@@ -38,7 +38,19 @@
 	export default {
 		data() {
 			return {
-				aa:[]
+				Carousel:[],
+				Menu:[],
+				Carouseltow:[],
+				productnew:[],
+				bigImglink1:[],
+				product1:[],
+				bigImglink2:[],
+				product2:[],
+				bigImglink3:[],
+				product3:[],
+				bigImglink4:[],
+				product4:[],
+				recommend:[]
 			}
 		},
 		components: {
@@ -59,13 +71,48 @@
 			var self = this;
 			axios.get('http://localhost:12345/api/gethome')
 				.then(function(response) {
-					self.aa =  response.data.data.widgets;
-					console.log(response.data.data.widgets);
-					// console.log(response.data.data.cards);
+					self.init();
+				  let aa =  response.data.data.widgets;
+					self.Carousel=aa[1].data.images;
+					self.Menu.push(aa[2].data.image);
+					self.Menu.push(aa[3].data.contents.slice(0,10));
+					self.Menu.push(aa[3].data.contents.slice(10,20));
+					self.Menu.push(aa[3].data.image);
+					self.Menu.push(aa[4].data.image);
+					self.Carouseltow.push(aa[6].data.images);
+					self.Carouseltow.push(aa[15].data.images);
+					self.productnew=aa[18].data.products;
+					self.bigImglink1=aa[20].data.image;
+					self.product1=aa[21].data.products;
+					self.bigImglink2=aa[23].data.image;
+					self.product2=aa[24].data.products;
+					self.bigImglink3=aa[26].data.image;
+					self.product3=aa[27].data.products;
+					self.bigImglink4=aa[29].data.image;
+					self.product4=aa[30].data.products;
+					console.log(self.Carousel);
+					
 				})
 				.catch(function(error) {
 					console.log(error);
 				});
+		},
+		methods:{
+			init(){
+				this.Carousel=[],
+				this.Menu=[],
+				this.Carouseltow=[],
+				this.productnew=[],
+				this.bigImglink1=[],
+				this.product1=[],
+				this.bigImglink2=[],
+				this.product2=[],
+				this.bigImglink3=[],
+				this.product3=[],
+				this.bigImglink4=[],
+				this.product4=[],
+				this.recommend=[]
+			}
 		}
 
 	}

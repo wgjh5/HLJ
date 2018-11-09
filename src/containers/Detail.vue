@@ -4,7 +4,8 @@
 		<div class="step-jump"></div>
 		<XproductImg />
 		<XDetailComponents />
-		<XdaysContainer />
+		<XdaysContainer style="position: absolute; width: 100%; height: 25vh;" />
+		<div class="posistion"></div>
 		<Xservice />
 		<div class="step-jump"></div>
 		<Xcomment />
@@ -104,6 +105,10 @@
 </script>
 
 <style >
+	.posistion{
+			width: 100%;
+			height: 25vh;
+	}
 .product-detail-container {
     padding-bottom: 2.5rem;
 }

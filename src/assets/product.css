@@ -10,7 +10,7 @@
      -moz-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font-size: 0;
+  font-size: 0.5rem;
   margin-top: 0.1rem;
 }
 

@@ -1346,6 +1346,7 @@
 	}
 
 	.recent-days-container {
+		background: #fff;
 		height: 100%;
 		font-size: 0.75rem;
 		padding-top: 0.5rem;

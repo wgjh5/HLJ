@@ -66,11 +66,7 @@ const routes = [{
 		path: '/detail',
 		name: 'detail',
 		component: Detail,
-		children: [{
-			path: 'detaliList',
-			name: 'detaliList',
-			component: DetailChannel
-		}]
+		
 	},
 	{
 		path: '/orders',
@@ -135,6 +131,11 @@ const routes = [{
 		path: '/login',
 		name: 'login',
 		component: Login
+	},
+	{
+		path: '/detaliList',
+		name: 'detaliList',
+		component: DetailChannel
 	},
 
 	{

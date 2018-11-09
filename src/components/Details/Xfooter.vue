@@ -43,7 +43,7 @@
 		},
 		methods:{
 			onsites(){
-				this.$router.push({ name: 'DetailChannel'});
+				this.$router.push({ name: 'detaliList'});
 			}
 		}
 	}
