@@ -1,8 +1,8 @@
 <template>
-	<div id="app" style="width:100%;height: 100%; ">
+	<div id="app" class="clearfix" >
 		<loading v-if="isloading" />
     <transition :name="transitionName" >
-    	<router-view class="child-view" ></router-view>
+    	<router-view class="child-view clearfix" ></router-view>
     </transition>
 	</div>
 </template>
@@ -42,6 +42,14 @@
 		width: 100%;
 		height: 100%;
 	}
+	html,body{
+		width: 100%;
+		height: 100%;
+		content:"";
+		display:block;
+		clear:both;
+	}
+	
 	@import url("assets/home.css");
 
 	/*====================*/
@@ -51,7 +59,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+			height: 100%;
       -moz-box-sizing: border-box;
              box-sizing: border-box;
     transition: all .6s  cubic-bezier(0.42, 0, 0.58, 1.0);
@@ -66,7 +74,14 @@
     -webkit-transform: translate(10px, 0);
     transform: translate(10px, 0);
 }
-
+.clearfix::after{
+    content:"";
+    display:block;
+    height:0;
+    clear:both;
+    overflow:hidden;
+    visibility:hidden;
+}
 
 	section.widget>header,
 	.bar,
@@ -171,7 +186,6 @@
 
 	html {
 		width: 100%;
-		height: 100%;
 	}
 
 	html>* {
@@ -181,7 +195,6 @@
 
 	html body {
 		width: 100%;
-		height: 100%;
 		margin: auto;
 	}
 

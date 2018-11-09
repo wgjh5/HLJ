@@ -2,23 +2,17 @@
 	<section data-reactroot="" class="widgets search-page mode weizheng_index">
 		<XTopbar status="list"/>
 		<XserviceAddress />
-		<XserchTab />
-		<XMultipleImages />
-		<XMultipleImages2 />
-		<XControls />
-		
 		<router-view></router-view>
+
+		</section>
    
-	</section>
+	
 </template>
 
 <script>
 	import XTopbar from '../components/Homes/XTopbar.vue';
 	import XserviceAddress from '../components/List/XserviceAddress.vue';
-	import XserchTab from '../components/List/XserchTab.vue';
-	import XMultipleImages from '../components/List/XMultipleImages.vue';
-	import XMultipleImages2 from '../components/List/XMultipleImages2.vue';
-	import XControls from '../components/List/XControls.vue';
+
 	
 
 
@@ -26,12 +20,8 @@
 	export default {
 		components:{
 			XTopbar,
-			XserviceAddress,
-			XserchTab,
-			XMultipleImages,
-			XMultipleImages2,
-			XControls
-     
+			XserviceAddress
+		
 
 
 			
@@ -1074,5 +1064,6 @@
 .popup-component.filter-pannel .content {
   left: 4.5em;
 }
+/* ==== */
 
 </style>

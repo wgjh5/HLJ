@@ -5,8 +5,8 @@
 		<div class="list-widget">
 			<div>
 				<div class="group-lead-component"></div>
-				<XlistWidget :cha="tab"/>
-				<Xrecommend />
+				<XlistWidget :cha="tab" />
+				<Xrecommend status="tab"/>
 			</div>
 		</div>
 	</div>
@@ -17,6 +17,7 @@
 	import XlistWidget from '../components/OrderChannel/XlistWidget.vue';
 	import Xrecommend from '../components/Homes/Xrecommend.vue';
 	export default {
+		props: ["cha"],
 		components: {
 			XfilterBar,
 			XlistWidget,
@@ -59,6 +60,7 @@
 				}
 			}
 		},
+
 		mounted() {
 			this.setChannel();
 

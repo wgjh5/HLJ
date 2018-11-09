@@ -18,6 +18,7 @@
 body {
   background-color: #fbf4e2;
   color: #1a1a1a;
+	
 }
 
 .app {
@@ -26,6 +27,7 @@ body {
 
 .home.index {
   padding-bottom: 2.5rem;
+	height: 100%;
 }
 
 .home.index .msg {

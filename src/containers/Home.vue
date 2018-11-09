@@ -101,7 +101,6 @@
 	 */
 	body {
 		width: 100%;
-		height: 100%;
 		background-color: #fbf4e2;
 		color: #1a1a1a;
 	}
@@ -113,7 +112,7 @@
 	.home.index {
 		padding-bottom: 2.5rem;
 		width: 100%;
-		height: 100%;
+
 	}
 
 	.home.index .msg {

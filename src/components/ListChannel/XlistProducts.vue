@@ -178,7 +178,7 @@
 		},
 		mounted() {
 			var self = this;
-			axios.get('http://localhost:3000/api/getIndex')
+			axios.get('http://localhost:3000/api/getList')
 				.then(function(response) {
 					var data = response.data.data.resultList;
 					self.aa = data;

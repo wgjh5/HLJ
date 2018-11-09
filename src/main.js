@@ -155,6 +155,7 @@ const store = new Vuex.Store({
 		DetailChannel: [],
 		arr: [],
 		isloading: false,
+		isShowMu:false,
 		text: {
 			text: "全部微整形"
 		},
@@ -279,6 +280,9 @@ const store = new Vuex.Store({
 		},
 		editisloading(state, data) {
 			state.isloading = data
+		},
+		editiShowMu(state, data) {
+			state.isShowMu = data
 		}
 
 
@@ -308,6 +312,9 @@ const store = new Vuex.Store({
 		},
 		setloading(conText, data) {
 			conText.commit('editisloading', data);
+		},
+		setShowMu(conText, data) {
+			conText.commit('editiShowMu', data);
 		}
 
 	},
@@ -348,6 +355,9 @@ const store = new Vuex.Store({
 		},
 		getisloading: state => {
 			return state.isloading
+		},
+		getShowMu: state => {
+			return state.isShowMu
 		}
 
 	}
