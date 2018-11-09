@@ -69,7 +69,7 @@
 		},
 		mounted() {
 			var self = this;
-			axios.get('http://localhost:12345/api/gethome')
+			axios.get('http://localhost:3000/api/gethome')
 				.then(function(response) {
 					self.init();
 				  let aa =  response.data.data.widgets;

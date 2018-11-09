@@ -23,7 +23,7 @@
 													<path d="M3.5 4L0 0h7z" fill="#999" fill-rule="evenodd"></path>
 												</svg></span></mark>
 										<!-- 下拉菜单 -->
-										<div v-show="isShowMu.isShowMu&&indx=='0'" class="options max-level-1" style="top: 0px; left: -95px; right: -190px;">
+										<div v-show="isShowMu.isShowMu==true&&indx=='0'" class="options max-level-1" style="top: 0px; left: -95px; right: -190px;">
 											<div class="placeholder"></div>
 											<ul class="depth-0">
 												<li v-for="(d,index) in dropdown" v-text="d.title" @click="changeTab(index)" :class="{active:tab==index}">
@@ -49,7 +49,7 @@
 													<path d="M3.5 4L0 0h7z" fill="#999" fill-rule="evenodd"></path>
 												</svg></span></mark>
 										<!-- ===== -->
-										<div v-show="isShowMu.isShowMu&&indx=='1'" class="options max-level-1" style="top: 0px; left: -170px; right: -114px;">
+										<div v-show="isShowMu.isShowMu==true&&indx=='1'" class="options max-level-1" style="top: 0px; left: -170px; right: -114px;">
 											<div class="placeholder"></div>
 											<ul class="depth-0">
 												<li :class="{active:tab==index}" v-for="(i,index) in IntelligentSorting" @click="changeTabPx(index)"

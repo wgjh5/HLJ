@@ -3,12 +3,22 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 
+// ==
+import Axios from 'axios';
+import Mint from 'mint-ui';
+Vue.use(Mint);
 // =====vue路由
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 import MintUI from 'mint-ui'
 Vue.use(MintUI)
+// ======
+import {
+	InfiniteScroll
+} from 'mint-ui';
+
+Vue.use(InfiniteScroll);
 
 import $ from 'jquery'
 // ====vuex
@@ -66,7 +76,7 @@ const routes = [{
 		path: '/detail',
 		name: 'detail',
 		component: Detail,
-		
+
 	},
 	{
 		path: '/orders',
@@ -156,7 +166,7 @@ const store = new Vuex.Store({
 		DetailChannel: [],
 		arr: [],
 		isloading: false,
-		isShowMu:false,
+		isShowMu: false,
 		text: {
 			text: "全部微整形"
 		},
@@ -373,6 +383,29 @@ router.afterEach((to, from) => {
 	// },500)
 
 })
+
+// ===
+Axios.interceptors.request.use((config) => {
+	Mint.Indicator.open({ //打开loading
+		text: '加载中...',
+		spinnerType: 'fading-circle'
+	});
+	return config;
+}, (err) => {
+	return Promise.reject(err)
+
+})
+// ====
+Axios.interceptors.response.use((response) => {
+	Mint.Indicator.close(); //关闭loading
+	return response;
+}, (err) => {
+	return Promise.reject(err);
+
+})
+
+
+
 new Vue({
 	router,
 	store,

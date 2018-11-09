@@ -5,158 +5,63 @@
 				<div class="cross"></div>
 				<div class="scroll-view-component">
 					<div class="content">
-						<div class="products-component layout-2x1" data-track-spm="search" data-track-show-root="true">
+						<div class="products-component layout-2x1" v-infinite-scroll="loadMore" infinite-scroll-disabled="loading" infinite-scroll-distance="10">
 							<!-- ==== -->
-							<div class="product-item" v-for="(a,index) in aa">
-								<div class="box">
-									<div class="product-image-box"><a href="https://m.helijia.com/product.html?id=097f1d0315b14f699be4e616c29691c6">
-											<div class="product-img">
-												<div class="ui-image-component status-show">
-													<img class="image" :src="'https://img-ucdn-static.helijia.com/zmw/'+a.coverPic">
-													<img class="draft" src="https://img-ucdn-static.helijia.com/zmw/upload/20171130/99e5d507ad5e4f1a83c44e4fa543d585!/0/w-100/quality-10/format-webp"></div>
-											</div>
-										</a>
-										<div class="promotion-tag"></div>
-									</div>
-									<div class="wrap"><a href="https://m.helijia.com/product.html?id=097f1d0315b14f699be4e616c29691c6">
-											<div class="product-name">
-												<span class="name">{{a.name}}</span></div>
-										</a>
-										<div>
-											<div class="product-props">
-												<div class="box">
-													<div class="price-part"><span class="price-component "><span class="yen">¥</span><span><span class="round">{{a.price}}</span></span></span><span
-														 class="market-price">
-															¥
-															{{a.marketPrice}}
-															
-														</span>
-														<div class="new-line"><span class="service-type"><span class="tag bg-gold">到店</span></span><!-- react-empty: 50847 --><span
-															 class="status"><span class="status-text">{{a.likeNum}} {{a.favNumInfo}}</span></span></div>
-													</div>
-													<div class="right-part"></div>
+							<ul >
+								<!-- <li v-for="item in list"> -->
+								<!-- {{ item }} -->
+								<!-- v-for="(a,index) in aa" -->
+								<div class="product-item" v-for="item in list">
+									<div class="box">
+										<div class="product-image-box"><a @click="publishDetail">
+												<div class="product-img">
+													<div class="ui-image-component status-show">
+														<img class="image" :src="'https://img-ucdn-static.helijia.com/zmw/'+item.coverPic">
+														<img class="draft" src="https://img-ucdn-static.helijia.com/zmw/upload/20171130/99e5d507ad5e4f1a83c44e4fa543d585!/0/w-100/quality-10/format-webp"></div>
 												</div>
-											</div>
-											<div class="Artisan-part">
-												<!-- 0% 0% / cover no-repeat; -->
-												<div class="artisan-item">
-													<div class="avatar" v-bind:style="{background:'url('+'https://img-ucdn-static.helijia.com/zmw/'+ a.artisanAvatar+')',backgroundSize:'100%',backgroundRepeat:'no-repeat'}"></div>
-													<div class="wrap"><span class="artisan-name-component"><span class="nick-name">
+											</a>
+											<div class="promotion-tag"></div>
+										</div>
+										<div class="wrap"><a >
+												<div class="product-name">
+													<span class="name">{{item.name}}</span></div>
+											</a>
+											<div>
+												<div class="product-props">
+													<div class="box">
+														<div class="price-part"><span class="price-component "><span class="yen">¥</span><span><span class="round">{{item.price}}</span></span></span><span
+															 class="market-price">
+																¥
+																{{item.marketPrice}}
 
-
-																{{a.artisanNick}}
-															</span></span>
-														<div class="level-star-component"><img class="star" src="//hlj-img.b0.upaiyun.com/zmw/upload/mobile/star/star5.gif"></div>
+															</span>
+															<div class="new-line"><span class="service-type"><span class="tag bg-gold">到店</span></span><!-- react-empty: 50847 --><span
+																 class="status"><span class="status-text">{{item.likeNum}} {{item.favNumInfo}}</span></span></div>
+														</div>
+														<div class="right-part"></div>
 													</div>
 												</div>
-												<div class="distancePart"></div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- 	<div class="product-item" data-track-scm="product.a295521106dd49a08a72c5d8f3ffa83b" data-track-pos="1"
-							 data-track-show="showed">
-								<div class="box">
-									<div class="product-image-box"><a href="https://m.helijia.com/product.html?id=a295521106dd49a08a72c5d8f3ffa83b">
-											<div class="product-img">
-												<div class="ui-image-component status-show"><img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/20181031/f32283e04f124ae78d0421ef564eda2c!/0/w-298/format-webp"><img
-													 class="draft" src="https://img-ucdn-static.helijia.com/zmw/upload/20181031/f32283e04f124ae78d0421ef564eda2c!/0/w-100/quality-10/format-webp"></div>
-											</div>
-										</a>
-										<div class="promotion-tag">
-											<div class="tag bg-red"><span>微整形5折</span></div>
-										</div>
-									</div>
-									<div class="wrap"><a href="https://m.helijia.com/product.html?id=a295521106dd49a08a72c5d8f3ffa83b">
-											<div class="product-name">
-												<span class="name">【双11必买】自体脂肪填充#软黄金脂肪美雕 6万+粉丝达人口碑推荐</span></div>
-										</a>
-										<div>
-											<div class="product-props">
-												<div class="box">
-													<div class="act-product"><span class="price-component "><span class="yen">¥</span><span><span class="round">998</span></span></span>
-														<div>
-															<div class="new-line"><span class="price-act-tag-pre">双11</span><span class="price">
-																	¥
+												<div class="Artisan-part">
+													<!-- 0% 0% / cover no-repeat; -->
+													<div class="artisan-item">
+														<div class="avatar" v-bind:style="{background:'url('+'https://img-ucdn-static.helijia.com/zmw/'+ item.artisanAvatar+')',backgroundSize:'100%',backgroundRepeat:'no-repeat'}"></div>
+														<div class="wrap"><span class="artisan-name-component"><span class="nick-name">
 
-																	499
-																</span><span class="service-type"><span class="tag bg-gold">到店</span></span><span
-																 class="status"><span class="status-text">17321 人喜欢</span></span></div>
+
+																	{{item.artisanNick}}
+																</span></span>
+															<div class="level-star-component"><img class="star" src="//hlj-img.b0.upaiyun.com/zmw/upload/mobile/star/star5.gif"></div>
 														</div>
 													</div>
-													<div class="right-part"></div>
+													<div class="distancePart"></div>
 												</div>
-											</div>
-											<div class="Artisan-part">
-												<div class="artisan-item">
-													<div class="avatar" style="background: url(&quot;https://img-ucdn-static.helijia.com/zmw/upload/20180105/67deaaf7a7844bbd99cbe73b023a1334!/0/w-128/format-webp&quot;) 0% 0% / cover no-repeat;"></div>
-													<div class="wrap"><span class="artisan-name-component"><span class="nick-name">
-
-
-																新星靓医疗美容张立彬院长
-															</span></span>
-														<div class="level-star-component"><img class="star" src="//hlj-img.b0.upaiyun.com/zmw/upload/mobile/star/star5.gif"></div>
-													</div>
-												</div>
-												<div class="distancePart"></div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div> -->
-
-
-							<!-- 	<div class="product-item" data-track-scm="product.aeee5ca3df024283b809d414fa0b8f1f" data-track-pos="179"
-							 data-track-show="init">
-								<div class="box">
-									<div class="product-image-box"><a href="https://m.helijia.com/product.html?id=aeee5ca3df024283b809d414fa0b8f1f">
-											<div class="product-img">
-												<div class="ui-image-component status-draft"><img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/20181103/3ac89b3e5de745699617af32b2534e71.jpg!/0/w-100/quality-10/format-webp"><img
-													 class="draft" src="https://img-ucdn-static.helijia.com/zmw/upload/20181103/3ac89b3e5de745699617af32b2534e71.jpg!/0/w-100/quality-10/format-webp"></div>
-											</div>
-										</a>
-										<div class="promotion-tag">
-											<div class="tag bg-red"><span>微整形5折</span></div>
-										</div>
-									</div>
-									<div class="wrap"><a href="https://m.helijia.com/product.html?id=aeee5ca3df024283b809d414fa0b8f1f">
-											<div class="product-name">
-												<span class="name">重现少女般粉嫩，做他的红颜，更做他的尤物</span></div>
-										</a>
-										<div>
-											<div class="product-props">
-												<div class="box">
-													<div class="act-product"><span class="price-component "><span class="yen">¥</span><span><span class="round">2376</span></span></span>
-														<div>
-															<div class="new-line"><span class="price-act-tag-pre">双11</span><span class="price">
-																	¥
-
-																	1188
-																</span><span class="service-type"><span class="tag bg-gold">到店</span></span><span
-																 class="status"><span class="status-text">2416 人喜欢</span></span></div>
-														</div>
-													</div>
-													<div class="right-part"></div>
-												</div>
-											</div>
-											<div class="Artisan-part">
-												<div class="artisan-item">
-													<div class="avatar" style="background: url(&quot;https://img-ucdn-static.helijia.com/zmw/upload/20180704/d3baff6958564c1e95fe9fa29de13bea.jpg!/0/w-128/format-webp&quot;) 0% 0% / cover no-repeat;"></div>
-													<div class="wrap"><span class="artisan-name-component"><span class="nick-name">
-
-
-																北京长虹医院张守玲主任
-															</span></span>
-														<div class="level-star-component"><img class="star" src="//hlj-img.b0.upaiyun.com/zmw/upload/mobile/star/star5.gif"></div>
-													</div>
-												</div>
-												<div class="distancePart"></div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div> -->
+								<!-- </li> -->
+							</ul>
+							
 							<!-- == -->
 						</div>
 					</div>
@@ -167,31 +72,68 @@
 	</section>
 </template>
 
-<script>
-	import axios from 'axios';
-	export default {
-		props: ["channel"],
-		data() {
-			return {
-				aa: []
-			};
-		},
-		mounted() {
-			var self = this;
-			axios.get('http://localhost:3000/api/getList')
-				.then(function(response) {
-					var data = response.data.data.resultList;
-					self.aa = data;
-					console.log(data);
-
-					// console.log(response.data.data.cards);
-				})
-				.catch(function(error) {
-					console.log(error);
-				});
+ <script>
+		import axios from 'axios';
+		export default {
+			props: ["channel"],
+			data() {
+				return {
+					list: []
+				};
+			},
+			methods: {
+				loadMore() {
+					console.log(1)
+					this.loading = true;
+					setTimeout(() => {
+						this.loading = false;
+					}, 2500);
+					this.qingqiu();
+				},
+				qingqiu() {
+					var self = this;
+					axios.get('http://localhost:3000/api/getlists')
+						.then(function(response) {
+							var data = response.data.data.resultList;
+							self.list = self.list.concat(data);
+	
+							// console.log(response.data.data.cards);
+						})
+						.catch(function(error) {
+							console.log(error);
+						});
+				},
+				publishDetail(){
+					this.$router.push({
+						name: "detail"
+					});
+				}
+	
+			},
+			mounted() {
+				// this.loadMore();
+				// this.qingqiu();
+				// this.scroll(this.list)
+				var self = this;
+				axios.get('http://localhost:3000/api/getList')
+					.then(function(response) {
+						var data = response.data.data.resultList;
+						self.list = data;
+						console.log(data);
+	
+						// console.log(response.data.data.cards);
+					})
+					.catch(function(error) {
+						console.log(error);
+					});
+	
+			}
+			// ===
+			
+	
 		}
 
-	}
+
 </script>
 
 <style>

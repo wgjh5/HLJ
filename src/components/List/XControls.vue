@@ -1,5 +1,4 @@
 <template>
-	<div style="height: 100%;">
 		<div v-show="isShowMu.isShowMu==true&&indx=='2'" id="popup" style="width: 100%;height: 100%;">
 			<div data-reactroot="" class="popup-component filter-pannel">
 				<div @click="close" class="overlay"></div>
@@ -164,7 +163,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
 </template>
 
 <script>
@@ -173,55 +171,19 @@
 		props: ["indx"],
 		data() {
 			return {
-				// isShow: true,
-				// indx: 0
+				
 
 			};
 		},
 		computed: {
-			// 			dropdown() {
-			// 				return this.$store.getters.getDropdown
-			// 			},
-			// // 			IntelligentSorting() {
-			// // 				return this.$store.getters.getPx
-			// // 			},
-			// // 			text() {
-			// // 
-			// // 				return this.$store.getters.getText
-			// // 			},
-			// // 			textPx() {
-			// // 
-			// // 				return this.$store.getters.getTextPx
-			// // 			}
+			
 			isShowMu() {
 				return this.$store.getters.getShowMu
 			}
 		},
 
 		methods: {
-			// 			showMu(e) {
-			// 				console.log(e.target.className)
-			// 				if (e.target.className == "dirty") {
-			// 					this.indx = e.target.getAttribute("data-id");
-			// 					this.isShowMu = !this.isShowMu;
-			// 
-			// 				}
-			// 			},
-			// 			changeTab(tab) {
-			// 				this.tab = tab;
-			// 				this.isShowMu = !this.isShowMu;
-			// 				this.$store.dispatch('setText', {
-			// 					text: this.$store.getters.getDropdown[tab].title
-			// 					
-			// 				})
-			// 			},
-			// 			changeTabPx(tab) {
-			// 				this.tab = tab;
-			// 				this.isShowMu = !this.isShowMu;
-			// 				this.$store.dispatch('setTextPx', {
-			// 					text: this.$store.getters.getPx[tab].title
-			// 				})
-			// 			},
+		
 			close() {
 				this.$store.dispatch('setShowMu', {
 					isShowMu: !this.$store.getters.getShowMu
@@ -229,13 +191,7 @@
 			}
 		},
 				mounted() {
-// 					if (this.isShowMu == true) {
-// 						$("html").addClass("no-scroll");
-// 						$("body").addClass("no-scroll");
-// 					} else if (this.isShowMu == false) {
-// 						$("html").removeClass("no-scroll");
-// 						$("body").removeClass("no-scroll");
-// 					}
+
 					
 				}
 	}
