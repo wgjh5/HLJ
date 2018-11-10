@@ -7,7 +7,7 @@
 					<div data-sticky-index="4" data-sticky-top="110.125">
 						<div class="item-count-5 with-item-size-switch with-filter">
 							<section class="widgets search-controls-widget Controls magic-widget">
-								<section class="ServiceTimeDropdown magic-widget " data-track-spm="m-list.Controls_YM_filter:ServiceTimeDropdown_service_time_fillter.$.8ca823">
+								<section class="ServiceTimeDropdown magic-widget " @click="Subscribe">
 									<div class="service-time-dropdown-widget"><mark class="">
 											服务时间
 											<span class="SVGInline dropdown"><svg class="SVGInline-svg dropdown-svg" style="width: 1em;height: 1em;"
@@ -97,6 +97,7 @@
 		<XQuickFilter :channel="channel" />
 		<XlistProducts :channel="channel" />
 		<XArtisans :channel="channel" />
+		<Xpopup/>
 
 	</div>
 </template>
@@ -109,6 +110,7 @@
 	import XMultipleImages from '../components/List/XMultipleImages.vue';
 	import XMultipleImages2 from '../components/List/XMultipleImages2.vue';
 	import XserchTab from '../components/List/XserchTab.vue';
+	import Xpopup from '../components/DetailChannel/Xpopup.vue';
 	import $ from 'jquery';
 
 	export default {
@@ -119,7 +121,8 @@
 			XControls,
 			XMultipleImages,
 			XMultipleImages2,
-			XserchTab
+			XserchTab,
+			Xpopup
 
 
 		},
@@ -200,6 +203,9 @@
 				this.$store.dispatch('setShowMu', {
 					isShowMu : this.ee
 				})
+			},
+			Subscribe(){
+				this.$store.dispatch("setSubscribe", true);
 			}
 
 		},
