@@ -71,7 +71,6 @@
 			var self = this;
 			axios.get('http://119.23.222.41:8888/app/home/')
 				.then(function(response) {
-					self.init();
 				  let aa =  response.data.widgets;
 					self.Carousel=aa[1].data.images;
 					self.Menu.push(aa[2].data.image);
@@ -94,23 +93,34 @@
 				.catch(function(error) {
 					console.log(error);
 				});
+// 			axios.get('http://localhost:3000/api/gethome')
+// 				.then(function(response) {
+// 					let aa =  response.data.data.widgets;
+// 					console.log(aa);
+// 					self.Carousel = aa[2].data.images;
+// 					self.Menu.push(aa[3].data.image);
+// 					self.Menu.push(aa[4].data.contents.slice(0,10));
+// 					self.Menu.push(aa[4].data.contents.slice(10,20));
+// 					self.Menu.push(aa[4].data.image);
+// 					self.Menu.push(aa[5].data.image);
+// 					self.Carouseltow.push(aa[7].data.images);
+// 					self.Carouseltow.push(aa[15].data.images);
+// 					self.productnew=aa[20].data.products;
+// 					self.bigImglink1=aa[22].data.image;
+// 					self.product1=aa[23].data.products;
+// 					self.bigImglink2=aa[25].data.image;
+// 					self.product2=aa[26].data.products;
+// 					self.bigImglink3=aa[26].data.image;
+// 					self.product3=aa[28].data.products;
+// 					self.bigImglink4=aa[29].data.image;
+// 					self.product4=aa[31].data.products;
+// 				})
+// 				.catch(function(error) {
+// 					console.log(error);
+// 				});
 		},
 		methods:{
-			init(){
-				this.Carousel=[],
-				this.Menu=[],
-				this.Carouseltow=[],
-				this.productnew=[],
-				this.bigImglink1=[],
-				this.product1=[],
-				this.bigImglink2=[],
-				this.product2=[],
-				this.bigImglink3=[],
-				this.product3=[],
-				this.bigImglink4=[],
-				this.product4=[],
-				this.recommend=[]
-			}
+		
 		}
 
 	}

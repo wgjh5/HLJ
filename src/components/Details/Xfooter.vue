@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<footer v-if="start=='detall'" class="footer">
-			<div class="pay-text"><span>待支付: </span><span class="price-component"><span class="yen">¥</span><span><span class="round">118</span><span
+			<div class="pay-text"><span>待支付: </span><span class="price-component"><span class="yen">¥</span><span><span class="round" v-text="zhifu.maxZhimaPrice">118</span><span
 						 class="decimal">.00</span></span></span></div><button class="block-level inverted primary button">去付款</button>
 		</footer>
 		<footer v-else class="product-footer-component studio">
@@ -35,7 +35,7 @@
 
 <script>
 	export default {
-		props: ['start'],
+		props: ['start','zhifu'],
 		data() {
 			return {
 

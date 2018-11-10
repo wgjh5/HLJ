@@ -108,12 +108,10 @@
 				return t;
 			},
 			getSomething() {
-				console.log(localStorage.getItem("something"));
 				var self = this;
 				axios.get('http://localhost:3000/api/getThing',{params: {id:localStorage.getItem("something")}})
 					.then(function(response) {
 						var data = response.data.data;
-						console.log(data);
 						self.pics=data.pics;
 						self.productName.push(data.productName);
 						self.productName.push(data.priceInfo.maxZhimaPrice)
@@ -129,7 +127,6 @@
 						self.artisan.push(data.artisan.artisanLevelValue)
 						self.artisan.push(data.artisan.artisanTypeDesc)
 						self.artisan.push(data.artisan.satisfaction)
-						console.log(self.artisan)
 						for(var i=0;i<self.serviceRange[0].length;i++){
 							self.str += self.serviceRange[0][i]+"、"
 							
