@@ -15,7 +15,8 @@
 						</g>
 					</svg></span></div>
 			<div class="desc-title">项目详情</div>
-			<div class="desc">
+			<div class="desc"  >
+				<!-- <p v-html="deList[0]"></p> -->
 				<p>☘️适应人群：疲倦肌肤，受损肌肤，缺水肌肤，氧化肌肤，亚健康初老肌</p>
 				<p></p>
 				<p>☘️亚健康是指人体处于健康和疾病之态，属於既不健康又不生病的一种身心状况。</p>
@@ -125,6 +126,7 @@
 
 <script>
 	export default {
+		props:["deList"],
 		data() {
 			return {
 

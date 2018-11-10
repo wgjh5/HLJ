@@ -5,15 +5,16 @@
 				<div class="cross"></div>
 				<div class="scroll-view-component">
 					<div class="content">
-						<div class="products-component layout-2x1" v-infinite-scroll="loadMore" infinite-scroll-disabled="loading" infinite-scroll-distance="10">
+						<div class="products-component layout-2x1" v-infinite-scroll="loadMore" infinite-scroll-disabled="loading"
+						 infinite-scroll-distance="10">
 							<!-- ==== -->
-							<ul >
+							<ul>
 								<!-- <li v-for="item in list"> -->
 								<!-- {{ item }} -->
 								<!-- v-for="(a,index) in aa" -->
-								<div class="product-item" v-for="item in list">
+								<div class="product-item" v-for="(item,index) in list">
 									<div class="box">
-										<div class="product-image-box"><a @click="publishDetail">
+										<div class="product-image-box"><a @click="publishDetail(index)">
 												<div class="product-img">
 													<div class="ui-image-component status-show">
 														<img class="image" :src="'https://img-ucdn-static.helijia.com/zmw/'+item.coverPic">
@@ -22,7 +23,7 @@
 											</a>
 											<div class="promotion-tag"></div>
 										</div>
-										<div class="wrap"><a >
+										<div class="wrap"><a>
 												<div class="product-name">
 													<span class="name">{{item.name}}</span></div>
 											</a>
@@ -61,7 +62,7 @@
 								</div>
 								<!-- </li> -->
 							</ul>
-							
+
 							<!-- == -->
 						</div>
 					</div>
@@ -72,68 +73,69 @@
 	</section>
 </template>
 
- <script>
-		import axios from 'axios';
-		export default {
-			props: ["channel"],
-			data() {
-				return {
-					list: []
-				};
+<script>
+	import axios from 'axios';
+	export default {
+		props: ["channel"],
+		data() {
+			return {
+				list: []
+			};
+		},
+		methods: {
+			loadMore() {
+				console.log(1)
+				this.loading = true;
+				setTimeout(() => {
+					this.loading = false;
+				}, 2500);
+				this.qingqiu();
 			},
-			methods: {
-				loadMore() {
-					console.log(1)
-					this.loading = true;
-					setTimeout(() => {
-						this.loading = false;
-					}, 2500);
-					this.qingqiu();
-				},
-				qingqiu() {
-					var self = this;
-					axios.get('http://localhost:3000/api/getlists')
-						.then(function(response) {
-							var data = response.data.data.resultList;
-							self.list = self.list.concat(data);
-	
-							// console.log(response.data.data.cards);
-						})
-						.catch(function(error) {
-							console.log(error);
-						});
-				},
-				publishDetail(){
-					this.$router.push({
-						name: "detail"
-					});
-				}
-	
-			},
-			mounted() {
-				// this.loadMore();
-				// this.qingqiu();
-				// this.scroll(this.list)
+			qingqiu() {
 				var self = this;
-				axios.get('http://localhost:3000/api/getList')
+				axios.get('http://localhost:3000/api/getlists')
 					.then(function(response) {
 						var data = response.data.data.resultList;
-						self.list = data;
-						console.log(data);
-	
+						self.list = self.list.concat(data);
+
 						// console.log(response.data.data.cards);
 					})
 					.catch(function(error) {
 						console.log(error);
 					});
-	
+			},
+			publishDetail(index) {
+				this.$router.push({
+					name: "detail",
+					params: {
+						dataObj: this.list[index]
+					}
+				});
 			}
-			// ===
-			
-	
+
+		},
+		mounted() {
+			// this.loadMore();
+			// this.qingqiu();
+			// this.scroll(this.list)
+			var self = this;
+			axios.get('http://localhost:3000/api/getList')
+				.then(function(response) {
+					var data = response.data.data.resultList;
+					self.list = data;
+					console.log(data);
+
+					// console.log(response.data.data.cards);
+				})
+				.catch(function(error) {
+					console.log(error);
+				});
+
 		}
+		// ===
 
 
+	}
 </script>
 
 <style>

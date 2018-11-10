@@ -2,23 +2,23 @@
 	<section class="artisan-simple-container" data-track-spm="b-default.simpleInfo.$" data-track-scm="artisan.56473b3e5be64bab8b62f433bec3e9f9">
 		<div class="content">
 			<div class="photo-box">
-				<div class="ui avatar-component" style="background-image:url('https://img-ucdn-static.helijia.com/zmw/upload/20180212/2e10bef1383d439897c3d24ce8c0813f!/0/w-640/format-webp');"></div>
+				<div class="ui avatar-component" v-bind:style="{background:'url('+'https://img-ucdn-static.helijia.com/zmw'+artisan[0]+') 0% 0% / 100% no-repeat'}"></div>
 			</div>
 			<div class="info">
 				<div class="title"><span class="artisan-name-component"><span class="nick-name">
 							<!-- react-text: 504 -->
 							<!-- /react-text -->
-							<!-- react-text: 505 -->伊可欣
+							<!-- react-text: 505 -->{{artisan[1]}}
 							<!-- /react-text --></span></span></div>
 				<div class="artisan-level">
 					<div class="level-star-component"><img class="star" src="//hlj-img.b0.upaiyun.com/zmw/upload/mobile/star/star4.gif"><span
 						 class="artisan-desc">
 							<!-- react-text: 510 -->(
-							<!-- /react-text --><span class="desc">卓越</span><span class="type">美容师</span><!-- react-text: 513 -->)
+							<!-- /react-text --><span class="desc">{{artisan[2]}}</span><span class="type">{{artisan[3]}}</span><!-- react-text: 513 -->)
 							<!-- /react-text --></span></div>
 				</div>
 				<div class="satisfy">
-					<!-- react-text: 515 -->满意度：93%
+					<!-- react-text: 515 -->{{artisan[4]}}
 					<!-- /react-text --><span class="undefined-satisfaction satisfaction"></span></div>
 			</div>
 			<div class="jumpto-artisan jumpto-studio-artisan">店员主页</div>
@@ -28,6 +28,7 @@
 
 <script>
 	export default {
+		props:["artisan"],
 		data() {
 			return {
 

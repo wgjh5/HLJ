@@ -88,32 +88,26 @@
 		<section class="Space magic-widget">
 			<div style="width: 100%; height: 10px; background-color: rgb(241, 233, 218);"></div>
 		</section>
-		<section class="Carousel magic-widget" >
+		<!-- <section class="Carousel magic-widget" >
 			<div class="carousel-component">
 				<div class="slick-initialized slick-slider">
 					<div class="slick-list">
-						<!-- <div class="slick-track" style="opacity: 1; "> -->
+						
 							<mt-swipe :auto="4000">
-								<mt-swipe-item v-for="a in status[1] ">
+								<mt-swipe-item  v-for="a in status[1] ">
 									<a href="javascript:void(0)" class="slick-slide slick-cloned"  >
 										<div class="ui-image-component status-show animate animate-end" style="height: 100%;">
-											<img class="image" :src="a.data.image" style="height: 100%;">
+											<img class="image" :src="a.image" style="height: 100%;">
 										</div>
 									</a>
 								</mt-swipe-item>
-								<!-- <mt-swipe-item>
-									<a href="javascript:void(0)"  class="slick-slide slick-active slick-current"  >
-										<div class="ui-image-component status-show animate animate-end" style="height: 100%;">
-											<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_830005cd3f0b45dc1b8a0f68d8cefe32.jpg!/0/w-1080/format-webp" style="height: 100%;">
-										</div>
-									</a>
-								</mt-swipe-item> -->
+								
 							</mt-swipe>
-						<!-- </div> -->
+						
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<section class="Space magic-widget">
 			<div style="width: 100%; height: 10px; background-color: rgb(241, 233, 218);"></div>
 		</section>

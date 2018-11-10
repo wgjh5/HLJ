@@ -1,21 +1,21 @@
 <template>
-	<section class="product-detail-container" id="project" >
-    <XtopShare :AscrollTop="scrollTop" />
+	<section class="product-detail-container" id="project">
+		<XtopShare :AscrollTop="scrollTop" />
 		<div class="step-jump"></div>
-		<XproductImg />
-		<XDetailComponents />
+		<XproductImg :pics="pics"/>
+		<XDetailComponents :something="productName"/>
 		<XdaysContainer style="position: absolute; width: 100%; height: 25vh;" />
 		<div class="posistion"></div>
-		<Xservice />
+		<Xservice :serviceRange="this.str"/>
 		<div class="step-jump"></div>
 		<Xcomment />
 		<div class="step-jump"></div>
-		<Xdetail />
+		<Xdetail :deList="deList"/>
 		<XfloatHelpcomponent />
 		<XserviceStepComponents />
 		<XitemProductComponents />
 		<XitemIntro />
-		<XartisanSimple />
+		<XartisanSimple :artisan="artisan"/>
 		<XsecStudio />
 		<div class="step-jump"></div>
 		<div class="title-belt-component gray-bg"><span class="SVGInline title-belt"><svg class="SVGInline-svg title-belt-svg"
@@ -38,6 +38,7 @@
 </template>
 
 <script>
+	import axios from 'axios';
 	import XtopShare from '../components/Details/XtopShare.vue';
 	import XproductImg from '../components/Details/Xproduct-img.vue';
 	import XdaysContainer from '../components/Details/XdaysContainer.vue';
@@ -58,7 +59,7 @@
 		components: {
 			XtopShare,
 			XproductImg,
-			XDetailComponents,			
+			XDetailComponents,
 			XdaysContainer,
 			Xservice,
 			Xcomment,
@@ -75,46 +76,98 @@
 		},
 		data() {
 			return {
-				scrollTop:[],
+				scrollTop: [],
+				detailList:[],
+				pics:[],
+				productName:[],
+				deList:[],
+				serviceRange:[],
+				str:"",
+				artisan:[]
 				
 			};
 		},
-		mounted: function () {
-			 this.$nextTick(function () {
-					this.onScroll();
-			 })
-		 },
-		methods:{
-			 onScroll (){
+		mounted: function() {
+			this.$nextTick(function() {
+				this.onScroll();
+				this.getSomething();
+			})
+		},
+		methods: {
+			onScroll() {
 				let article = document.querySelectorAll('.step-jump');
-				for(var i=0;i<article.length;i++){
+				for (var i = 0; i < article.length; i++) {
 					this.scrollTop.push(this.getPoint(article[i]));
 				}
-			 },
-			 getPoint(obj) {  
-				let t = obj.offsetTop;   
-				while (obj = obj.offsetParent) { 
-				  t += obj.offsetTop;
+			},
+			getPoint(obj) {
+				let t = obj.offsetTop;
+				while (obj = obj.offsetParent) {
+					t += obj.offsetTop;
 				}
 				return t;
-			  }
+			},
+			getSomething() {
+				console.log(localStorage.getItem("something"));
+				var self = this;
+				axios.get('http://localhost:3000/api/getThing',{params: {id:localStorage.getItem("something")}})
+					.then(function(response) {
+						var data = response.data.data;
+						console.log(data);
+						self.pics=data.pics;
+						self.productName.push(data.productName);
+						self.productName.push(data.priceInfo.maxZhimaPrice)
+						self.productName.push(data.marketPrice)
+						self.productName.push(data.likeNum)
+						self.productName.push(data.favNumInfo)
+						self.productName.push(data.productAdditionalInfo.cardTemplates)
+						self.productName.push(data.descTag);
+						self.deList.push(data.desc);
+						self.serviceRange.push(data.artisan.serviceRange)
+						self.artisan.push(data.artisan.avatar)
+						self.artisan.push(data.artisan.name)
+						self.artisan.push(data.artisan.artisanLevelValue)
+						self.artisan.push(data.artisan.artisanTypeDesc)
+						self.artisan.push(data.artisan.satisfaction)
+						console.log(self.artisan)
+						for(var i=0;i<self.serviceRange[0].length;i++){
+							self.str += self.serviceRange[0][i]+"、"
+							
+						}
+						self.str = self.str.slice(0,-1)
+					})
+					.catch(function(error) {
+						console.log(error);
+					});
+
+				if (JSON.stringify(this.$route.params) === '{}') {
+					return false;
+				}
+				localStorage.setItem("something", this.$route.params.dataObj.id || this.$route.params.dataObj.productId);
+
+			}
 		}
-		
-		
+
+
+
 	}
 </script>
 
-<style >
-	.posistion{
-			width: 100%;
-			height: 25vh;
+<style>
+	.posistion {
+		width: 100%;
+		height: 25vh;
 	}
-.product-detail-container {
-    padding-bottom: 2.5rem;
-}
-.product-detail-container > section {
-    border-bottom: 0.5rem solid #f7f7f7;
-}	.product-detail-container .skeleton-component {
+
+	.product-detail-container {
+		padding-bottom: 2.5rem;
+	}
+
+	.product-detail-container>section {
+		border-bottom: 0.5rem solid #f7f7f7;
+	}
+
+	.product-detail-container .skeleton-component {
 		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100vw, #ccc), color-stop(0, #fff), color-stop(120vw, #fff), color-stop(0, #f7f7f7), color-stop(140vw, #f7f7f7), color-stop(0, #fff));
 		background-image: -webkit-linear-gradient(top, #ccc 100vw, #fff 0, #fff 120vw, #f7f7f7 0, #f7f7f7 140vw, #fff 0);
 		background-image: -o-linear-gradient(top, #ccc 100vw, #fff 0, #fff 120vw, #f7f7f7 0, #f7f7f7 140vw, #fff 0);

@@ -1,36 +1,36 @@
 <template>
 	<section class="ItemDetail-components">
 		<div class="intro-box">
-			<h4><span>显手白、性感豹纹奢华</span>
+			<h4><span>{{something[0]}}</span>
 			</h4>
 			<div class="price">
-				<div class="price-item-wrap"><span class="price-component"><span class="yen">¥</span><span class="round">199</span></span><del
+				<div class="price-item-wrap"><span class="price-component"><span class="yen">¥</span><span class="round">{{something[1]}}</span></span><del
 					 class="muted">
 						¥
 
-						490
-					</del></div><span class="like muted">108人喜欢</span>
+						{{something[2]}}
+					</del></div><span class="like muted">{{something[3]}}{{something[4]}}</span>
 			</div>
 			<div class="act-tag-subtitle"></div>
 			<div class="shop-card-wrap" data-track-spm="b-default.shopCardSliderList.$">
 				<div class="title">充值卡</div>
 				<ul class="shop-card-list">
-					<li class="item">
+					<li class="item" v-for="(s,index) in something[5]">
 						<div class="shop-card" data-track-scm="cardId.card_20180303082212719433" data-track-pos="0">
 							<div class="recharge">
 								充
-								<span class="unit">￥</span>500
+								<span class="unit">￥</span>{{s.price}}
 
 							</div>
 							<div class="giving">
 								送
-								<span class="unit">￥</span>50
+								<span class="unit">￥</span>{{s.extraPrice}}
 
 							</div>
 							<div class="buy-btn">立即充值 &gt;&gt;</div>
 						</div>
 					</li>
-					<li class="item">
+					<!-- <li class="item">
 						<div class="shop-card" data-track-scm="cardId.card_20181007084008299884" data-track-pos="1">
 							<div class="recharge">
 								充
@@ -44,7 +44,7 @@
 							</div>
 							<div class="buy-btn">立即充值 &gt;&gt;</div>
 						</div>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 			<section class="small-coupons-list-component">
@@ -72,14 +72,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="desc-tag"><span class="item"><span class="SVGInline"><svg class="SVGInline-svg" style="width: 0.6rem;height: 0.6rem;"
+			<div class="desc-tag">
+				<span class="item" v-for="(w,index) in something[6]"><span class="SVGInline"><svg class="SVGInline-svg" style="width: 0.6rem;height: 0.6rem;"
 						 width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
 							<g fill="#C3902C" fill-rule="evenodd">
 								<path d="M7.926.316l-.975.978a4.8 4.8 0 1 0 2.676 1.56l.849-.85A6 6 0 1 1 7.926.316z" fill-rule="nonzero"></path>
 								<path d="M10.316 2.168l-5.16 5.176L2.61 4.802l-.847.847L4.307 8.19l.849.847.847-.847 5.16-5.175z"></path>
 							</g>
-						</svg></span>可上门
-				</span><span class="item"><span class="SVGInline"><svg class="SVGInline-svg" style="width: 0.6rem;height: 0.6rem;"
+						</svg></span>{{w}}
+				</span>
+				<!-- <span class="item"><span class="SVGInline"><svg class="SVGInline-svg" style="width: 0.6rem;height: 0.6rem;"
 						 width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
 							<g fill="#C3902C" fill-rule="evenodd">
 								<path d="M7.926.316l-.975.978a4.8 4.8 0 1 0 2.676 1.56l.849-.85A6 6 0 1 1 7.926.316z" fill-rule="nonzero"></path>
@@ -93,13 +95,15 @@
 								<path d="M10.316 2.168l-5.16 5.176L2.61 4.802l-.847.847L4.307 8.19l.849.847.847-.847 5.16-5.175z"></path>
 							</g>
 						</svg></span>安全保障
-				</span></div>
+				</span> -->
+			</div>
 		</div>
 	</section>
 </template>
 
 <script>
 	export default {
+		props:["something"],
 		data() {
 			return {
 				value:1

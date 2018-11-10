@@ -2,20 +2,20 @@
 	<section class="product-img">
 		<section class="carousel-widget" >
 			<mt-swipe :show-indicators="false" class="style__horizontalDeck___2PWmZ style__deck___3GxuK carousel-component">
-				<mt-swipe-item>
+				<mt-swipe-item v-for="(p,index) in pics">
 					<div class="style__currentSlide___1yXCC style__slide___jy-my deck-slide" style="">
 						<div class="ui-image-component status-show">
-							<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/20181019/eb1885d4abce4f469155c6d81a9453af.jpg!/0/w-1080/format-webp">
+							<img class="image" :src="'https://img-ucdn-static.helijia.com/zmw'+p">
 						</div>
 					</div>
 				</mt-swipe-item>
-				<mt-swipe-item>
+				<!-- <mt-swipe-item>
 					<div class="style__slideAfter___1dREn style__slide___jy-my deck-slide" style="">
 						<div class="ui-image-component status-show">
 							<img class="image" src="https://img-ucdn-static.helijia.com/zmw/upload/20181019/08fd200d9a814509b8df2589d063a7c3.jpg!/0/w-1080/format-webp">
 						</div>
 					</div>
-				</mt-swipe-item>
+				</mt-swipe-item> -->
 			</mt-swipe>
 		</section>
 	</section>
@@ -28,6 +28,7 @@
 	} from 'mint-ui'
 	import 'mint-ui/lib/style.css'
 	export default {
+		props:["pics"],
 		components: {
 			'mt-swipe': Swipe,
 			'mt-swipe-item': SwipeItem

@@ -69,10 +69,10 @@
 		},
 		mounted() {
 			var self = this;
-			axios.get('http://localhost:3000/api/gethome')
+			axios.get('http://119.23.222.41:8888/app/home/')
 				.then(function(response) {
 					self.init();
-				  let aa =  response.data.data.widgets;
+				  let aa =  response.data.widgets;
 					self.Carousel=aa[1].data.images;
 					self.Menu.push(aa[2].data.image);
 					self.Menu.push(aa[3].data.contents.slice(0,10));
