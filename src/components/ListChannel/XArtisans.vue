@@ -365,7 +365,7 @@
 		},
 		mounted() {
 			var self = this;
-			axios.get('http://localhost:3000/api/getDoctor')
+			axios.get('./doctor.json')
 				.then(function(response) {
 					var data = response.data.data.resultList;
 					self.bb = data;

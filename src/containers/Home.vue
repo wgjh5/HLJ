@@ -69,9 +69,10 @@
 		},
 		mounted() {
 			var self = this;
-			axios.get('http://119.23.222.41:8888/app/home/')
+			axios.get('./home.json')
 				.then(function(response) {
-				  let aa =  response.data.widgets;
+				  let aa =  response.data.data.widgets;
+					// console.log(response.data)
 					self.Carousel=aa[1].data.images;
 					self.Menu.push(aa[2].data.image);
 					self.Menu.push(aa[3].data.contents.slice(0,10));

@@ -93,9 +93,9 @@
 			},
 			qingqiu() {
 				var self = this;
-				axios.get('http://localhost:3000/api/getlists')
+				axios.get('./wzx.json')
 					.then(function(response) {
-						var data = response.data.data.resultList;
+						var data = response.data.resultList;
 						self.list = self.list.concat(data);
 
 						// console.log(response.data.data.cards);
@@ -119,9 +119,9 @@
 			// this.qingqiu();
 			// this.scroll(this.list)
 			var self = this;
-			axios.get('http://localhost:3000/api/getList')
+			axios.get('./wzx.json')
 				.then(function(response) {
-					var data = response.data.data.resultList;
+					var data = response.data.resultList;
 					self.list = data;
 					console.log(data);
 

@@ -2,20 +2,20 @@
 	<section class="product-detail-container" id="project">
 		<XtopShare :AscrollTop="scrollTop" />
 		<div class="step-jump"></div>
-		<XproductImg :pics="pics"/>
-		<XDetailComponents :something="productName"/>
+		<XproductImg :pics="pics" />
+		<XDetailComponents :something="productName" />
 		<XdaysContainer style="position: absolute; width: 100%; height: 25vh;" />
 		<div class="posistion"></div>
-		<Xservice :serviceRange="this.str"/>
+		<Xservice :serviceRange="this.str" />
 		<div class="step-jump"></div>
 		<Xcomment />
 		<div class="step-jump"></div>
-		<Xdetail :deList="deList"/>
+		<Xdetail :deList="deList" />
 		<XfloatHelpcomponent />
 		<XserviceStepComponents />
 		<XitemProductComponents />
 		<XitemIntro />
-		<XartisanSimple :artisan="artisan"/>
+		<XartisanSimple :artisan="artisan" />
 		<XsecStudio />
 		<div class="step-jump"></div>
 		<div class="title-belt-component gray-bg"><span class="SVGInline title-belt"><svg class="SVGInline-svg title-belt-svg"
@@ -77,14 +77,14 @@
 		data() {
 			return {
 				scrollTop: [],
-				detailList:[],
-				pics:[],
-				productName:[],
-				deList:[],
-				serviceRange:[],
-				str:"",
-				artisan:[]
-				
+				detailList: [],
+				pics: [],
+				productName: [],
+				deList: [],
+				serviceRange: [],
+				str: "",
+				artisan: []
+
 			};
 		},
 		mounted: function() {
@@ -109,41 +109,49 @@
 			},
 			getSomething() {
 				var self = this;
-				axios.get('http://localhost:3000/api/getThing',{params: {id:localStorage.getItem("something")}})
-					.then(function(response) {
-						var data = response.data.data;
-						self.pics=data.pics;
-						self.productName.push(data.productName);
-						self.productName.push(data.priceInfo.maxZhimaPrice)
-						self.productName.push(data.marketPrice)
-						self.productName.push(data.likeNum)
-						self.productName.push(data.favNumInfo)
-						self.productName.push(data.productAdditionalInfo.cardTemplates)
-						self.productName.push(data.descTag);
-						self.deList.push(data.desc);
-						self.serviceRange.push(data.artisan.serviceRange)
-						self.artisan.push(data.artisan.avatar)
-						self.artisan.push(data.artisan.name)
-						self.artisan.push(data.artisan.artisanLevelValue)
-						self.artisan.push(data.artisan.artisanTypeDesc)
-						self.artisan.push(data.artisan.satisfaction)
-						for(var i=0;i<self.serviceRange[0].length;i++){
-							self.str += self.serviceRange[0][i]+"、"
-							
-						}
-						self.str = self.str.slice(0,-1)
-					})
-					.catch(function(error) {
-						console.log(error);
-					});
+// 				var params = new URLSearchParams();
+// 				params.append('id', localStorage.getItem("something"));
+// 				axios.post('http://localhost:3000/api/getThing',params
+// 					 
+// 				)
+// 				.then(function(response) {
 
-				if (JSON.stringify(this.$route.params) === '{}') {
-					return false;
+				// });
+								axios.get('http://localhost:3000/api/getThing',{params: {id:localStorage.getItem("something")}})
+									.then(function(response) {
+				var data = response.data.data;
+				self.pics = data.pics;
+				self.productName.push(data.productName);
+				self.productName.push(data.priceInfo.maxZhimaPrice)
+				self.productName.push(data.marketPrice)
+				self.productName.push(data.likeNum)
+				self.productName.push(data.favNumInfo)
+				self.productName.push(data.productAdditionalInfo.cardTemplates)
+				self.productName.push(data.descTag);
+				self.deList.push(data.desc);
+				self.serviceRange.push(data.artisan.serviceRange)
+				self.artisan.push(data.artisan.avatar)
+				self.artisan.push(data.artisan.name)
+				self.artisan.push(data.artisan.artisanLevelValue)
+				self.artisan.push(data.artisan.artisanTypeDesc)
+				self.artisan.push(data.artisan.satisfaction)
+				for (var i = 0; i < self.serviceRange[0].length; i++) {
+					self.str += self.serviceRange[0][i] + "、"
+
 				}
-				localStorage.setItem("something", this.$route.params.dataObj.id || this.$route.params.dataObj.productId);
+				self.str = self.str.slice(0, -1)
+			})
+		.catch(function(error) {
+			console.log(error);
+		});
 
-			}
+		if (JSON.stringify(this.$route.params) === '{}') {
+			return false;
 		}
+		localStorage.setItem("something", this.$route.params.dataObj.id || this.$route.params.dataObj.productId);
+
+	}
+	}
 
 
 
