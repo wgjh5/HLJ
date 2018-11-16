@@ -117,7 +117,7 @@
 // 				.then(function(response) {
 
 				// });
-								axios.get('http://localhost:3000/api/getThing',{params: {id:localStorage.getItem("something")}})
+								axios.get('./detail.json')
 									.then(function(response) {
 				var data = response.data.data;
 				self.pics = data.pics;
