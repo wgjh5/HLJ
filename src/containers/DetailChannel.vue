@@ -36,7 +36,7 @@
 		methods: {
 			getSomething() {
 				var self = this;
-				axios.get('http://localhost:3000/api/getThing', {
+				axios.get('./detail.json', {
 						params: {
 							id: localStorage.getItem("something")
 						}
