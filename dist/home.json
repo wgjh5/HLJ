@@ -1,0 +1,4029 @@
+{
+  "data": {
+    "mode": "normal",
+    "spm": "m-clientapp-index.918",
+    "version": 918,
+    "widgets": [
+      {
+        "data": {
+          "widgetName": "Topbar",
+          "widgetType": "Config"
+        },
+        "id": 189,
+        "name": "Topbar",
+        "spm": "m-clientapp-index.Topbar_189.$.b9bd0e",
+        "version": "b9bd0e"
+      },
+      {
+        "data": {
+          "images": [
+            {
+              "data": {
+                "bgColor": "",
+                "height": 920,
+                "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_48db6d58e9e087b63b95a546daa9443f.jpg",
+                "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/2075\"}}",
+                "width": 1500
+              },
+              "id": 304,
+              "name": "ImageLink",
+              "spm": "m-clientapp-index.Carousel_jiao_dian_tu:ImageLink_shuangshiyiyimei.$.7884db",
+              "version": "f06c35"
+            },
+            {
+              "data": {
+                "bgColor": "",
+                "height": 920,
+                "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_477b6e51af58ea6373c3bfcb59608136.jpg",
+                "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/2092\"}}",
+                "width": 1500
+              },
+              "id": 303,
+              "name": "ImageLink",
+              "spm": "m-clientapp-index.Carousel_jiao_dian_tu:ImageLink_shuangshiyimeirong.$.7884db",
+              "version": "d92716"
+            },
+            {
+              "data": {
+                "bgColor": "",
+                "height": 920,
+                "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_bde25b9c319a8eee87cda99c49bf9bbb.jpg",
+                "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/1328\"}}",
+                "width": 1500
+              },
+              "id": 315,
+              "name": "ImageLink",
+              "spm": "m-clientapp-index.Carousel_jiao_dian_tu:ImageLink_shuangshiyimiaosha.$.7884db",
+              "version": "764e9a"
+            },
+            {
+              "data": {
+                "bgColor": "",
+                "height": 920,
+                "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_32e2e986695a406ed6a643dac6df7f25.jpg",
+                "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/2105\"}}",
+                "width": 1500
+              },
+              "id": 312,
+              "name": "ImageLink",
+              "spm": "m-clientapp-index.Carousel_jiao_dian_tu:ImageLink_shuangshilinglid.$.7884db",
+              "version": "a6fbb6"
+            },
+            {
+              "data": {
+                "bgColor": "",
+                "height": 920,
+                "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_f0cb8506a0a59691e07dfd711427d49e.jpg",
+                "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/2095\"}}",
+                "width": 1500
+              },
+              "id": 307,
+              "name": "ImageLink",
+              "spm": "m-clientapp-index.Carousel_jiao_dian_tu:ImageLink_shuangshiyimeijie.$.7884db",
+              "version": "ffe82d"
+            },
+            {
+              "data": {
+                "bgColor": "",
+                "height": 920,
+                "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_1730f2a0f5b2f86a0f09b36ca355bf4b.jpg",
+                "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/2094\"}}",
+                "width": 1500
+              },
+              "id": 297,
+              "name": "ImageLink",
+              "spm": "m-clientapp-index.Carousel_jiao_dian_tu:ImageLink_shuangshiyimeijia.$.7884db",
+              "version": "003d2c"
+            },
+            {
+              "data": {
+                "bgColor": "",
+                "height": 920,
+                "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_06bb4d2a1675d96a3519e01f89a6510e.jpg",
+                "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/2103\"}}",
+                "width": 1500
+              },
+              "id": 310,
+              "name": "ImageLink",
+              "spm": "m-clientapp-index.Carousel_jiao_dian_tu:ImageLink_shuangshiyimeifajianshen.$.7884db",
+              "version": "240182"
+            }
+          ],
+          "sourceName": "Carousel"
+        },
+        "id": 16,
+        "name": "Carousel",
+        "spm": "m-clientapp-index.Carousel_jiao_dian_tu.$.7884db",
+        "version": "7884db"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "bottomLine": false,
+          "height": 375,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_470004f9e574d04cafd17c17fbfee0e1.gif",
+          "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/2091\"}}",
+          "width": 1500
+        },
+        "id": 214,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_yi_xing_ru_kou.$.8833e1",
+        "version": "8833e1"
+      },
+      {
+        "data": {
+          "contents": [
+            {
+              "categoryName": "美甲",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_920877f8688f4a4420df832fefbf46c3.gif",
+              "openUrl": "hljclient://page?jsonData={\"type\":9,\"pageName\":\"混合列表\",\"data\":{\"artisanType\":\"1\",\"entryWayId\":\"5\",\"category\":\"tag_mei_jia\",\"mode\":\"meijia_index\",\"spm_scope\":\"meijia\"}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "微整形",
+              "cornerImageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_42655a73b5d6340f134467e1b82f6100.png",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_fb7997854b77f1e7f92ddf30a2cf2c2f.gif",
+              "openUrl": "hljclient://page?jsonData={\"type\":9,\"pageName\":\"作品列表\",\"data\":{\"artisanType\":10,\"category\":\"tag_wei_zheng\",\"entryWayId\":12,\"mode\":\"weizheng_index\"}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "美容",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_512641924c5d3e725615601e82241b1e.gif",
+              "openUrl": "hljclient://page?jsonData={\"type\":9,\"pageName\":\"混合列表\",\"data\":{\"artisanType\":3,\"entryWayId\":8,\"category\":\"tag_mei_rong|mianbuhuli\",\"mode\":\"meirong_index\",\"spm_scope\":\"meirong\"}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "理疗",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_abbb7f1e2c039dcba48835b49aee8a2d.png",
+              "openUrl": "hljclient://page?jsonData={\"type\":9,\"pageName\":\"混合列表\",\"data\":{\"entryWayId\":\"9\",\"artisanType\":\"14\",\"category\":\"tag_li_liao\",\"mode\":\"liliao_index\",\"spm_scope\":\"liliao\"}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "邻里店",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_7f87db197ec9854625f017b083924b0b.png",
+              "openUrl": "hljclient://page?jsonData={\"type\":38,\"pageName\":\"手艺人列表\",\"data\":{\"query\":\"邻里\",\"mode\":\"linli_index\",\"type\":\"artisan\"}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "美睫",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_47901486847b442cd4c6284ff927a492.png",
+              "openUrl": "hljclient://page?jsonData={\"type\":9,\"pageName\":\"混合列表\",\"data\":{\"artisanType\":12,\"entryWayId\":7,\"category\":\"tag_mei_jie\",\"mode\":\"meijie_index\",\"spm_scope\":\"meijie\"}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "医疗美容",
+              "cornerImageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_21d4f151cd926696c1582f70cbad7559.png",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_0c36d9fcce9e7b85c7ebd2900a900d83.png",
+              "openUrl": "hljclient://page?jsonData={\"type\":0,\"pageName\":\"作品列表\",\"data\":{\"query\":\"水光针,超声刀,热玛吉,牙,光子,红蓝光,小气泡,嫩肤,激光,热力塑,优立塑,酷塑,射频,脱毛,白瓷娃娃,黑脸娃娃,点阵激光,疤痕,祛斑,皮秒,抗衰老,水氧,祛痘,纤体,冷光美白,洗牙,牙冠,矫正,牙\",\"category\":\"tag_wei_zheng\",\"entryWayId\":\"16\",\"mode\":\"yimei_index\"}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "美体",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_b1f350d7afbf7a03f0da75a06bcd1fc7.png",
+              "openUrl": "hljclient://page?jsonData={\"type\":9,\"pageName\":\"作品列表\",\"data\":{\"artisanType\":3,\"category\":\"tag_mei_rong|shentianmo\",\"entryWayId\":18,\"mode\":\"meiti_index\",\"spm_scope\":\"meiti\"}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "化妆",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_49d5c9cd4c59463e122e2c7af67502b6.png",
+              "openUrl": "hljclient://page?jsonData={\"type\":9,\"pageName\":\"混合列表\",\"data\":{\"category\":\"tag_zao_xing\",\"artisanType\":\"2\",\"entryWayId\":\"13\",\"mode\":\"huazhuang_index\",\"spm_scope\":\"huazhuang\"}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "品牌馆",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_0f3262d866d5c886f92e285d1298e8ed.png",
+              "openUrl": "hljclient://page?jsonData={\"type\":9,\"pageName\":\"混合列表\",\"data\":{\"mode\":\"studio\",\"type\":\"product\",\"isStudio\":\"1\",\"spm_scope\":\"studio\"}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "美足",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_14cdd5beb2d85be0b8dfc6b173d9f63a.png",
+              "openUrl": "hljclient://page?jsonData={\"type\":9,\"pageName\":\"混合列表\",\"data\":{\"entryWayId\":\"9\",\"artisanType\":\"1\",\"category\":\"tag_mei_zu\",\"mode\":\"meizu_index\",\"spm_scope\":\"meizu\"}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "玻尿酸",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_27bc3ec524d4952e5e4d7e3d080d8158.png",
+              "openUrl": "hljclient://page?jsonData={\"type\":0,\"pageName\":\"作品列表\",\"data\":{\"query\":\"玻尿酸\",\"category\":\"tag_wei_zheng\"}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "健身",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_70097f17de6c36ca6493e6c831985fe3.png",
+              "openUrl": "hljclient://page?jsonData={\"type\":9,\"pageName\":\"作品列表\",\"data\":{\"artisanType\":5,\"category\":\"tag_jian_shen\",\"entryWayId\":3}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "半永久",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_caf3f24dd09587701a56d413892c6a19.png",
+              "openUrl": "hljclient://page?jsonData={\"type\":0,\"pageName\":\"作品列表\",\"data\":{\"category\":\"tag_half_forever\"}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "新人专享",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_29193d6ae2644e405452dc3ea4dd3bbd.png",
+              "openUrl": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/155\"}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "瘦身",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_533e9308c7794b39269b056551059003.png",
+              "openUrl": "hljclient://page?jsonData={\"type\":9,\"pageName\":\"混合列表\",\"data\":{\"entryWayId\":\"9\",\"artisanType\":\"13\",\"category\":\"tag_jian_fei\"}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "脱毛",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_5a7ab38167c4e4fc646158c48a74d958.png",
+              "openUrl": "hljclient://page?jsonData={\"type\":0,\"pageName\":\"作品列表\",\"data\":{\"query\":\"脱毛\"}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "美发",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_4842695267c82d4e3d76e56370b393cb.png",
+              "openUrl": "hljclient://page?jsonData={\"type\":9,\"pageName\":\"作品列表\",\"data\":{\"artisanType\":4,\"category\":\"tag_mei_fa\",\"entryWayId\":4}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "体雕",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_7c08b8cf766dfb367e218c7514651c00.png",
+              "openUrl": "hljclient://page?jsonData={\"type\":9,\"pageName\":\"混合列表\",\"data\":{\"category\":\"tag_ti_diao\"}}",
+              "textColor": "#ffffff"
+            },
+            {
+              "categoryName": "全部分类",
+              "imageUrl": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_a0b68039f885320fff76783bb6448389.png",
+              "openUrl": "hljclient://page?jsonData={\"type\":30,\"pageName\":\"选中分类\",\"data\":{\"index\": 1 }}",
+              "textColor": "#ffffff"
+            }
+          ],
+          "dynamicBackground": false,
+          "height": 750,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_cdc5fcd9cfe4bb85df81f014b14e6eb9.jpg",
+          "shapeText": "{\n          \"key\": \"Menu\",\n          \"title\": \"多宫格\",\n          \"rules\": {\n            \"contents\": {\n              \"type\": \"list\",\n              \"of\": {\n                 \"categoryName\": {\n                    \"type\": \"string\",\n                    \"title\": \"宫格名称\"\n                 },\n                 \"imageUrl\": {\n                    \"type\": \"image\",\n                    \"title\": \"宫格图片\"\n                 },\n                 \"cornerImageUrl\": {\n                    \"type\": \"image\",\n                    \"title\": \"角标图片\"\n                 },\n                 \"openUrl\": {\n                    \"type\": \"url\",\n                    \"title\": \"跳转链接\"\n                 },\n                 \"textColor\": {\n                    \"type\": \"color\",\n                    \"title\": \"文字颜色\"\n                 }\n              },\n              \"title\": \"宫格Cell\"\n            }\n          }\n        }",
+          "width": 3000
+        },
+        "id": 180,
+        "name": "GridMenu",
+        "spm": "m-clientapp-index.Include_182:GridMenu_duo_gong_ge.$.129509",
+        "version": "792a69"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "bottomLine": false,
+          "height": 374,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_44b991d83d81caf737fa1879c9b96676.jpg",
+          "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/155\"}}",
+          "width": 1500
+        },
+        "id": 205,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_xin_ren_zhuan_xiang.$.2a9677",
+        "version": "2a9677"
+      },
+      {
+        "data": {
+          "bgColor": "#F1E9DA",
+          "height": "10"
+        },
+        "id": 111,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_111.$.182096",
+        "version": "182096"
+      },
+      {
+        "data": {
+          "images": [
+            {
+              "bgColor": "",
+              "height": 320,
+              "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_6c465b2d34584f107cea7ee2cc93fc42.jpg",
+              "link": "hljclient://page?jsonData={\"type\":2,\"pageName\":\"附近手艺人\",\"data\":{\"radius\":\"10\"}}",
+              "width": 750
+            },
+            {
+              "bgColor": "",
+              "height": 320,
+              "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_9a0ef458654456bcd615e6d60b7e3822.jpg",
+              "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/1464\"}}",
+              "width": 750
+            }
+          ],
+          "topLine": true
+        },
+        "id": 7,
+        "name": "MultipleImages",
+        "spm": "m-clientapp-index.MultipleImages_shou_yi_ren_xin_dian.$.dbf6e4",
+        "version": "dbf6e4"
+      },
+      {
+        "data": {
+          "bgColor": "#F1E9DA",
+          "height": "10"
+        },
+        "id": 82,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_82.$.49b097",
+        "version": "49b097"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "bottomLine": true,
+          "height": 108,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_0f32872ca6ffc5a620451b2ce107ffb4.png",
+          "link": "",
+          "width": 1125
+        },
+        "id": 20,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_20.$.da26a4",
+        "version": "da26a4"
+      },
+      {
+        "data": {
+          "images": [
+            {
+              "bgColor": "",
+              "height": 720,
+              "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_e4582cd42970a1b473a9675930f295c7.jpg",
+              "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/1462\"}}",
+              "width": 563
+            },
+            {
+              "bgColor": "",
+              "height": 320,
+              "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_258d16c8920cc3710a27b5b283c8bc18.jpg",
+              "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/p/new-user-award\"}}",
+              "width": 750
+            },
+            {
+              "bgColor": "",
+              "height": 265,
+              "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_bee5c019c2e5f1f0770ac7f521adfd51.jpg",
+              "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/2107\"}}",
+              "width": 620
+            },
+            {
+              "bgColor": "",
+              "height": 265,
+              "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_ce3e359dbf6fde355303275b1e6fe224.jpg",
+              "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/1328\"}}",
+              "width": 620
+            }
+          ],
+          "innerLine": true
+        },
+        "id": 19,
+        "name": "ComplexImages",
+        "spm": "m-clientapp-index.ComplexImages_xin_ke_yi_jia_san.$.60df3b",
+        "version": "60df3b"
+      },
+      {
+        "data": {
+          "bgColor": "#F1E9DA",
+          "height": "10"
+        },
+        "id": 83,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_83.$.49b097",
+        "version": "49b097"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "bottomLine": true,
+          "height": 108,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_91a672142198dc6ea2eb479822f3d381.png",
+          "link": "",
+          "width": 1125
+        },
+        "id": 21,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_21.$.999bf9",
+        "version": "999bf9"
+      },
+      {
+        "data": {
+          "images": [
+            {
+              "bgColor": "",
+              "height": 500,
+              "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_35202b80f3af877f155822a2c1017d95.jpg",
+              "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/1225\"}}",
+              "width": 500
+            },
+            {
+              "bgColor": "",
+              "height": 500,
+              "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_826e06aa83df7fa9192d51052e99601c.jpg",
+              "link": "https://p.helijia.com/l/2101",
+              "width": 500
+            },
+            {
+              "bgColor": "",
+              "height": 500,
+              "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_2be6b4b1088c6a62b635f8acd8e0f208.jpg",
+              "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://page.helijia.com/m/stuff/ym-helper/index.html\"}}",
+              "width": 500
+            }
+          ],
+          "innerLine": true
+        },
+        "id": 165,
+        "name": "MultipleImages",
+        "spm": "m-clientapp-index.MultipleImages_heng_3.$.2e57c7",
+        "version": "2e57c7"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "height": 375,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_d194e969ac39ba9b08da21c1a6e254b5.jpg",
+          "link": "hljclient://page?jsonData={\"type\":9,\"pageName\":\"混合列表\",\"data\":{\"mode\":\"studio\",\"type\":\"product\",\"isStudio\":\"1\",\"spm_scope\":\"studio\"}}",
+          "topLine": true,
+          "width": 1500
+        },
+        "id": 161,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_pin_pai_guan.$.2312e7",
+        "version": "2312e7"
+      },
+      {
+        "data": {
+          "bgColor": "#F1E9DA",
+          "height": "10"
+        },
+        "id": 77,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_77.$.49b097",
+        "version": "49b097"
+      },
+      {
+        "data": {
+          "images": [
+            {
+              "data": {
+                "bgColor": "",
+                "height": 410,
+                "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_e2861a3e8968477e9ea40e79c41ec63f.jpg",
+                "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/2099\"}}",
+                "width": 1500
+              },
+              "id": 37,
+              "name": "ImageLink",
+              "spm": "m-clientapp-index.Carousel_lun_bo_tu:ImageLink_ztll.$.2ff608",
+              "version": "81e730"
+            },
+            {
+              "data": {
+                "bgColor": "",
+                "height": 410,
+                "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_eaeb912aed6ae8364b2c614c055ff56b.jpg",
+                "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/2098\"}}",
+                "width": 1500
+              },
+              "id": 39,
+              "name": "ImageLink",
+              "spm": "m-clientapp-index.Carousel_lun_bo_tu:ImageLink_ztzx.$.2ff608",
+              "version": "1c2d20"
+            },
+            {
+              "data": {
+                "bgColor": "",
+                "height": 410,
+                "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_26efcb2154cbc8b3b391897888838ce1.jpg",
+                "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/2104\"}}",
+                "width": 1500
+              },
+              "id": 42,
+              "name": "ImageLink",
+              "spm": "m-clientapp-index.Carousel_lun_bo_tu:ImageLink_zttd.$.2ff608",
+              "version": "dcda1c"
+            }
+          ],
+          "sourceName": "theme-carousel"
+        },
+        "id": 17,
+        "name": "Carousel",
+        "spm": "m-clientapp-index.Carousel_lun_bo_tu.$.2ff608",
+        "version": "2ff608"
+      },
+      {
+        "data": {
+          "bgColor": "#F1E9DA",
+          "height": "10"
+        },
+        "id": 78,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_78.$.49b097",
+        "version": "49b097"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "height": 78,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_31edf525d19e77c4e2e2491ec593a161.jpg",
+          "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=3\"}}",
+          "topLine": false,
+          "width": 1125
+        },
+        "id": 25,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_jin_ri_shang_xin.$.ee37f4",
+        "version": "ee37f4"
+      },
+      {
+        "data": {
+          "products": [
+            {
+              "contentId": "90b6e016b3f64131adffbae55f120dd6",
+              "contentType": 2,
+              "imageUrl": "/upload/20181107/e34d1b473903486196aaa83763de20c7.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"90b6e016b3f64131adffbae55f120dd6\"}}",
+              "price": "158",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 158,
+                "customerVisit": true,
+                "customerVisitPrice": 158,
+                "marketPrice": 598.0,
+                "maxZhimaPrice": 158.0,
+                "minZhimaPrice": 158.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 158
+              },
+              "productCategory": "美甲",
+              "productId": "90b6e016b3f64131adffbae55f120dd6",
+              "productName": "小红书同款水波纹贝壳晕染美甲",
+              "storePrice": "598"
+            },
+            {
+              "activeTagName": "5折抢购",
+              "contentId": "6fe6fa62c5be4dada50d5ae463a59010",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/5zqg.png",
+              "cornerText": "5折抢购",
+              "imageUrl": "/upload/20181107/78ac2f7432ec47df8bc88f7e69cbf9b4!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"6fe6fa62c5be4dada50d5ae463a59010\"}}",
+              "price": "199",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 199,
+                "customerVisit": false,
+                "customerVisitPrice": 199,
+                "marketPrice": 999.0,
+                "maxZhimaPrice": 398.0,
+                "minZhimaPrice": 398.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 199,
+                "showType": 2,
+                "simName": "折扣"
+              },
+              "productCategory": "美睫",
+              "productId": "6fe6fa62c5be4dada50d5ae463a59010",
+              "productName": "日式芭比空气美睫300根赠下睫毛",
+              "storePrice": "999"
+            },
+            {
+              "contentId": "c56251616de443a78c50f7902a4ecff8",
+              "contentType": 2,
+              "imageUrl": "/upload/20181009/73d23211cbcd4d40a62d76484808e800!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"c56251616de443a78c50f7902a4ecff8\"}}",
+              "price": "248",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 248,
+                "customerVisit": false,
+                "customerVisitPrice": 248,
+                "marketPrice": 889.0,
+                "maxZhimaPrice": 248.0,
+                "minZhimaPrice": 248.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 248
+              },
+              "productCategory": "美睫",
+              "productId": "c56251616de443a78c50f7902a4ecff8",
+              "productName": "四星0.10日式冬款双眼580根",
+              "storePrice": "889"
+            },
+            {
+              "activeTagName": "5折抢购",
+              "contentId": "b2cb3bdfaf1f4420a60d4fd938434b47",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/5zqg.png",
+              "cornerText": "5折抢购",
+              "imageUrl": "/upload/20181029/be03b274088e4f2793b50bd37bfa396a!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"b2cb3bdfaf1f4420a60d4fd938434b47\"}}",
+              "price": "268",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 268,
+                "customerVisit": false,
+                "customerVisitPrice": 268,
+                "marketPrice": 688.0,
+                "maxZhimaPrice": 536.0,
+                "minZhimaPrice": 536.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 268,
+                "showType": 2,
+                "simName": "折扣"
+              },
+              "productCategory": "美睫",
+              "productId": "b2cb3bdfaf1f4420a60d4fd938434b47",
+              "productName": "五星店推裸妆甜美自然款200根",
+              "storePrice": "688"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "2b0145183c0548ecbd278c0ea6e27cc8",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20180612/aa19ae553bf04287b3aea3854c39cbf1.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"2b0145183c0548ecbd278c0ea6e27cc8\"}}",
+              "price": "129",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 129,
+                "customerVisit": false,
+                "customerVisitPrice": 129,
+                "marketPrice": 398.0,
+                "maxZhimaPrice": 258.0,
+                "minZhimaPrice": 258.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 129,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "美容",
+              "productId": "2b0145183c0548ecbd278c0ea6e27cc8",
+              "productName": "V脸提升补水】拔筋+头部按摩",
+              "storePrice": "398"
+            },
+            {
+              "activeTagName": "微整形5折",
+              "contentId": "49ac631b931b4ed7b588a845001fabb9",
+              "contentType": 2,
+              "cornerText": "微整形5折",
+              "imageUrl": "/upload/20181102/4fa6381637c44c6d9b9a0f7498ed69a2!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"49ac631b931b4ed7b588a845001fabb9\"}}",
+              "price": "711",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 711,
+                "customerVisit": true,
+                "customerVisitPrice": 711,
+                "marketPrice": 5999.0,
+                "maxZhimaPrice": 1422.0,
+                "minZhimaPrice": 1422.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 711,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "其他",
+              "productId": "49ac631b931b4ed7b588a845001fabb9",
+              "productName": "【官方推荐】法国菲洛嘉水光针3ml 送医用面膜",
+              "storePrice": "5999"
+            },
+            {
+              "contentId": "248038ebe5fc4b918f3d9f2042741aac",
+              "contentType": 2,
+              "imageUrl": "/upload/20180823/3b925491dc6a4d9a860a155c8cada9f6!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"248038ebe5fc4b918f3d9f2042741aac\"}}",
+              "price": "188",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 188,
+                "customerVisit": true,
+                "customerVisitPrice": 188,
+                "marketPrice": 288.0,
+                "maxZhimaPrice": 188.0,
+                "minZhimaPrice": 188.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 188
+              },
+              "productCategory": "美甲",
+              "productId": "248038ebe5fc4b918f3d9f2042741aac",
+              "productName": "四星推荐唯美星月系美甲",
+              "storePrice": "288"
+            },
+            {
+              "contentId": "e4a8b06dbb104263a6d8e919d7f4c8f0",
+              "contentType": 2,
+              "imageUrl": "/upload/20160919/f3544a292dd54edfa312d1d735d85837.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"e4a8b06dbb104263a6d8e919d7f4c8f0\"}}",
+              "price": "168",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 168,
+                "customerVisit": false,
+                "customerVisitPrice": 168,
+                "marketPrice": 680.0,
+                "maxZhimaPrice": 168.0,
+                "minZhimaPrice": 168.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 168
+              },
+              "productCategory": "美容",
+              "productId": "e4a8b06dbb104263a6d8e919d7f4c8f0",
+              "productName": "天芮面部补水+背部减压+头部按摩",
+              "storePrice": "680"
+            }
+          ],
+          "datasource": "widgetId",
+          "layout": "slider",
+          "openUrl": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=3\"}}",
+          "showStatus": false,
+          "version": "4.2.0",
+          "widgetId": "34"
+        },
+        "id": 76,
+        "name": "ProductsSlider",
+        "spm": "m-clientapp-index.ProductsSlider_jin_ri_shang_xin_zuo_pin.$.2d731e",
+        "version": "2d731e"
+      },
+      {
+        "data": {
+          "bgColor": "#F4F4F4",
+          "height": "10"
+        },
+        "id": 84,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_84.$.1a19f8",
+        "version": "1a19f8"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "height": 600,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_fb29bf685e698cadb0e336ec660a1f6c.jpg",
+          "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=2\"}}",
+          "width": 1500
+        },
+        "id": 183,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_mei_jia_tui_jian.$.2f4d4f",
+        "version": "2f4d4f"
+      },
+      {
+        "data": {
+          "products": [
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "9d9ab778fdea4595b896e715d25ff442",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20180207/0c55b6ae48054a8ba3df78e49e6741d0!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"9d9ab778fdea4595b896e715d25ff442\"}}",
+              "price": "199",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 199,
+                "customerVisit": true,
+                "customerVisitPrice": 199,
+                "marketPrice": 498.0,
+                "maxZhimaPrice": 398.0,
+                "minZhimaPrice": 398.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 199,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "美甲",
+              "productId": "9d9ab778fdea4595b896e715d25ff442",
+              "productName": "气质 猫眼",
+              "storePrice": "498"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "f8e0a6f8f33047fc814c5f551fd96eeb",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20181008/e3b026095eee4e0c81649043f929eaf0.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"f8e0a6f8f33047fc814c5f551fd96eeb\"}}",
+              "price": "130",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 130,
+                "customerVisit": true,
+                "customerVisitPrice": 130,
+                "marketPrice": 629.0,
+                "maxZhimaPrice": 259.0,
+                "minZhimaPrice": 259.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 130,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "美甲",
+              "productId": "f8e0a6f8f33047fc814c5f551fd96eeb",
+              "productName": "小红书火热推出ins",
+              "storePrice": "629"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "c0ee039c903442859fc46d6cd8d666c2",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20181002/ec0d2579559e49709bbdddf02dac933b!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"c0ee039c903442859fc46d6cd8d666c2\"}}",
+              "price": "149",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 149,
+                "customerVisit": true,
+                "customerVisitPrice": 149,
+                "marketPrice": 398.0,
+                "maxZhimaPrice": 298.0,
+                "minZhimaPrice": 298.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 149,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "美甲",
+              "productId": "c0ee039c903442859fc46d6cd8d666c2",
+              "productName": "秋冬新款日式风显手白",
+              "storePrice": "398"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "1083eea758f04d79963cd7b585e85634",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20180526/b931b59c754a4c05901dd6c3df562a4a.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"1083eea758f04d79963cd7b585e85634\"}}",
+              "price": "144",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 144,
+                "customerVisit": true,
+                "customerVisitPrice": 144,
+                "marketPrice": 768.0,
+                "maxZhimaPrice": 288.0,
+                "minZhimaPrice": 288.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 144,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "美甲",
+              "productId": "1083eea758f04d79963cd7b585e85634",
+              "productName": "日式清新小仙女美甲",
+              "storePrice": "768"
+            },
+            {
+              "activeTagName": "5折抢购",
+              "contentId": "95ea7f0847204762a4998934f8b1d8c1",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/5zqg.png",
+              "cornerText": "5折抢购",
+              "imageUrl": "/upload/20181013/21aefd2a324e45af86b12b107a24af74.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"95ea7f0847204762a4998934f8b1d8c1\"}}",
+              "price": "178",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 178,
+                "customerVisit": true,
+                "customerVisitPrice": 178,
+                "marketPrice": 480.0,
+                "maxZhimaPrice": 356.0,
+                "minZhimaPrice": 356.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 178,
+                "showType": 2,
+                "simName": "活动价"
+              },
+              "productCategory": "美甲",
+              "productId": "95ea7f0847204762a4998934f8b1d8c1",
+              "productName": "新款时尚甜美百搭（可换色）",
+              "storePrice": "480"
+            },
+            {
+              "activeTagName": "2人团",
+              "contentId": "26f7323b26fb47d6b2dc4f2ee14c7f46",
+              "contentType": 2,
+              "cornerText": "2人团",
+              "imageUrl": "/upload/20181022/611b844a34e4476286c6386a5d323b2a!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"26f7323b26fb47d6b2dc4f2ee14c7f46\"}}",
+              "price": "166",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 238,
+                "customerVisit": true,
+                "customerVisitPrice": 238,
+                "marketPrice": 580.0,
+                "maxZhimaPrice": 238.0,
+                "minZhimaPrice": 238.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 238
+              },
+              "productCategory": "美甲",
+              "productId": "26f7323b26fb47d6b2dc4f2ee14c7f46",
+              "productName": "魔镜粉显白款",
+              "storePrice": "580"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "058c52c3838b401aa4b857e6b83e13e5",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20181029/276c19c107b8430c8d0338f77713ae80!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"058c52c3838b401aa4b857e6b83e13e5\"}}",
+              "price": "129",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 129,
+                "customerVisit": true,
+                "customerVisitPrice": 129,
+                "marketPrice": 988.0,
+                "maxZhimaPrice": 258.0,
+                "minZhimaPrice": 258.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 129,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "美甲",
+              "productId": "058c52c3838b401aa4b857e6b83e13e5",
+              "productName": "暖秋马蒂喱风格晕染甲送加固",
+              "storePrice": "988"
+            },
+            {
+              "activeTagName": "5折抢购",
+              "contentId": "a6e0045f36ff49f0a8a7b711647f78bd",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/5zqg.png",
+              "cornerText": "5折抢购",
+              "imageUrl": "/upload/20181106/9e229319c5eb4eb792ee7cfa9bcf6dbe.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"a6e0045f36ff49f0a8a7b711647f78bd\"}}",
+              "price": "189",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 189,
+                "customerVisit": true,
+                "customerVisitPrice": 189,
+                "marketPrice": 999.0,
+                "maxZhimaPrice": 378.0,
+                "minZhimaPrice": 378.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 189,
+                "showType": 2,
+                "simName": "活动价"
+              },
+              "productCategory": "美甲",
+              "productId": "a6e0045f36ff49f0a8a7b711647f78bd",
+              "productName": "显白气质猫眼美甲",
+              "storePrice": "999"
+            }
+          ],
+          "datasource": "widgetId",
+          "layout": "slider",
+          "openUrl": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=2\"}}",
+          "showStatus": false,
+          "version": "4.2.0",
+          "widgetId": "36"
+        },
+        "id": 56,
+        "name": "ProductsSlider",
+        "spm": "m-clientapp-index.ProductsSlider_mei_jia_zuo_pin.$.e8bea0",
+        "version": "e8bea0"
+      },
+      {
+        "data": {
+          "bgColor": "#F4F4F4",
+          "height": "10"
+        },
+        "id": 85,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_85.$.1a19f8",
+        "version": "1a19f8"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "height": 600,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_4eddd283c86bf6dc30d5f275bfc0e697.jpg",
+          "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=4\"}}",
+          "width": 1500
+        },
+        "id": 184,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_mei_jie_tui_jian.$.c7ed83",
+        "version": "c7ed83"
+      },
+      {
+        "data": {
+          "products": [
+            {
+              "contentId": "994aadc035ad4373992f1499e8de264f",
+              "contentType": 2,
+              "imageUrl": "/upload/20181107/55bbd3c584c14ab78d1b735f9d367d94.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"994aadc035ad4373992f1499e8de264f\"}}",
+              "price": "199",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 199,
+                "customerVisit": false,
+                "customerVisitPrice": 199,
+                "marketPrice": 488.0,
+                "maxZhimaPrice": 199.0,
+                "minZhimaPrice": 199.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 199
+              },
+              "productCategory": "美睫",
+              "productId": "994aadc035ad4373992f1499e8de264f",
+              "productName": "裸妆0.07婴儿睫浓密双眼400",
+              "storePrice": "488"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "96db5a31ef8345d3b6e11d382d29301b",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20181014/053c6eda9a3a4a32af2c005514b870ea.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"96db5a31ef8345d3b6e11d382d29301b\"}}",
+              "price": "149",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 149,
+                "customerVisit": false,
+                "customerVisitPrice": 149,
+                "marketPrice": 1860.0,
+                "maxZhimaPrice": 298.0,
+                "minZhimaPrice": 298.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 149,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "美睫",
+              "productId": "96db5a31ef8345d3b6e11d382d29301b",
+              "productName": "0.07五星推荐貂毛飞扬368根",
+              "storePrice": "1860"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "489ccc1570f74e1aa288552dbb2ede04",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20181107/e6911436aeb74dc28d5daac05e8fd393!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"489ccc1570f74e1aa288552dbb2ede04\"}}",
+              "price": "198",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 198,
+                "customerVisit": false,
+                "customerVisitPrice": 198,
+                "marketPrice": 899.0,
+                "maxZhimaPrice": 396.0,
+                "minZhimaPrice": 396.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 198,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "美睫",
+              "productId": "489ccc1570f74e1aa288552dbb2ede04",
+              "productName": "四星推荐双十一爆款0.07浓密型",
+              "storePrice": "899"
+            },
+            {
+              "activeTagName": "2人团",
+              "contentId": "8794cb92e9204cc6adb5851228bf1ae0",
+              "contentType": 2,
+              "cornerText": "2人团",
+              "imageUrl": "/upload/20180822/0d7dbc54db3d477b9df73fb161850726.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"8794cb92e9204cc6adb5851228bf1ae0\"}}",
+              "price": "199",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 288,
+                "customerVisit": false,
+                "customerVisitPrice": 288,
+                "marketPrice": 999.0,
+                "maxZhimaPrice": 288.0,
+                "minZhimaPrice": 288.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 288
+              },
+              "productCategory": "美睫",
+              "productId": "8794cb92e9204cc6adb5851228bf1ae0",
+              "productName": "浓密焦糖色扇形蚕丝蛋白500根",
+              "storePrice": "999"
+            },
+            {
+              "activeTagName": "5折抢购",
+              "contentId": "69f0d76a9eee4d3aad3effdd2b678ccc",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/5zqg.png",
+              "cornerText": "5折抢购",
+              "imageUrl": "/upload/20181002/931348e9086a477eb2e79d6fd9d7e517!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"69f0d76a9eee4d3aad3effdd2b678ccc\"}}",
+              "price": "199",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 199,
+                "customerVisit": false,
+                "customerVisitPrice": 199,
+                "marketPrice": 888.0,
+                "maxZhimaPrice": 398.0,
+                "minZhimaPrice": 398.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 199,
+                "showType": 2,
+                "simName": "折扣"
+              },
+              "productCategory": "美睫",
+              "productId": "69f0d76a9eee4d3aad3effdd2b678ccc",
+              "productName": "爱情网YY睫毛浓密400根",
+              "storePrice": "888"
+            },
+            {
+              "activeTagName": "5折抢购",
+              "contentId": "6dec9fbed0384b12b4e8fd09177e4495",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/5zqg.png",
+              "cornerText": "5折抢购",
+              "imageUrl": "/upload/20181024/1bb51ccdbc444e859acfe1e8fa64e86a!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"6dec9fbed0384b12b4e8fd09177e4495\"}}",
+              "price": "199",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 199,
+                "customerVisit": false,
+                "customerVisitPrice": 199,
+                "marketPrice": 886.0,
+                "maxZhimaPrice": 398.0,
+                "minZhimaPrice": 398.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 199,
+                "showType": 2,
+                "simName": "折扣"
+              },
+              "productCategory": "美睫",
+              "productId": "6dec9fbed0384b12b4e8fd09177e4495",
+              "productName": "四星店铺限时0.05貂绒600根",
+              "storePrice": "886"
+            },
+            {
+              "contentId": "236f0c84dbe645a9a798d09513561b3b",
+              "contentType": 2,
+              "imageUrl": "/upload/20180816/c33c67bbbb0944c88c867acf250ecd0d!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"236f0c84dbe645a9a798d09513561b3b\"}}",
+              "price": "188",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 188,
+                "customerVisit": false,
+                "customerVisitPrice": 188,
+                "marketPrice": 680.0,
+                "maxZhimaPrice": 188.0,
+                "minZhimaPrice": 188.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 188
+              },
+              "productCategory": "美睫",
+              "productId": "236f0c84dbe645a9a798d09513561b3b",
+              "productName": "四星店铺限时抢购超软貂毛200根",
+              "storePrice": "680"
+            },
+            {
+              "activeTagName": "5折抢购",
+              "contentId": "8fd159036199433a9b1334f259f2925f",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/5zqg.png",
+              "cornerText": "5折抢购",
+              "imageUrl": "/upload/20180605/2e51f14d99ff4df6ae3d3b4d42842f6f.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"8fd159036199433a9b1334f259f2925f\"}}",
+              "price": "270",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 270,
+                "customerVisit": false,
+                "customerVisitPrice": 270,
+                "marketPrice": 688.0,
+                "maxZhimaPrice": 539.0,
+                "minZhimaPrice": 539.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 270,
+                "showType": 2,
+                "simName": "折扣"
+              },
+              "productCategory": "美睫",
+              "productId": "8fd159036199433a9b1334f259f2925f",
+              "productName": "妩媚款水貂绒眼尾加长大飞扬款",
+              "storePrice": "688"
+            }
+          ],
+          "datasource": "widgetId",
+          "layout": "slider",
+          "openUrl": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=4\"}}",
+          "showStatus": false,
+          "version": "4.2.0",
+          "widgetId": "173"
+        },
+        "id": 58,
+        "name": "ProductsSlider",
+        "spm": "m-clientapp-index.ProductsSlider_mei_jie_zuo_pin.$.94786a",
+        "version": "94786a"
+      },
+      {
+        "data": {
+          "bgColor": "#F4F4F4",
+          "height": "10"
+        },
+        "id": 86,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_86.$.1a19f8",
+        "version": "1a19f8"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "height": 600,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_9c0a5500ffa8fbed4f4cf5dfa5c6eea4.jpg",
+          "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=3\"}}",
+          "width": 1500
+        },
+        "id": 185,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_mei_rong_tui_jian.$.31cf0c",
+        "version": "31cf0c"
+      },
+      {
+        "data": {
+          "products": [
+            {
+              "contentId": "e4a8b06dbb104263a6d8e919d7f4c8f0",
+              "contentType": 2,
+              "imageUrl": "/upload/20160919/f3544a292dd54edfa312d1d735d85837.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"e4a8b06dbb104263a6d8e919d7f4c8f0\"}}",
+              "price": "168",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 168,
+                "customerVisit": false,
+                "customerVisitPrice": 168,
+                "marketPrice": 680.0,
+                "maxZhimaPrice": 168.0,
+                "minZhimaPrice": 168.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 168
+              },
+              "productCategory": "美容",
+              "productId": "e4a8b06dbb104263a6d8e919d7f4c8f0",
+              "productName": "天芮面部补水+背部减压+头部按摩",
+              "storePrice": "680"
+            },
+            {
+              "activeTagName": "5折抢购",
+              "contentId": "b50e5fa3fab24e048f8d3474ef72665b",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/5zqg.png",
+              "cornerText": "5折抢购",
+              "imageUrl": "/upload/20181105/852dcf5eeb02487dbf80a4c20c21d3e4.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"b50e5fa3fab24e048f8d3474ef72665b\"}}",
+              "price": "178",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 178,
+                "customerVisit": false,
+                "customerVisitPrice": 178,
+                "marketPrice": 568.0,
+                "maxZhimaPrice": 356.0,
+                "minZhimaPrice": 356.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 178,
+                "showType": 2,
+                "simName": "折扣"
+              },
+              "productCategory": "美容",
+              "productId": "b50e5fa3fab24e048f8d3474ef72665b",
+              "productName": "深层清洁补水＋明星V脸＋拨筋+背",
+              "storePrice": "568"
+            },
+            {
+              "activeTagName": "91.1元秒杀",
+              "contentId": "b800ad4bb84e489b81e68f04cc9aeffa",
+              "contentType": 2,
+              "cornerText": "91.1元秒杀",
+              "imageUrl": "/upload/20181017/6ca36aff42f4475e8b05b751d4ad5fa4.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"b800ad4bb84e489b81e68f04cc9aeffa\"}}",
+              "price": "188",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 188,
+                "customerVisit": false,
+                "customerVisitPrice": 188,
+                "marketPrice": 598.0,
+                "maxZhimaPrice": 188.0,
+                "minZhimaPrice": 188.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 188
+              },
+              "productCategory": "美容",
+              "productId": "b800ad4bb84e489b81e68f04cc9aeffa",
+              "productName": "面眼颈全面护+拨筋提升+肩颈养护",
+              "storePrice": "598"
+            },
+            {
+              "contentId": "df908b3a12044bf986a6a051f9632639",
+              "contentType": 2,
+              "imageUrl": "/upload/20180829/578362b5f4274fd4bc6535541e9e7196.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"df908b3a12044bf986a6a051f9632639\"}}",
+              "price": "198",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 198,
+                "customerVisit": false,
+                "customerVisitPrice": 198,
+                "marketPrice": 699.0,
+                "maxZhimaPrice": 198.0,
+                "minZhimaPrice": 198.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 198
+              },
+              "productCategory": "美容",
+              "productId": "df908b3a12044bf986a6a051f9632639",
+              "productName": "换季美白补水+拔筋+头+背",
+              "storePrice": "699"
+            },
+            {
+              "contentId": "32cafbab566c4a4492114f6aa210d6bb",
+              "contentType": 2,
+              "imageUrl": "/upload/20171225/417e810ff2e943559ef8c84cbd6a819f!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"32cafbab566c4a4492114f6aa210d6bb\"}}",
+              "price": "358",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 358,
+                "customerVisit": false,
+                "customerVisitPrice": 358,
+                "marketPrice": 688.0,
+                "maxZhimaPrice": 358.0,
+                "minZhimaPrice": 358.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 358
+              },
+              "productCategory": "美容",
+              "productId": "32cafbab566c4a4492114f6aa210d6bb",
+              "productName": "『淡斑亮肤』秋冬补水美白",
+              "storePrice": "688"
+            },
+            {
+              "activeTagName": "8折抢购",
+              "contentId": "16306dff231f475d9f8105309272e971",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/8zqg.png",
+              "cornerText": "8折抢购",
+              "imageUrl": "/upload/20170816/4b5748680b8142f780ba1e96260b8e10.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"16306dff231f475d9f8105309272e971\"}}",
+              "price": "270",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 270,
+                "customerVisit": false,
+                "customerVisitPrice": 270,
+                "marketPrice": 580.0,
+                "maxZhimaPrice": 338.0,
+                "minZhimaPrice": 338.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 270,
+                "showType": 2,
+                "simName": "活动价"
+              },
+              "productCategory": "美容",
+              "productId": "16306dff231f475d9f8105309272e971",
+              "productName": "店主推荐（面排补水+小V脸提升）",
+              "storePrice": "580"
+            },
+            {
+              "contentId": "b2f500144bdb4735b35a766b84479948",
+              "contentType": 2,
+              "imageUrl": "/upload/20181020/f9902f424e7d458182a8daaa025d3fda.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"b2f500144bdb4735b35a766b84479948\"}}",
+              "price": "198",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 198,
+                "customerVisit": false,
+                "customerVisitPrice": 198,
+                "marketPrice": 500.0,
+                "maxZhimaPrice": 198.0,
+                "minZhimaPrice": 198.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 198
+              },
+              "productCategory": "美容",
+              "productId": "b2f500144bdb4735b35a766b84479948",
+              "productName": "面眼颈全面护+拨筋提升",
+              "storePrice": "500"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "f9f3c39632c44f29ab22763678d737b0",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20180827/54689f1594354c94a90b6f702fbe20dc!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"f9f3c39632c44f29ab22763678d737b0\"}}",
+              "price": "129",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 129,
+                "customerVisit": false,
+                "customerVisitPrice": 129,
+                "marketPrice": 598.0,
+                "maxZhimaPrice": 258.0,
+                "minZhimaPrice": 258.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 129,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "美容",
+              "productId": "f9f3c39632c44f29ab22763678d737b0",
+              "productName": "清滢平衡净化＋小气泡碳酸清洁面膜",
+              "storePrice": "598"
+            }
+          ],
+          "datasource": "widgetId",
+          "layout": "slider",
+          "openUrl": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=3\"}}",
+          "showStatus": false,
+          "version": "4.2.0",
+          "widgetId": "35"
+        },
+        "id": 59,
+        "name": "ProductsSlider",
+        "spm": "m-clientapp-index.ProductsSlider_mei_rong_zuo_pin.$.be2c19",
+        "version": "be2c19"
+      },
+      {
+        "data": {
+          "bgColor": "#F4F4F4",
+          "height": "10"
+        },
+        "id": 87,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_87.$.1a19f8",
+        "version": "1a19f8"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "height": 600,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_b22cfae9b1ce7878c609fffac281a152.jpg",
+          "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=14\"}}",
+          "width": 1500
+        },
+        "id": 27,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_an_mo_tui_jian.$.2803c1",
+        "version": "2803c1"
+      },
+      {
+        "data": {
+          "products": [
+            {
+              "activeTagName": "5折抢购",
+              "contentId": "b7f01f6a16954086ba882c089d3eda8b",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/5zqg.png",
+              "cornerText": "5折抢购",
+              "imageUrl": "/upload/20180827/a764aa0d9a794e4aa56dd7957b62dd8b.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"b7f01f6a16954086ba882c089d3eda8b\"}}",
+              "price": "99",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 99,
+                "customerVisit": false,
+                "customerVisitPrice": 99,
+                "marketPrice": 588.0,
+                "maxZhimaPrice": 198.0,
+                "minZhimaPrice": 198.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 99,
+                "showType": 2,
+                "simName": "折扣"
+              },
+              "productCategory": "美容",
+              "productId": "b7f01f6a16954086ba882c089d3eda8b",
+              "productName": "乳腺调理+腋下手臂淋巴散结化瘀",
+              "storePrice": "588"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "7ac2baf5d72c4d439915567dfe1e5ab9",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20181009/f4463d23ff2340feba1a93b357fa943b.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"7ac2baf5d72c4d439915567dfe1e5ab9\"}}",
+              "price": "144",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 144,
+                "customerVisit": false,
+                "customerVisitPrice": 144,
+                "marketPrice": 2588.0,
+                "maxZhimaPrice": 288.0,
+                "minZhimaPrice": 288.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 144,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "美容",
+              "productId": "7ac2baf5d72c4d439915567dfe1e5ab9",
+              "productName": "〔菩草堂〕三腺淋巴·腋下·腹股沟",
+              "storePrice": "2588"
+            },
+            {
+              "activeTagName": "5折抢购",
+              "contentId": "a7a5242505194b2399259752f04a70ab",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/5zqg.png",
+              "cornerText": "5折抢购",
+              "imageUrl": "/upload/20150613/9273248307b24f128b7cbdaa7dcf1480.png!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"a7a5242505194b2399259752f04a70ab\"}}",
+              "price": "268",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 268,
+                "customerVisit": false,
+                "customerVisitPrice": 268,
+                "marketPrice": 588.0,
+                "maxZhimaPrice": 536.0,
+                "minZhimaPrice": 536.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 268,
+                "showType": 2,
+                "simName": "折扣"
+              },
+              "productCategory": "美容",
+              "productId": "a7a5242505194b2399259752f04a70ab",
+              "productName": "胸部疏通+腋下淋巴",
+              "storePrice": "588"
+            },
+            {
+              "contentId": "749846b9bf534098a3684e324065d400",
+              "contentType": 2,
+              "imageUrl": "/upload/20151122/283a26d6de5e40b18473c69da1fb2960.png!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"749846b9bf534098a3684e324065d400\"}}",
+              "price": "198",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 198,
+                "customerVisit": false,
+                "customerVisitPrice": 198,
+                "marketPrice": 398.0,
+                "maxZhimaPrice": 198.0,
+                "minZhimaPrice": 198.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 198
+              },
+              "productCategory": "美容",
+              "productId": "749846b9bf534098a3684e324065d400",
+              "productName": "【五星特惠】肩颈按摩疏通",
+              "storePrice": "398"
+            },
+            {
+              "activeTagName": "美体1折抢购",
+              "contentId": "d7c4b85bd9ba4c84b0a64f6d835261ab",
+              "contentType": 2,
+              "cornerText": "美体1折抢购",
+              "imageUrl": "/upload/20181009/723cc8f4e30f46cda7b57dce3ddd3a67!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"d7c4b85bd9ba4c84b0a64f6d835261ab\"}}",
+              "price": "158",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 158,
+                "customerVisit": false,
+                "customerVisitPrice": 158,
+                "marketPrice": 2.0e3,
+                "maxZhimaPrice": 1580.0,
+                "minZhimaPrice": 1580.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 158,
+                "showType": 2,
+                "simName": "活动价"
+              },
+              "productCategory": "美容",
+              "productId": "d7c4b85bd9ba4c84b0a64f6d835261ab",
+              "productName": "【粉红色丝带专享】菩草堂胸部调理",
+              "storePrice": "2000"
+            },
+            {
+              "activeTagName": "5折抢购",
+              "contentId": "f1ead795ca7144aea2307e319fbb20c2",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/5zqg.png",
+              "cornerText": "5折抢购",
+              "imageUrl": "/upload/20181023/64716cf01d154009870cae805cefa57a.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"f1ead795ca7144aea2307e319fbb20c2\"}}",
+              "price": "99",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 99,
+                "customerVisit": false,
+                "customerVisitPrice": 99,
+                "marketPrice": 398.0,
+                "maxZhimaPrice": 198.0,
+                "minZhimaPrice": 198.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 99,
+                "showType": 2,
+                "simName": "折扣"
+              },
+              "productCategory": "美容",
+              "productId": "f1ead795ca7144aea2307e319fbb20c2",
+              "productName": "【拒绝增生】+胸部+腋下+手臂",
+              "storePrice": "398"
+            },
+            {
+              "activeTagName": "5折抢购",
+              "contentId": "39d256de9563494abd4b18efbaf7dcbe",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/5zqg.png",
+              "cornerText": "5折抢购",
+              "imageUrl": "/upload/20180622/910d2b9cee854f9b8e9533b038aac171!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"39d256de9563494abd4b18efbaf7dcbe\"}}",
+              "price": "128",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 128,
+                "customerVisit": false,
+                "customerVisitPrice": 128,
+                "marketPrice": 398.0,
+                "maxZhimaPrice": 256.0,
+                "minZhimaPrice": 256.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 128,
+                "showType": 2,
+                "simName": "折扣"
+              },
+              "productCategory": "美容",
+              "productId": "39d256de9563494abd4b18efbaf7dcbe",
+              "productName": "低折秒杀——肩颈＋腰部按摩＋头部",
+              "storePrice": "398"
+            },
+            {
+              "activeTagName": "8折抢购",
+              "contentId": "8705c57393874f6c84c8f5786ce94f1a",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/8zqg.png",
+              "cornerText": "8折抢购",
+              "imageUrl": "/upload/20170711/9fd1276d69c3450a8051274ce32f646d.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"8705c57393874f6c84c8f5786ce94f1a\"}}",
+              "price": "197",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 197,
+                "customerVisit": false,
+                "customerVisitPrice": 197,
+                "marketPrice": 318.0,
+                "maxZhimaPrice": 246.0,
+                "minZhimaPrice": 246.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 197,
+                "showType": 2,
+                "simName": "活动价"
+              },
+              "productCategory": "美容",
+              "productId": "8705c57393874f6c84c8f5786ce94f1a",
+              "productName": "【推荐热式】肠胃保养舒缓按摩",
+              "storePrice": "318"
+            }
+          ],
+          "datasource": "widgetId",
+          "layout": "slider",
+          "openUrl": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=14\"}}",
+          "showStatus": false,
+          "version": "4.2.0",
+          "widgetId": "520"
+        },
+        "id": 60,
+        "name": "ProductsSlider",
+        "spm": "m-clientapp-index.ProductsSlider_an_mo_zuo_pin.$.469eae",
+        "version": "469eae"
+      },
+      {
+        "data": {
+          "bgColor": "#F4F4F4",
+          "height": "10"
+        },
+        "id": 88,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_88.$.1a19f8",
+        "version": "1a19f8"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "height": 600,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_162e9753896697e647e39229577c5416.jpg",
+          "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=9\"}}",
+          "width": 1500
+        },
+        "id": 186,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_wei_zheng_xing_tui_jian_1.$.708f49",
+        "version": "708f49"
+      },
+      {
+        "data": {
+          "products": [
+            {
+              "activeTagName": "微整形5折",
+              "contentId": "e8f48242aefe446dbb4c25a81b5664e5",
+              "contentType": 2,
+              "cornerText": "微整形5折",
+              "imageUrl": "/upload/20181030/b8a0ea07a7be4bc487ac5ae1728aaa86!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"e8f48242aefe446dbb4c25a81b5664e5\"}}",
+              "price": "980",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 980,
+                "customerVisit": true,
+                "customerVisitPrice": 980,
+                "marketPrice": 9.8e3,
+                "maxZhimaPrice": 1960.0,
+                "minZhimaPrice": 1960.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 980,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "其他",
+              "productId": "e8f48242aefe446dbb4c25a81b5664e5",
+              "productName": "【菲洛嘉8ml水光针】全面部+颈部 送医用面膜",
+              "storePrice": "9800"
+            },
+            {
+              "activeTagName": "微整形5折",
+              "contentId": "067c61fe1dc64a1a82439d2082b08959",
+              "contentType": 2,
+              "cornerText": "微整形5折",
+              "imageUrl": "/upload/20181102/4489e7f878a9431c909683e5e8014454!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"067c61fe1dc64a1a82439d2082b08959\"}}",
+              "price": "2980",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 2980,
+                "customerVisit": true,
+                "customerVisitPrice": 2980,
+                "marketPrice": 1.28e4,
+                "maxZhimaPrice": 5960.0,
+                "minZhimaPrice": 5960.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 2980,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "其他",
+              "productId": "067c61fe1dc64a1a82439d2082b08959",
+              "productName": "【祛斑】超皮秒祛斑单次",
+              "storePrice": "12800"
+            },
+            {
+              "activeTagName": "微整形5折",
+              "contentId": "4dabcf8385944e519b125a3b01f53014",
+              "contentType": 2,
+              "cornerText": "微整形5折",
+              "imageUrl": "/upload/20181030/e30ff463cd89438989ca16bcf6310e29!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"4dabcf8385944e519b125a3b01f53014\"}}",
+              "price": "980",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 980,
+                "customerVisit": true,
+                "customerVisitPrice": 980,
+                "marketPrice": 3.8e3,
+                "maxZhimaPrice": 1960.0,
+                "minZhimaPrice": 1960.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 980,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "其他",
+              "productId": "4dabcf8385944e519b125a3b01f53014",
+              "productName": "【瘦脸针套餐】衡力100单位 +玻尿酸下巴+以色列射频紧致",
+              "storePrice": "3800"
+            },
+            {
+              "activeTagName": "微整形5折",
+              "contentId": "22a8222584b1419c8b2f6e7a1af9599f",
+              "contentType": 2,
+              "cornerText": "微整形5折",
+              "imageUrl": "/upload/20181102/bdae798a60f14097b160c26eb2f5a630!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"22a8222584b1419c8b2f6e7a1af9599f\"}}",
+              "price": "280",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 280,
+                "customerVisit": true,
+                "customerVisitPrice": 280,
+                "marketPrice": 2.8e3,
+                "maxZhimaPrice": 560.0,
+                "minZhimaPrice": 560.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 280,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "其他",
+              "productId": "22a8222584b1419c8b2f6e7a1af9599f",
+              "productName": "【水光针】润月雅水光针",
+              "storePrice": "2800"
+            },
+            {
+              "activeTagName": "微整形5折",
+              "contentId": "87fa00b61ff144449b0b0a2c026ed8c0",
+              "contentType": 2,
+              "cornerText": "微整形5折",
+              "imageUrl": "/upload/20181030/5c702ad2c281417194ffe9dc87c0879d!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"87fa00b61ff144449b0b0a2c026ed8c0\"}}",
+              "price": "1888",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 1888,
+                "customerVisit": true,
+                "customerVisitPrice": 1888,
+                "marketPrice": 9.8e3,
+                "maxZhimaPrice": 3776.0,
+                "minZhimaPrice": 3776.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 1888,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "其他",
+              "productId": "87fa00b61ff144449b0b0a2c026ed8c0",
+              "productName": "【皮秒激光】【惠合嘉美】picoway超皮秒平光 ，美肌嫩肤，双11活动1888",
+              "storePrice": "9800"
+            },
+            {
+              "activeTagName": "微整形5折",
+              "contentId": "5360d3cbaf384fcd8b5490563b0b1900",
+              "contentType": 2,
+              "cornerText": "微整形5折",
+              "imageUrl": "/upload/20181031/98759b46d98643baacd067cff66c547c!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"5360d3cbaf384fcd8b5490563b0b1900\"}}",
+              "price": "7980",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 7980,
+                "customerVisit": true,
+                "customerVisitPrice": 7980,
+                "marketPrice": 3.8e4,
+                "maxZhimaPrice": 15960.0,
+                "minZhimaPrice": 15960.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 7980,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "其他",
+              "productId": "5360d3cbaf384fcd8b5490563b0b1900",
+              "productName": "【双11必买】【腰腹+大腿吸脂】综合精雕塑形；2年包干 可选其他部位；分期0首付",
+              "storePrice": "38000"
+            }
+          ],
+          "datasource": "widgetId",
+          "layout": "slider",
+          "openUrl": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=9\"}}",
+          "showStatus": false,
+          "version": "4.2.0",
+          "widgetId": "226"
+        },
+        "id": 61,
+        "name": "ProductsSlider",
+        "spm": "m-clientapp-index.ProductsSlider_wei_zheng_xing_zuo_pin1.$.177b42",
+        "version": "177b42"
+      },
+      {
+        "data": {
+          "bgColor": "#F4F4F4",
+          "height": "10"
+        },
+        "id": 103,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_103.$.7ac43c",
+        "version": "7ac43c"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "height": 600,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_0e2410e4cfccfeb1c8714cc4e2f7a268.jpg",
+          "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=7&category=15\"}}",
+          "width": 1500
+        },
+        "id": 99,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_wei_zheng_xing_tui_jian2.$.40a4a5",
+        "version": "40a4a5"
+      },
+      {
+        "data": {
+          "products": [
+            {
+              "contentId": "75ff8f31e79b463ebaa26daf906db905",
+              "contentType": 2,
+              "imageUrl": "/upload/20181012/e5afd2ba5d904558849676444b09ee85!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"75ff8f31e79b463ebaa26daf906db905\"}}",
+              "price": "1999",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 1999,
+                "customerVisit": true,
+                "customerVisitPrice": 1999,
+                "marketPrice": 3980.0,
+                "maxZhimaPrice": 1999.0,
+                "minZhimaPrice": 1999.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 1999
+              },
+              "productCategory": "其他",
+              "productId": "75ff8f31e79b463ebaa26daf906db905",
+              "productName": "【美白针】美白疗程5次  美白/抗氧化 全身美白 美白必buy 修复+调理+预防",
+              "storePrice": "3980"
+            },
+            {
+              "contentId": "c3d0a1beeb28434fb26d10325d1775b8",
+              "contentType": 2,
+              "imageUrl": "/upload/20180927/99d2302bef9f4e18b169c20261b28f2f.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"c3d0a1beeb28434fb26d10325d1775b8\"}}",
+              "price": "3180",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 3180,
+                "customerVisit": true,
+                "customerVisitPrice": 3180,
+                "marketPrice": 6.8e3,
+                "maxZhimaPrice": 3180.0,
+                "minZhimaPrice": 3180.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 3180
+              },
+              "productCategory": "其他",
+              "productId": "c3d0a1beeb28434fb26d10325d1775b8",
+              "productName": "【净肤祛斑套餐】【十项任选】全面部皮秒+水光针+射频+彩光嫩肤+面膜",
+              "storePrice": "6800"
+            },
+            {
+              "contentId": "809486da559f44758422cabfe6026c20",
+              "contentType": 2,
+              "imageUrl": "/upload/20181011/70b5e271866e43f18dbaf488aaa0b539!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"809486da559f44758422cabfe6026c20\"}}",
+              "price": "4980",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 4980,
+                "customerVisit": true,
+                "customerVisitPrice": 4980,
+                "marketPrice": 6.8e3,
+                "maxZhimaPrice": 4980.0,
+                "minZhimaPrice": 4980.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 4980
+              },
+              "productCategory": "其他",
+              "productId": "809486da559f44758422cabfe6026c20",
+              "productName": "【河狸家推荐】【婴儿针】进口三文鱼水光针 打造如婴儿般水嫩肌肤",
+              "storePrice": "6800"
+            },
+            {
+              "contentId": "4afab2431a214c95b802e21127651a8a",
+              "contentType": 2,
+              "imageUrl": "/upload/20180927/340a4b15dc834b87a096fe84c9e07f9f.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"4afab2431a214c95b802e21127651a8a\"}}",
+              "price": "1580",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 1580,
+                "customerVisit": true,
+                "customerVisitPrice": 1580,
+                "marketPrice": 2980.0,
+                "maxZhimaPrice": 1580.0,
+                "minZhimaPrice": 1580.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 1580
+              },
+              "productCategory": "其他",
+              "productId": "4afab2431a214c95b802e21127651a8a",
+              "productName": "【prp水光针】 自体血清焕肤 除皱抗衰水光针 补水修复 保湿去细纹 年轻活力",
+              "storePrice": "2980"
+            },
+            {
+              "contentId": "ac7b7751c3cd49b29f07b4cc0747f3f0",
+              "contentType": 2,
+              "imageUrl": "/upload/20181012/e2826d153ddc467ba673ce33a5f8a1fd!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"ac7b7751c3cd49b29f07b4cc0747f3f0\"}}",
+              "price": "3980",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 3980,
+                "customerVisit": true,
+                "customerVisitPrice": 3980,
+                "marketPrice": 8.8e3,
+                "maxZhimaPrice": 3980.0,
+                "minZhimaPrice": 3980.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 3980
+              },
+              "productCategory": "其他",
+              "productId": "ac7b7751c3cd49b29f07b4cc0747f3f0",
+              "productName": "【美版超声刀】 下颌缘提升 +无针水光针 提拉紧致 私信有好礼",
+              "storePrice": "8800"
+            },
+            {
+              "contentId": "ec00bf186c1141f6ace8678e0054833d",
+              "contentType": 2,
+              "imageUrl": "/upload/20181012/cd39b6e2fa684c14aa886b9dac545a48!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"ec00bf186c1141f6ace8678e0054833d\"}}",
+              "price": "2680",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 2680,
+                "customerVisit": true,
+                "customerVisitPrice": 2680,
+                "marketPrice": 6.8e3,
+                "maxZhimaPrice": 2680.0,
+                "minZhimaPrice": 2680.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 2680
+              },
+              "productCategory": "其他",
+              "productId": "ec00bf186c1141f6ace8678e0054833d",
+              "productName": "【河狸家推荐】【贵妇级别】法国丝丽青春动能素 提亮肤色 淡斑祛细纹",
+              "storePrice": "6800"
+            }
+          ],
+          "datasource": "widgetId",
+          "layout": "slider",
+          "openUrl": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=7&category=15\"}}",
+          "showStatus": false,
+          "version": "4.2.0",
+          "widgetId": "548"
+        },
+        "id": 62,
+        "name": "ProductsSlider",
+        "spm": "m-clientapp-index.ProductsSlider_wei_zheng_xing_zuo_pin2.$.27c6f7",
+        "version": "27c6f7"
+      },
+      {
+        "data": {
+          "bgColor": "#F4F4F4",
+          "height": "10"
+        },
+        "id": 104,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_104.$.95c897",
+        "version": "95c897"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "height": 600,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_2672e262b52fde8c317eb0b6fdc97608.jpg",
+          "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=7&navigate=19\"}}",
+          "width": 1500
+        },
+        "id": 100,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_wei_zheng_xing_tui_jian3.$.ff8f3e",
+        "version": "ff8f3e"
+      },
+      {
+        "data": {
+          "products": [
+            {
+              "contentId": "fc42c22cacd1437781e3ae0a32ebc29a",
+              "contentType": 2,
+              "imageUrl": "/upload/20180723/7eae4577446e4242b87b017bbd596651!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"fc42c22cacd1437781e3ae0a32ebc29a\"}}",
+              "price": "520",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 520,
+                "customerVisit": true,
+                "customerVisitPrice": 520,
+                "marketPrice": 1.2e3,
+                "maxZhimaPrice": 520.0,
+                "minZhimaPrice": 520.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 520
+              },
+              "productCategory": "其他",
+              "productId": "fc42c22cacd1437781e3ae0a32ebc29a",
+              "productName": "【私密清洁】私密整形 撩汉不止在脸，妹妹同样重要，来长虹，女性专属的秘密",
+              "storePrice": "1200"
+            },
+            {
+              "contentId": "960bf3a8b30c4b60adab6389969a9fd3",
+              "contentType": 2,
+              "imageUrl": "/upload/20180913/675d07260123436387730b70c2ff1036!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"960bf3a8b30c4b60adab6389969a9fd3\"}}",
+              "price": "1919",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 1919,
+                "customerVisit": true,
+                "customerVisitPrice": 1919,
+                "marketPrice": 7.8e3,
+                "maxZhimaPrice": 1919.0,
+                "minZhimaPrice": 1919.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 1919
+              },
+              "productCategory": "其他",
+              "productId": "960bf3a8b30c4b60adab6389969a9fd3",
+              "productName": "【线雕】大部位埋线提升 雕出逆龄童颜",
+              "storePrice": "7800"
+            },
+            {
+              "contentId": "a13686b6a26d40a0b84050a09e5f6eac",
+              "contentType": 2,
+              "imageUrl": "/upload/20180913/8824d9a960fd4c4c8f61196ffdf090b7!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"a13686b6a26d40a0b84050a09e5f6eac\"}}",
+              "price": "899",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 899,
+                "customerVisit": true,
+                "customerVisitPrice": 899,
+                "marketPrice": 2980.0,
+                "maxZhimaPrice": 899.0,
+                "minZhimaPrice": 899.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 899
+              },
+              "productCategory": "其他",
+              "productId": "a13686b6a26d40a0b84050a09e5f6eac",
+              "productName": "【botox保妥适单部位除皱】鱼尾纹/抬头纹 明星同款  即刻除皱",
+              "storePrice": "2980"
+            },
+            {
+              "contentId": "f5aa971a6089424e8077d52600fe3501",
+              "contentType": 2,
+              "imageUrl": "/upload/20180720/8c9cf6832a3545e0be5ee9120580c9b9!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"f5aa971a6089424e8077d52600fe3501\"}}",
+              "price": "1200",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 1200,
+                "customerVisit": true,
+                "customerVisitPrice": 1200,
+                "marketPrice": 2.8e3,
+                "maxZhimaPrice": 1.2e3,
+                "minZhimaPrice": 1.2e3,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 1200
+              },
+              "productCategory": "其他",
+              "productId": "f5aa971a6089424e8077d52600fe3501",
+              "productName": "【半永久妆】【乳晕漂红】黑了紫了肿么办？长虹还你原有粉嫩！如朱砂 一点红",
+              "storePrice": "2800"
+            },
+            {
+              "contentId": "a42936051b334674a10ac20b6cefba35",
+              "contentType": 2,
+              "imageUrl": "/upload/20180309/4345f2883aa24f739d20d01fe3aa4c23!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"a42936051b334674a10ac20b6cefba35\"}}",
+              "price": "6980",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 6980,
+                "customerVisit": true,
+                "customerVisitPrice": 6980,
+                "marketPrice": 12980.0,
+                "maxZhimaPrice": 6980.0,
+                "minZhimaPrice": 6980.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 6980
+              },
+              "productCategory": "其他",
+              "productId": "a42936051b334674a10ac20b6cefba35",
+              "productName": "【埋线减肥】酷夏瘦身中医减肥",
+              "storePrice": "12980"
+            }
+          ],
+          "datasource": "widgetId",
+          "layout": "slider",
+          "openUrl": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=7&navigate=19\"}}",
+          "showStatus": false,
+          "version": "4.2.0",
+          "widgetId": "1554"
+        },
+        "id": 64,
+        "name": "ProductsSlider",
+        "spm": "m-clientapp-index.ProductsSlider_wei_zheng_xing_zuo_pin3.$.986a70",
+        "version": "986a70"
+      },
+      {
+        "data": {
+          "bgColor": "#F4F4F4",
+          "height": "10"
+        },
+        "id": 90,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_90.$.1a19f8",
+        "version": "1a19f8"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "height": 600,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_314b65d58bb2915885da1231cd07ab20.jpg",
+          "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=18\"}}",
+          "width": 1500
+        },
+        "id": 35,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_li_liao_tui_jian.$.1ec126",
+        "version": "1ec126"
+      },
+      {
+        "data": {
+          "products": [
+            {
+              "activeTagName": "8折抢购",
+              "contentId": "ddec9cc4651a44a98ae7d3b0faaac4af",
+              "contentType": 2,
+              "cornerText": "8折抢购",
+              "imageUrl": "/upload/20181102/f4a657daff9343f6bcb536ac41a8e44c!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"ddec9cc4651a44a98ae7d3b0faaac4af\"}}",
+              "price": "79",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 79,
+                "customerVisit": false,
+                "customerVisitPrice": 79,
+                "marketPrice": 168.0,
+                "maxZhimaPrice": 99.0,
+                "minZhimaPrice": 99.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 79,
+                "showType": 2,
+                "simName": "活动价"
+              },
+              "productCategory": "其他",
+              "productId": "ddec9cc4651a44a98ae7d3b0faaac4af",
+              "productName": "肩颈酸痛，手臂麻木调理",
+              "storePrice": "168"
+            },
+            {
+              "activeTagName": "2人团",
+              "contentId": "461fc232e73a44ff8e3b2c67069533f8",
+              "contentType": 2,
+              "cornerText": "2人团",
+              "imageUrl": "/upload/20181024/1c0f4fdcd1614cee9f728b80b211dac1.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"461fc232e73a44ff8e3b2c67069533f8\"}}",
+              "price": "128",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 168,
+                "customerVisit": false,
+                "customerVisitPrice": 168,
+                "marketPrice": 399.0,
+                "maxZhimaPrice": 168.0,
+                "minZhimaPrice": 168.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 168
+              },
+              "productCategory": "其他",
+              "productId": "461fc232e73a44ff8e3b2c67069533f8",
+              "productName": "清源·中医传统推拿按摩（60）",
+              "storePrice": "399"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "9f9c862e713c4fac8e099f0e94063ada",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20181023/42307587b87147bd85e0e9b0309ba0e1!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"9f9c862e713c4fac8e099f0e94063ada\"}}",
+              "price": "150",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 150,
+                "customerVisit": false,
+                "customerVisitPrice": 150,
+                "marketPrice": 299.0,
+                "maxZhimaPrice": 299.0,
+                "minZhimaPrice": 299.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 150,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "其他",
+              "productId": "9f9c862e713c4fac8e099f0e94063ada",
+              "productName": "【冬之韵】全身经络按摩",
+              "storePrice": "299"
+            },
+            {
+              "contentId": "1e1f7af9025e4c149a418334b702f932",
+              "contentType": 2,
+              "imageUrl": "/upload/20181106/51f8f2b373ba4715951e8a42ec5cd054.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"1e1f7af9025e4c149a418334b702f932\"}}",
+              "price": "150",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 150,
+                "customerVisit": false,
+                "customerVisitPrice": 150,
+                "marketPrice": 198.0,
+                "maxZhimaPrice": 150.0,
+                "minZhimaPrice": 150.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 150
+              },
+              "productCategory": "其他",
+              "productId": "1e1f7af9025e4c149a418334b702f932",
+              "productName": "足部按摩赠腿部",
+              "storePrice": "198"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "9d56c91db44442658844666d984e40d5",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20181019/2ba2a0a64ee14dccb00a8303664d8886!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"9d56c91db44442658844666d984e40d5\"}}",
+              "price": "129",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 129,
+                "customerVisit": false,
+                "customerVisitPrice": 129,
+                "marketPrice": 588.0,
+                "maxZhimaPrice": 258.0,
+                "minZhimaPrice": 258.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 129,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "其他",
+              "productId": "9d56c91db44442658844666d984e40d5",
+              "productName": "足疗+腿部",
+              "storePrice": "588"
+            },
+            {
+              "activeTagName": "理疗5折特惠",
+              "contentId": "1d3d9466409a440c98b06456ad5ea4f5",
+              "contentType": 2,
+              "cornerText": "理疗5折特惠",
+              "imageUrl": "/upload/20180529/cde0038c9f6e4a95b8f56a66d655aba1.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"1d3d9466409a440c98b06456ad5ea4f5\"}}",
+              "price": "126",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 126,
+                "customerVisit": false,
+                "customerVisitPrice": 126,
+                "marketPrice": 268.0,
+                "maxZhimaPrice": 252.0,
+                "minZhimaPrice": 252.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 126,
+                "showType": 2,
+                "simName": "活动价"
+              },
+              "productCategory": "其他",
+              "productId": "1d3d9466409a440c98b06456ad5ea4f5",
+              "productName": "【肩颈调理】肩颈背按摩推拿",
+              "storePrice": "268"
+            },
+            {
+              "activeTagName": "理疗5折特惠",
+              "contentId": "0c20207dbc554d6bb9971539bde311c2",
+              "contentType": 2,
+              "cornerText": "理疗5折特惠",
+              "imageUrl": "/upload/20180803/f3029631f38f4a4482ec4e0a0d34be07.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"0c20207dbc554d6bb9971539bde311c2\"}}",
+              "price": "249",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 249,
+                "customerVisit": false,
+                "customerVisitPrice": 249,
+                "marketPrice": 1.8e3,
+                "maxZhimaPrice": 498.0,
+                "minZhimaPrice": 498.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 249,
+                "showType": 2,
+                "simName": "活动价"
+              },
+              "productCategory": "其他",
+              "productId": "0c20207dbc554d6bb9971539bde311c2",
+              "productName": "【岐道调理】中医推拿（含脏腑）",
+              "storePrice": "1800"
+            },
+            {
+              "activeTagName": "理疗5折特惠",
+              "contentId": "85899a58c7654c68a2fc501c4ec4326c",
+              "contentType": 2,
+              "cornerText": "理疗5折特惠",
+              "imageUrl": "/upload/20180901/e43260c0ce1d49229bef8a9a834a371a.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"85899a58c7654c68a2fc501c4ec4326c\"}}",
+              "price": "238",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 238,
+                "customerVisit": false,
+                "customerVisitPrice": 238,
+                "marketPrice": 699.0,
+                "maxZhimaPrice": 476.0,
+                "minZhimaPrice": 476.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 238,
+                "showType": 2,
+                "simName": "活动价"
+              },
+              "productCategory": "其他",
+              "productId": "85899a58c7654c68a2fc501c4ec4326c",
+              "productName": "[中医]全身经络赠脏腑调理80",
+              "storePrice": "699"
+            }
+          ],
+          "datasource": "widgetId",
+          "layout": "slider",
+          "openUrl": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=18\"}}",
+          "showStatus": false,
+          "version": "4.2.0",
+          "widgetId": "1457"
+        },
+        "id": 65,
+        "name": "ProductsSlider",
+        "spm": "m-clientapp-index.ProductsSlider_li_liao_zuo_pin.$.7d8444",
+        "version": "7d8444"
+      },
+      {
+        "data": {
+          "bgColor": "#F4F4F4",
+          "height": "10"
+        },
+        "id": 198,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_198.$.e60d90",
+        "version": "e60d90"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "height": 600,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_4a4e457698f4b24c3f74c8c21bae8ac9.jpg",
+          "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=17\"}}",
+          "width": 1500
+        },
+        "id": 34,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_shou_shen_tui_jian.$.76f82a",
+        "version": "76f82a"
+      },
+      {
+        "data": {
+          "products": [
+            {
+              "activeTagName": "5折抢购",
+              "contentId": "53fadca085ca4f6b8411827cfd5324a6",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/5zqg.png",
+              "cornerText": "5折抢购",
+              "imageUrl": "/upload/20171126/48c59514212f405aaa4787d1bd7bc428.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"53fadca085ca4f6b8411827cfd5324a6\"}}",
+              "price": "298",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 298,
+                "customerVisit": false,
+                "customerVisitPrice": 298,
+                "marketPrice": 688.0,
+                "maxZhimaPrice": 596.0,
+                "minZhimaPrice": 596.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 298,
+                "showType": 2,
+                "simName": "折扣"
+              },
+              "productCategory": "美容",
+              "productId": "53fadca085ca4f6b8411827cfd5324a6",
+              "productName": "爆款迷人马甲线+无敌小细腿",
+              "storePrice": "688"
+            },
+            {
+              "activeTagName": "夏日特惠",
+              "contentId": "61e1922f737f40459c20fa225975bd87",
+              "contentType": 2,
+              "cornerText": "夏日特惠",
+              "imageUrl": "/upload/20180412/0a908c27972b41f9af3f529b429741d3.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"61e1922f737f40459c20fa225975bd87\"}}",
+              "price": "198",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 198,
+                "customerVisit": false,
+                "customerVisitPrice": 198,
+                "marketPrice": 988.0,
+                "maxZhimaPrice": 198.0,
+                "minZhimaPrice": 198.0,
+                "promotionType": "fullPieceDiscount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 198,
+                "showType": 2,
+                "simName": "满件折"
+              },
+              "productCategory": "美容",
+              "productId": "61e1922f737f40459c20fa225975bd87",
+              "productName": "纤体塑型（细腰平腹消灭赘肉）",
+              "storePrice": "988"
+            },
+            {
+              "activeTagName": "瘦身特价体验",
+              "contentId": "ee6b6cc66999405a936de3261630ee6d",
+              "contentType": 2,
+              "cornerText": "瘦身特价体验",
+              "imageUrl": "/upload/20180321/05cceb5f39d94f049c348a8ad2d74901!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"ee6b6cc66999405a936de3261630ee6d\"}}",
+              "price": "298",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 298,
+                "customerVisit": false,
+                "customerVisitPrice": 298,
+                "marketPrice": 598.0,
+                "maxZhimaPrice": 298.0,
+                "minZhimaPrice": 298.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 298
+              },
+              "productCategory": "其他",
+              "productId": "ee6b6cc66999405a936de3261630ee6d",
+              "productName": "瘦身王单次［专业瘦身减重］",
+              "storePrice": "598"
+            },
+            {
+              "activeTagName": "减肥疗程特惠",
+              "contentId": "c9f969cb35484e93b6a315b4ef5f82f3",
+              "contentType": 2,
+              "cornerText": "减肥疗程特惠",
+              "imageUrl": "/upload/20180403/436dd4d4b1c14e969e2b45f053d5e0e4!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"c9f969cb35484e93b6a315b4ef5f82f3\"}}",
+              "price": "298",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 298,
+                "customerVisit": false,
+                "customerVisitPrice": 298,
+                "marketPrice": 598.0,
+                "maxZhimaPrice": 298.0,
+                "minZhimaPrice": 298.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 298
+              },
+              "productCategory": "其他",
+              "productId": "c9f969cb35484e93b6a315b4ef5f82f3",
+              "productName": "瘦身王单次[专业减重瘦身]",
+              "storePrice": "598"
+            },
+            {
+              "activeTagName": "8折抢购",
+              "contentId": "d73684095b964eb8908d825f33068926",
+              "contentType": 2,
+              "cornerText": "8折抢购",
+              "imageUrl": "/upload/20180227/564a8ae275ee455681839b642b969ee5!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"d73684095b964eb8908d825f33068926\"}}",
+              "price": "480",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 480,
+                "customerVisit": false,
+                "customerVisitPrice": 480,
+                "marketPrice": 980.0,
+                "maxZhimaPrice": 600.0,
+                "minZhimaPrice": 600.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 480,
+                "showType": 2,
+                "simName": "折扣"
+              },
+              "productCategory": "其他",
+              "productId": "d73684095b964eb8908d825f33068926",
+              "productName": "纤体、塑型",
+              "storePrice": "980"
+            },
+            {
+              "activeTagName": "瘦身特价体验",
+              "contentId": "25ace0bba9434db581818dad9123a6e9",
+              "contentType": 2,
+              "cornerText": "瘦身特价体验",
+              "imageUrl": "/upload/20180205/6ef287fef3ae4c4aa9e8dafaed3199e0!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"25ace0bba9434db581818dad9123a6e9\"}}",
+              "price": "298",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 298,
+                "customerVisit": false,
+                "customerVisitPrice": 298,
+                "marketPrice": 680.0,
+                "maxZhimaPrice": 298.0,
+                "minZhimaPrice": 298.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 298
+              },
+              "productCategory": "其他",
+              "productId": "25ace0bba9434db581818dad9123a6e9",
+              "productName": "减重降脂瘦身--单次体验",
+              "storePrice": "680"
+            },
+            {
+              "activeTagName": "瘦身特价体验",
+              "contentId": "d5e67a4bcdd64aaba954ac44c1a6d134",
+              "contentType": 2,
+              "cornerText": "瘦身特价体验",
+              "imageUrl": "/upload/20171129/542b0ede38154e6b949aa38d8b7147fa!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"d5e67a4bcdd64aaba954ac44c1a6d134\"}}",
+              "price": "298",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 298,
+                "customerVisit": false,
+                "customerVisitPrice": 298,
+                "marketPrice": 580.0,
+                "maxZhimaPrice": 298.0,
+                "minZhimaPrice": 298.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 298
+              },
+              "productCategory": "其他",
+              "productId": "d5e67a4bcdd64aaba954ac44c1a6d134",
+              "productName": "减重降脂瘦身--单次体验",
+              "storePrice": "580"
+            },
+            {
+              "activeTagName": "瘦身特价体验",
+              "contentId": "c437172207a64cb0a0c36ac1ccbd93a4",
+              "contentType": 2,
+              "cornerText": "瘦身特价体验",
+              "imageUrl": "/upload/20171128/f777ac8d35ab4a138d30584a2d5b91c4!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"c437172207a64cb0a0c36ac1ccbd93a4\"}}",
+              "price": "238",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 238,
+                "customerVisit": false,
+                "customerVisitPrice": 238,
+                "marketPrice": 580.0,
+                "maxZhimaPrice": 238.0,
+                "minZhimaPrice": 238.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 238
+              },
+              "productCategory": "其他",
+              "productId": "c437172207a64cb0a0c36ac1ccbd93a4",
+              "productName": "减重降脂瘦身--单次体验",
+              "storePrice": "580"
+            }
+          ],
+          "datasource": "widgetId",
+          "layout": "slider",
+          "openUrl": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=17\"}}",
+          "showStatus": false,
+          "version": "4.2.0",
+          "widgetId": "1458"
+        },
+        "id": 66,
+        "name": "ProductsSlider",
+        "spm": "m-clientapp-index.ProductsSlider_shou_shen_zuo_pin.$.612fd8",
+        "version": "612fd8"
+      },
+      {
+        "data": {
+          "bgColor": "#F4F4F4",
+          "height": "10"
+        },
+        "id": 92,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_92.$.e60d90",
+        "version": "e60d90"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "height": 600,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_69d247369d78901d84d6fb2497ed6594.jpg",
+          "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=5\"}}",
+          "width": 1500
+        },
+        "id": 31,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_zao_xing_tui_jian.$.29c93e",
+        "version": "29c93e"
+      },
+      {
+        "data": {
+          "products": [
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "0e7a8a913bf64e7ca1d0ec19e689bab4",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20181105/39346db608ee4106a50726f66a86d09e.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"0e7a8a913bf64e7ca1d0ec19e689bab4\"}}",
+              "price": "208",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 208,
+                "customerVisit": false,
+                "customerVisitPrice": 208,
+                "marketPrice": 789.0,
+                "maxZhimaPrice": 416.0,
+                "minZhimaPrice": 416.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 208,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "造型",
+              "productId": "0e7a8a913bf64e7ca1d0ec19e689bab4",
+              "productName": "【热】日系甜美减龄微醺妆",
+              "storePrice": "789"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "05f10eddf050445abd65bd0a326ddce2",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20181102/c6b2426fed2d4ca096025e695c4a40cf!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"05f10eddf050445abd65bd0a326ddce2\"}}",
+              "price": "195",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 195,
+                "customerVisit": false,
+                "customerVisitPrice": 195,
+                "marketPrice": 758.0,
+                "maxZhimaPrice": 390.0,
+                "minZhimaPrice": 390.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 195,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "造型",
+              "productId": "05f10eddf050445abd65bd0a326ddce2",
+              "productName": "【明星化妆师】秋冬约会必备水润妆",
+              "storePrice": "758"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "a1a3b07ce9f2490b95c1f1dd71221f47",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20181030/b450f527dec544a2a1030cda6ae698ab.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"a1a3b07ce9f2490b95c1f1dd71221f47\"}}",
+              "price": "140",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 140,
+                "customerVisit": false,
+                "customerVisitPrice": 140,
+                "marketPrice": 688.0,
+                "maxZhimaPrice": 280.0,
+                "minZhimaPrice": 280.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 140,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "造型",
+              "productId": "a1a3b07ce9f2490b95c1f1dd71221f47",
+              "productName": "时尚晚宴妆+造型",
+              "storePrice": "688"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "de602d3991194041b56ad426540904da",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20181105/6ec6770cba21471c8036a363b6a0d21a!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"de602d3991194041b56ad426540904da\"}}",
+              "price": "119",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 119,
+                "customerVisit": false,
+                "customerVisitPrice": 119,
+                "marketPrice": 238.0,
+                "maxZhimaPrice": 238.0,
+                "minZhimaPrice": 238.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 119,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "造型",
+              "productId": "de602d3991194041b56ad426540904da",
+              "productName": "【秋冬热荐】暖冬妆赠发型",
+              "storePrice": "238"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "b3e2e6e49052472db32b57a63d61ee12",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20181025/67a01019ae724aa998e6facd1d0c4aec.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"b3e2e6e49052472db32b57a63d61ee12\"}}",
+              "price": "115",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 115,
+                "customerVisit": false,
+                "customerVisitPrice": 115,
+                "marketPrice": 458.0,
+                "maxZhimaPrice": 229.0,
+                "minZhimaPrice": 229.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 115,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "造型",
+              "productId": "b3e2e6e49052472db32b57a63d61ee12",
+              "productName": "人气网红妆 (发型+睫毛)",
+              "storePrice": "458"
+            },
+            {
+              "activeTagName": "5折抢购",
+              "contentId": "2c3c17b2017149c1ac12ff58cca41aec",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/5zqg.png",
+              "cornerText": "5折抢购",
+              "imageUrl": "/upload/20181028/a33dba378ab044ffbc817eb1f4a05440.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"2c3c17b2017149c1ac12ff58cca41aec\"}}",
+              "price": "170",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 170,
+                "customerVisit": false,
+                "customerVisitPrice": 170,
+                "marketPrice": 888.0,
+                "maxZhimaPrice": 339.0,
+                "minZhimaPrice": 339.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 170,
+                "showType": 2,
+                "simName": "折扣"
+              },
+              "productCategory": "造型",
+              "productId": "2c3c17b2017149c1ac12ff58cca41aec",
+              "productName": "夜店轰趴 生日party主题妆",
+              "storePrice": "888"
+            },
+            {
+              "contentId": "5f1edae9e0004e5badd7058c425df018",
+              "contentType": 2,
+              "imageUrl": "/upload/20181106/964a0469bb684d0bb9d9b5baa69cc70f.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"5f1edae9e0004e5badd7058c425df018\"}}",
+              "price": "88",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 88,
+                "customerVisit": false,
+                "customerVisitPrice": 88,
+                "marketPrice": 158.0,
+                "maxZhimaPrice": 88.0,
+                "minZhimaPrice": 88.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 88
+              },
+              "productCategory": "造型",
+              "productId": "5f1edae9e0004e5badd7058c425df018",
+              "productName": "【特惠】粉嫩元气妆(送睫毛)",
+              "storePrice": "158"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "31081211499c492589cbc0e25e01c3b9",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20180718/1094fd3fc5024b49944bd188d1745797!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"31081211499c492589cbc0e25e01c3b9\"}}",
+              "price": "130",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 130,
+                "customerVisit": false,
+                "customerVisitPrice": 130,
+                "marketPrice": 599.0,
+                "maxZhimaPrice": 259.0,
+                "minZhimaPrice": 259.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 130,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "造型",
+              "productId": "31081211499c492589cbc0e25e01c3b9",
+              "productName": "精致伴娘妆＋发型",
+              "storePrice": "599"
+            }
+          ],
+          "datasource": "widgetId",
+          "layout": "slider",
+          "openUrl": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=5\"}}",
+          "showStatus": false,
+          "version": "4.2.0",
+          "widgetId": "174"
+        },
+        "id": 67,
+        "name": "ProductsSlider",
+        "spm": "m-clientapp-index.ProductsSlider_zao_xing_zuo_pin.$.3c82f5",
+        "version": "3c82f5"
+      },
+      {
+        "data": {
+          "bgColor": "#F4F4F4",
+          "height": "10"
+        },
+        "id": 95,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_95.$.d70bfe",
+        "version": "d70bfe"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "height": 600,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_9ed1fe496ae4bd8b410692bba70456c4.jpg",
+          "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=6\"}}",
+          "width": 1500
+        },
+        "id": 43,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_mei_fa_tui_jian1.$.efdd07",
+        "version": "efdd07"
+      },
+      {
+        "data": {
+          "products": [
+            {
+              "activeTagName": "下单送护理",
+              "contentId": "d6372a8ffc4f4b60a413ec7f614f9e17",
+              "contentType": 2,
+              "cornerText": "下单送护理",
+              "imageUrl": "/upload/20180205/9c4721563abc412bb6aa86e1abf5f122!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"d6372a8ffc4f4b60a413ec7f614f9e17\"}}",
+              "price": "666",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 666,
+                "customerVisit": true,
+                "customerVisitPrice": 666,
+                "marketPrice": 1.2e3,
+                "maxZhimaPrice": 666.0,
+                "minZhimaPrice": 666.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 666
+              },
+              "productCategory": "美发",
+              "productId": "d6372a8ffc4f4b60a413ec7f614f9e17",
+              "productName": "RK隐形接发",
+              "storePrice": "1200"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "24579ba897224a50a5e84d801aabafd7",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20160504/a19f700993b44283a50e18054ac6b8f1.png!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"24579ba897224a50a5e84d801aabafd7\"}}",
+              "price": "190",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 190,
+                "customerVisit": true,
+                "customerVisitPrice": 190,
+                "marketPrice": 580.0,
+                "maxZhimaPrice": 380.0,
+                "minZhimaPrice": 380.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 190,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "美发",
+              "productId": "24579ba897224a50a5e84d801aabafd7",
+              "productName": "剪发",
+              "storePrice": "580"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "39146e16f16447ea995b01a049bef594",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20180929/1d693fcee05d4504a0208fff53cf47c9!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"39146e16f16447ea995b01a049bef594\"}}",
+              "price": "680",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 680,
+                "customerVisit": true,
+                "customerVisitPrice": 680,
+                "marketPrice": 5980.0,
+                "maxZhimaPrice": 1360.0,
+                "minZhimaPrice": 1360.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 680,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "美发",
+              "productId": "39146e16f16447ea995b01a049bef594",
+              "productName": "杨旭独创健康漂发OLAPLEX",
+              "storePrice": "5980"
+            },
+            {
+              "activeTagName": "下单送护理",
+              "contentId": "34397701c80a4d19ad9f0beb5c439c45",
+              "contentType": 2,
+              "cornerText": "下单送护理",
+              "imageUrl": "/upload/20171116/217fecd222644e179ef05ac12b032b98!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"34397701c80a4d19ad9f0beb5c439c45\"}}",
+              "price": "1080",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 1080,
+                "customerVisit": true,
+                "customerVisitPrice": 1080,
+                "marketPrice": 1680.0,
+                "maxZhimaPrice": 1080.0,
+                "minZhimaPrice": 1080.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 1080
+              },
+              "productCategory": "美发",
+              "productId": "34397701c80a4d19ad9f0beb5c439c45",
+              "productName": "日式减龄霓綾丝羽烫发",
+              "storePrice": "1680"
+            },
+            {
+              "activeTagName": "下单送护理",
+              "contentId": "4dc0bb66c35444a593f79137c708c6ae",
+              "contentType": 2,
+              "cornerText": "下单送护理",
+              "imageUrl": "/upload/20171116/6128a0362b3e49f5b8de7831b18d8062!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"4dc0bb66c35444a593f79137c708c6ae\"}}",
+              "price": "1080",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 1080,
+                "customerVisit": true,
+                "customerVisitPrice": 1080,
+                "marketPrice": 1680.0,
+                "maxZhimaPrice": 1080.0,
+                "minZhimaPrice": 1080.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 1080
+              },
+              "productCategory": "美发",
+              "productId": "4dc0bb66c35444a593f79137c708c6ae",
+              "productName": "日式减龄摩卡雾彩染发",
+              "storePrice": "1680"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "d9f0188a929b4583802903f420bb7528",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20171125/7e4644adbb0f414faf35812530b74c64!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"d9f0188a929b4583802903f420bb7528\"}}",
+              "price": "840",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 840,
+                "customerVisit": true,
+                "customerVisitPrice": 840,
+                "marketPrice": 1980.0,
+                "maxZhimaPrice": 1680.0,
+                "minZhimaPrice": 1680.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 840,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "美发",
+              "productId": "d9f0188a929b4583802903f420bb7528",
+              "productName": "日式减龄胧纱暮色染（护理型）",
+              "storePrice": "1980"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "d9b17b018364450696cb8aeb226716ca",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20171125/3f77089bb7e44be1b4d211923153f36a!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"d9b17b018364450696cb8aeb226716ca\"}}",
+              "price": "840",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 840,
+                "customerVisit": true,
+                "customerVisitPrice": 840,
+                "marketPrice": 1980.0,
+                "maxZhimaPrice": 1680.0,
+                "minZhimaPrice": 1680.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 840,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "美发",
+              "productId": "d9b17b018364450696cb8aeb226716ca",
+              "productName": "日式减龄丝雾魅影烫（护理型）",
+              "storePrice": "1980"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "ac4ef9f297ea40bea6b596a6581b93dd",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20150920/514365dd33da434b93ddefb076465960.png!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"ac4ef9f297ea40bea6b596a6581b93dd\"}}",
+              "price": "200",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 200,
+                "customerVisit": false,
+                "customerVisitPrice": 200,
+                "marketPrice": 788.0,
+                "maxZhimaPrice": 399.0,
+                "minZhimaPrice": 399.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 200,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "美发",
+              "productId": "ac4ef9f297ea40bea6b596a6581b93dd",
+              "productName": "经典红",
+              "storePrice": "788"
+            }
+          ],
+          "datasource": "widgetId",
+          "layout": "slider",
+          "openUrl": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=6\"}}",
+          "showStatus": false,
+          "version": "4.2.0",
+          "widgetId": "175"
+        },
+        "id": 73,
+        "name": "ProductsSlider",
+        "spm": "m-clientapp-index.ProductsSlider_mei_fa_zuo_pin1.$.3d5cae",
+        "version": "3d5cae"
+      },
+      {
+        "data": {
+          "bgColor": "#F4F4F4",
+          "height": "10"
+        },
+        "id": 93,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_93.$.5059c9",
+        "version": "5059c9"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "height": 600,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_f89b1391aea13c48c06701c70fc59b9e.jpg",
+          "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=7\"}}",
+          "width": 1500
+        },
+        "id": 44,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_jian_shen_tui_jian1.$.c48662",
+        "version": "c48662"
+      },
+      {
+        "data": {
+          "products": [
+            {
+              "activeTagName": "到店健身单次体验",
+              "contentId": "c40b4e85f19e4ed38cedc0924348e371",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/dcty.png",
+              "cornerText": "到店健身单次体验",
+              "imageUrl": "/upload/20181024/b42880710ee34a1ebf63c89ef929c38a!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"c40b4e85f19e4ed38cedc0924348e371\"}}",
+              "price": "39",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 39,
+                "customerVisit": true,
+                "customerVisitPrice": 39,
+                "marketPrice": 600.0,
+                "maxZhimaPrice": 39.0,
+                "minZhimaPrice": 39.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 39
+              },
+              "productCategory": "健身",
+              "productId": "c40b4e85f19e4ed38cedc0924348e371",
+              "productName": "腿型矫正 XO型腿",
+              "storePrice": "600"
+            },
+            {
+              "contentId": "f6ad90d9992a4b6f84768a83ceec235e",
+              "contentType": 2,
+              "imageUrl": "/upload/20161205/f596f821188d47b59e12e2537ddf431d.cover_pic!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"f6ad90d9992a4b6f84768a83ceec235e\"}}",
+              "price": "154",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 154,
+                "customerVisit": true,
+                "customerVisitPrice": 154,
+                "marketPrice": 400.0,
+                "maxZhimaPrice": 154.0,
+                "minZhimaPrice": 154.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 154
+              },
+              "productCategory": "健身",
+              "productId": "f6ad90d9992a4b6f84768a83ceec235e",
+              "productName": "翘臀丰胸体验课",
+              "storePrice": "400"
+            },
+            {
+              "activeTagName": "到店健身单次体验",
+              "contentId": "070793a51a3345fab0aeacf2bca67e5c",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/dcty.png",
+              "cornerText": "到店健身单次体验",
+              "imageUrl": "/upload/20161228/1f04916f8ddf489b9bdb5a6ee14fab97.cover_pic!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"070793a51a3345fab0aeacf2bca67e5c\"}}",
+              "price": "128",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 98,
+                "customerVisit": true,
+                "customerVisitPrice": 128,
+                "marketPrice": 400.0,
+                "maxZhimaPrice": 128.0,
+                "minZhimaPrice": 128.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 128
+              },
+              "productCategory": "健身",
+              "productId": "070793a51a3345fab0aeacf2bca67e5c",
+              "productName": "享瘦减脂塑形一对一体验课程",
+              "storePrice": "400"
+            },
+            {
+              "activeTagName": "到店健身单次体验",
+              "contentId": "1f5c4953d77c4df5941a4bd646fec38e",
+              "contentType": 2,
+              "cornerImageUrl": "/upload/jiaobiao/dcty.png",
+              "cornerText": "到店健身单次体验",
+              "imageUrl": "/upload/20161222/8a97be921d1d43448d175113ba67b202.cover_pic!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"1f5c4953d77c4df5941a4bd646fec38e\"}}",
+              "price": "98",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 98,
+                "customerVisit": true,
+                "customerVisitPrice": 98,
+                "marketPrice": 600.0,
+                "maxZhimaPrice": 98.0,
+                "minZhimaPrice": 98.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 98
+              },
+              "productCategory": "健身",
+              "productId": "1f5c4953d77c4df5941a4bd646fec38e",
+              "productName": "一对一拳击课程",
+              "storePrice": "600"
+            },
+            {
+              "contentId": "f23aefc43c05447f9c0c54ca987a539f",
+              "contentType": 2,
+              "imageUrl": "/upload/20161111/c8daa212691f4545aef960397b58b19e.cover_pic!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"f23aefc43c05447f9c0c54ca987a539f\"}}",
+              "price": "98",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 128,
+                "customerVisit": true,
+                "customerVisitPrice": 98,
+                "marketPrice": 600.0,
+                "maxZhimaPrice": 98.0,
+                "minZhimaPrice": 98.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 98
+              },
+              "productCategory": "健身",
+              "productId": "f23aefc43c05447f9c0c54ca987a539f",
+              "productName": "减脂塑形一对一私教课",
+              "storePrice": "600"
+            },
+            {
+              "contentId": "9103dcade16f4890981e4353cce3f953",
+              "contentType": 2,
+              "imageUrl": "/upload/20161205/3a42a39d525f4da8833a9cc3e1597c92.cover_pic!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"9103dcade16f4890981e4353cce3f953\"}}",
+              "price": "129",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 129,
+                "customerVisit": true,
+                "customerVisitPrice": 129,
+                "marketPrice": 400.0,
+                "maxZhimaPrice": 129.0,
+                "minZhimaPrice": 129.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 129
+              },
+              "productCategory": "健身",
+              "productId": "9103dcade16f4890981e4353cce3f953",
+              "productName": "极速瘦腿体验课",
+              "storePrice": "400"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "3735bb6783684cc392b908c7caae18cc",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20161009/23458570eecd4b51ad8ecd78ad070c53.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"3735bb6783684cc392b908c7caae18cc\"}}",
+              "price": "150",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 150,
+                "customerVisit": true,
+                "customerVisitPrice": 150,
+                "marketPrice": 400.0,
+                "maxZhimaPrice": 300.0,
+                "minZhimaPrice": 300.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 150,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "健身",
+              "productId": "3735bb6783684cc392b908c7caae18cc",
+              "productName": "潮舞元素爵士舞基本功",
+              "storePrice": "400"
+            },
+            {
+              "contentId": "540033a5cebe4c409c2a88f769bb3e9f",
+              "contentType": 2,
+              "imageUrl": "/upload/20161205/bde5f3ea06404ffc97ebde83f34009a9.cover_pic!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"540033a5cebe4c409c2a88f769bb3e9f\"}}",
+              "price": "169",
+              "priceInfo": {
+                "artisanVisit": false,
+                "artisanVisitPrice": 169,
+                "customerVisit": true,
+                "customerVisitPrice": 169,
+                "marketPrice": 30.0,
+                "maxZhimaPrice": 169.0,
+                "minZhimaPrice": 169.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 169
+              },
+              "productCategory": "健身",
+              "productId": "540033a5cebe4c409c2a88f769bb3e9f",
+              "productName": "体形矫正体验课",
+              "storePrice": "30"
+            }
+          ],
+          "datasource": "widgetId",
+          "layout": "slider",
+          "openUrl": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=7\"}}",
+          "showStatus": false,
+          "version": "4.2.0",
+          "widgetId": "176"
+        },
+        "id": 74,
+        "name": "ProductsSlider",
+        "spm": "m-clientapp-index.ProductsSlider_shou_shen_zuo_pin1.$.c5e034",
+        "version": "c5e034"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "height": 600,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_5027e453c214b34b9ce4bbc8b24e393e.jpg",
+          "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=16\"}}",
+          "width": 1500
+        },
+        "id": 40,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_ban_yong_jiu_tui_jian.$.c6893c",
+        "version": "c6893c"
+      },
+      {
+        "data": {
+          "products": [
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "79bd84c00e1746fab6c2b31ccf39d315",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20181024/ec599223f808471c9a9edc62b70e6605!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"79bd84c00e1746fab6c2b31ccf39d315\"}}",
+              "price": "2300",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 2300,
+                "customerVisit": false,
+                "customerVisitPrice": 2300,
+                "marketPrice": 7.8e3,
+                "maxZhimaPrice": 4.6e3,
+                "minZhimaPrice": 4.6e3,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 2300,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "其他",
+              "productId": "79bd84c00e1746fab6c2b31ccf39d315",
+              "productName": "【双11放价款】6D仿真线条眉",
+              "storePrice": "7800"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "52a64860c43648d2bc149d3ff7fc520d",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20181105/0528a89a038c4e1bae1e57e5c3415fe9!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"52a64860c43648d2bc149d3ff7fc520d\"}}",
+              "price": "2200",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 2200,
+                "customerVisit": false,
+                "customerVisitPrice": 2200,
+                "marketPrice": 6866.0,
+                "maxZhimaPrice": 4.4e3,
+                "minZhimaPrice": 4.4e3,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 2200,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "其他",
+              "productId": "52a64860c43648d2bc149d3ff7fc520d",
+              "productName": "【可即刻碰水】半永久仿生线条透视",
+              "storePrice": "6866"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "4ab4e38651cd49c58bada44ae8ac83c7",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20170904/80a698c344f547f3b7b11bad4507d87b!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"4ab4e38651cd49c58bada44ae8ac83c7\"}}",
+              "price": "2280",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 2280,
+                "customerVisit": false,
+                "customerVisitPrice": 2280,
+                "marketPrice": 8.0e3,
+                "maxZhimaPrice": 4560.0,
+                "minZhimaPrice": 4560.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 2280,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "其他",
+              "productId": "4ab4e38651cd49c58bada44ae8ac83c7",
+              "productName": "【零结痂】半永久人气雾眉",
+              "storePrice": "8000"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "535c1a4d2a234cbe98bc52e72894d842",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20170510/0c1c64e6ffc74378b282aaa9d9e6e7b7.png!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"535c1a4d2a234cbe98bc52e72894d842\"}}",
+              "price": "2200",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 2200,
+                "customerVisit": false,
+                "customerVisitPrice": 2200,
+                "marketPrice": 1.0e4,
+                "maxZhimaPrice": 4.4e3,
+                "minZhimaPrice": 4.4e3,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 2200,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "其他",
+              "productId": "535c1a4d2a234cbe98bc52e72894d842",
+              "productName": "【抖音爆款】半永久裸妆素颜水雾眉",
+              "storePrice": "10000"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "db4d70a47ae6418dbac6974599843e5d",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20171229/8f69f5a2a6db48c7b5aee43a59beefca!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"db4d70a47ae6418dbac6974599843e5d\"}}",
+              "price": "1840",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 1840,
+                "customerVisit": false,
+                "customerVisitPrice": 1840,
+                "marketPrice": 9980.0,
+                "maxZhimaPrice": 3680.0,
+                "minZhimaPrice": 3680.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 1840,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "其他",
+              "productId": "db4d70a47ae6418dbac6974599843e5d",
+              "productName": "独家技术 超自然渐变粉黛眉",
+              "storePrice": "9980"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "195ed9e069da47b09b262d76cc12c599",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20170630/201f49db43ed4d9b9e625aa3ff304c12!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"195ed9e069da47b09b262d76cc12c599\"}}",
+              "price": "2250",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 2250,
+                "customerVisit": false,
+                "customerVisitPrice": 2250,
+                "marketPrice": 8.8e3,
+                "maxZhimaPrice": 4.5e3,
+                "minZhimaPrice": 4.5e3,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 2250,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "其他",
+              "productId": "195ed9e069da47b09b262d76cc12c599",
+              "productName": "私人定制 韩式粉黛眉",
+              "storePrice": "8800"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "12ed4220c957490aa5ebb5cadae90b5d",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20181105/6ff162b979ad4530aece0da00bef356c!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"12ed4220c957490aa5ebb5cadae90b5d\"}}",
+              "price": "2200",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 2200,
+                "customerVisit": false,
+                "customerVisitPrice": 2200,
+                "marketPrice": 6.8e3,
+                "maxZhimaPrice": 4.4e3,
+                "minZhimaPrice": 4.4e3,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 2200,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "其他",
+              "productId": "12ed4220c957490aa5ebb5cadae90b5d",
+              "productName": "半永久手工仿真线条眉（可沾水）",
+              "storePrice": "6800"
+            },
+            {
+              "activeTagName": "双11 全场5折",
+              "contentId": "17e1b808c42f463fb57d7dd163b07ce6",
+              "contentType": 2,
+              "cornerText": "双11 全场5折",
+              "imageUrl": "/upload/20170614/35746e2a51454e2c88b7adf6dc27378d!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"17e1b808c42f463fb57d7dd163b07ce6\"}}",
+              "price": "2999",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 2999,
+                "customerVisit": false,
+                "customerVisitPrice": 2999,
+                "marketPrice": 8.8e3,
+                "maxZhimaPrice": 5998.0,
+                "minZhimaPrice": 5998.0,
+                "promotionType": "discount",
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 2999,
+                "showType": 1,
+                "simName": "双11"
+              },
+              "productCategory": "其他",
+              "productId": "17e1b808c42f463fb57d7dd163b07ce6",
+              "productName": "平台第一金牌 称霸半永久 丝雾眉",
+              "storePrice": "8800"
+            }
+          ],
+          "datasource": "widgetId",
+          "layout": "slider",
+          "openUrl": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=16\"}}",
+          "showStatus": false,
+          "version": "4.2.0",
+          "widgetId": "593"
+        },
+        "id": 68,
+        "name": "ProductsSlider",
+        "spm": "m-clientapp-index.ProductsSlider_ban_yong_jiu_zuo_pin.$.f16c8a",
+        "version": "f16c8a"
+      },
+      {
+        "data": {
+          "bgColor": "#F4F4F4",
+          "height": "10"
+        },
+        "id": 94,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_94.$.cbbbfc",
+        "version": "cbbbfc"
+      },
+      {
+        "data": {
+          "bgColor": "",
+          "height": 600,
+          "image": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_7ba840de096e81356c357a61cad4e12f.jpg",
+          "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=13\"}}",
+          "width": 1500
+        },
+        "id": 39,
+        "name": "ImageLink",
+        "spm": "m-clientapp-index.ImageLink_ti_diao_tui_jian.$.604a97",
+        "version": "604a97"
+      },
+      {
+        "data": {
+          "products": [
+            {
+              "activeTagName": "尊享价",
+              "contentId": "2b29f2e33ab24b219052354f6e4f3d92",
+              "contentType": 2,
+              "cornerText": "尊享价",
+              "imageUrl": "/upload/20171025/fefba94830934864bac43a46c365a9e4!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"2b29f2e33ab24b219052354f6e4f3d92\"}}",
+              "price": "2280",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 2280,
+                "customerVisit": false,
+                "customerVisitPrice": 2280,
+                "marketPrice": 3.8e3,
+                "maxZhimaPrice": 2280.0,
+                "minZhimaPrice": 2280.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 2280
+              },
+              "productCategory": "其他",
+              "productId": "2b29f2e33ab24b219052354f6e4f3d92",
+              "productName": "艾玛拉提塑型面罩",
+              "storePrice": "3800"
+            },
+            {
+              "contentId": "9cb884c03cf84f3ba3f913225faf3fc8",
+              "contentType": 2,
+              "imageUrl": "/upload/20171103/4a8f8404b12844d096aab3adb952cee3.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"9cb884c03cf84f3ba3f913225faf3fc8\"}}",
+              "price": "1000",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 1000,
+                "customerVisit": false,
+                "customerVisitPrice": 1000,
+                "marketPrice": 5.8e4,
+                "maxZhimaPrice": 1.0e3,
+                "minZhimaPrice": 1.0e3,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 1000
+              },
+              "productCategory": "其他",
+              "productId": "9cb884c03cf84f3ba3f913225faf3fc8",
+              "productName": "法莉娅体雕",
+              "storePrice": "58000"
+            },
+            {
+              "contentId": "a75f6197077945ee947dab4e57b148db",
+              "contentType": 2,
+              "imageUrl": "/upload/20180428/b152cb13201547d0b6c830d1cd3700ff!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"a75f6197077945ee947dab4e57b148db\"}}",
+              "price": "1000",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 1000,
+                "customerVisit": false,
+                "customerVisitPrice": 1000,
+                "marketPrice": 1.0e3,
+                "maxZhimaPrice": 1.0e3,
+                "minZhimaPrice": 1.0e3,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 1000
+              },
+              "productCategory": "其他",
+              "productId": "a75f6197077945ee947dab4e57b148db",
+              "productName": "艾玛体雕定金款",
+              "storePrice": "1000"
+            },
+            {
+              "activeTagName": "尊享价",
+              "contentId": "00771317885c4fce92c7f81cd8a039d5",
+              "contentType": 2,
+              "cornerText": "尊享价",
+              "imageUrl": "/upload/20171129/b1c1ebe354ec4571811a41138cb7489f.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"00771317885c4fce92c7f81cd8a039d5\"}}",
+              "price": "9800",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 9800,
+                "customerVisit": false,
+                "customerVisitPrice": 9800,
+                "marketPrice": 1.98e4,
+                "maxZhimaPrice": 9.8e3,
+                "minZhimaPrice": 9.8e3,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 9800
+              },
+              "productCategory": "其他",
+              "productId": "00771317885c4fce92c7f81cd8a039d5",
+              "productName": "法国（法莉娅）背心短裤",
+              "storePrice": "19800"
+            },
+            {
+              "activeTagName": "尊享价",
+              "contentId": "1033189debc14647b798381334fef0ad",
+              "contentType": 2,
+              "cornerText": "尊享价",
+              "imageUrl": "/upload/20161115/eb131a3567a24666a5a706ae93cf3d88.cover_pic!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"1033189debc14647b798381334fef0ad\"}}",
+              "price": "2280",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 2280,
+                "customerVisit": false,
+                "customerVisitPrice": 2280,
+                "marketPrice": 2280.0,
+                "maxZhimaPrice": 2280.0,
+                "minZhimaPrice": 2280.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 2280
+              },
+              "productCategory": "其他",
+              "productId": "1033189debc14647b798381334fef0ad",
+              "productName": "【体雕】V脸 紧致塑形提拉面罩",
+              "storePrice": "2280"
+            },
+            {
+              "activeTagName": "尊享价",
+              "contentId": "23b964c0124046dfbd78a1ad24e8acab",
+              "contentType": 2,
+              "cornerText": "尊享价",
+              "imageUrl": "/upload/20171216/68a8caa64aaf4d46bd2ab233d8b603ed.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"23b964c0124046dfbd78a1ad24e8acab\"}}",
+              "price": "15800",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 15800,
+                "customerVisit": false,
+                "customerVisitPrice": 15800,
+                "marketPrice": 1.58e4,
+                "maxZhimaPrice": 1.58e4,
+                "minZhimaPrice": 1.58e4,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 15800
+              },
+              "productCategory": "其他",
+              "productId": "23b964c0124046dfbd78a1ad24e8acab",
+              "productName": "法莉娅体雕",
+              "storePrice": "15800"
+            },
+            {
+              "activeTagName": "尊享价",
+              "contentId": "da48370a883046808124ed4d5fb57c71",
+              "contentType": 2,
+              "cornerText": "尊享价",
+              "imageUrl": "/upload/20161012/7c6eeb2adf5d41cc80271e1e2b4d6daf.png!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"da48370a883046808124ed4d5fb57c71\"}}",
+              "price": "10300",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 10300,
+                "customerVisit": false,
+                "customerVisitPrice": 10300,
+                "marketPrice": 2.08e4,
+                "maxZhimaPrice": 1.03e4,
+                "minZhimaPrice": 1.03e4,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 10300
+              },
+              "productCategory": "其他",
+              "productId": "da48370a883046808124ed4d5fb57c71",
+              "productName": "【体雕】平腹纤腿一体长款",
+              "storePrice": "20800"
+            },
+            {
+              "activeTagName": "尊享价",
+              "contentId": "693db930850d46f9868c2ee4aba066d1",
+              "contentType": 2,
+              "cornerText": "尊享价",
+              "imageUrl": "/upload/20170314/aa45c857841f498a88f91dd428be469f.jpg!460",
+              "openUrl": "hljclient://page?jsonData={\"type\":1,\"pageName\":\"作品详情\",\"data\":{\"productId\":\"693db930850d46f9868c2ee4aba066d1\"}}",
+              "price": "16560",
+              "priceInfo": {
+                "artisanVisit": true,
+                "artisanVisitPrice": 16560,
+                "customerVisit": false,
+                "customerVisitPrice": 16560,
+                "marketPrice": 3.58e4,
+                "maxZhimaPrice": 16560.0,
+                "minZhimaPrice": 16560.0,
+                "rangeArtisanVisitPrice": false,
+                "showCustomerPrice": 16560
+              },
+              "productCategory": "其他",
+              "productId": "693db930850d46f9868c2ee4aba066d1",
+              "productName": "艾玛体雕",
+              "storePrice": "35800"
+            }
+          ],
+          "datasource": "widgetId",
+          "layout": "slider",
+          "openUrl": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://m.helijia.com/sub-product.html?recType=4&navigate=13\"}}",
+          "showStatus": false,
+          "version": "4.2.0",
+          "widgetId": "239"
+        },
+        "id": 71,
+        "name": "ProductsSlider",
+        "spm": "m-clientapp-index.ProductsSlider_ti_diao_zuo_pin.$.62ecbd",
+        "version": "62ecbd"
+      },
+      {
+        "data": {
+          "bgColor": "#F4F4F4",
+          "height": "10"
+        },
+        "id": 105,
+        "name": "Space",
+        "spm": "m-clientapp-index.Space_105.$.d786e0",
+        "version": "d786e0"
+      },
+      {
+        "data": {
+          "height": "50",
+          "imageUrl": "https://img-ucdn-static.helijia.com/zmw/magic-view/recommend-header.png",
+          "showStatus": true,
+          "width": "50"
+        },
+        "id": 15,
+        "name": "Recommend",
+        "spm": "m-clientapp-index.Recommend_15.$.b592e1",
+        "version": "b592e1"
+      },
+      {
+        "data": {
+          "widgetImage": null,
+          "widgetName": "BackTop",
+          "widgetTitle": "返回顶部",
+          "widgetType": "External"
+        },
+        "id": 190,
+        "name": "BackTop",
+        "spm": "m-clientapp-index.BackTop_190.$.90fe07",
+        "version": "90fe07"
+      },
+      {
+        "data": {
+          "enabled": true,
+          "widgetName": "Account",
+          "widgetType": "Config"
+        },
+        "id": 192,
+        "name": "Account",
+        "spm": "m-clientapp-index.Account_192.$.8c934b",
+        "version": "8c934b"
+      },
+      {
+        "data": {
+          "widgetName": "GotoApp",
+          "widgetType": "Config"
+        },
+        "id": 191,
+        "name": "GotoApp",
+        "spm": "m-clientapp-index.GotoApp_191.$.6972af",
+        "version": "6972af"
+      },
+      {
+        "data": {
+          "widgetName": "Navbar",
+          "widgetType": "Config"
+        },
+        "id": 193,
+        "name": "Navbar",
+        "spm": "m-clientapp-index.Navbar_193.$.fed914",
+        "version": "fed914"
+      },
+      {
+        "data": {
+          "height": 320,
+          "link": "hljclient://page?jsonData={\"type\":4,\"pageName\":\"HTML\",\"data\":{\"url1\":\"https://p.helijia.com/l/2128\"}}",
+          "radio": "0.2",
+          "widgetImage": "https://img-ucdn-static.helijia.com/zmw/upload/magic/images/original_f1577ebb2783ee8c7374f94d2e6ec134.gif",
+          "widgetName": "Pendant",
+          "widgetTitle": "首页挂件",
+          "widgetType": "External",
+          "width": 320
+        },
+        "id": 210,
+        "name": "Pendant",
+        "spm": "m-clientapp-index.Pendant_pendant.$.3fc9b5",
+        "version": "3fc9b5"
+      }
+    ]
+  },
+  "success": true
+}
